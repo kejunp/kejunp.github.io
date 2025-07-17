@@ -109,7 +109,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classVM.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classVM.html">VM</a> {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classVM.html">VM</a>(<a class="code hl_class" href="classChunk.html">Chunk</a>&amp; chunk_ref);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// Rule of five, as copy is not allowed (references can&#39;t be rebound).</span></div>
@@ -129,7 +129,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  std::vector&lt;uint8_t&gt;::const_iterator <a class="code hl_function" href="classVM.html#a9dfe7c9aa89d1af4ca643e195ba3cd72">get_instr_ptr</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="classChunk.html">Chunk</a>&amp; chunk;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  std::vector&lt;uint8_t&gt;::const_iterator instr_ptr;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  std::array&lt;Value, STACK_MAX&gt; stack;</div>

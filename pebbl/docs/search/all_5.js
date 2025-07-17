@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pop_0',['pop',['../classVM.html#af5f97f93ca522dd02dbaba309fd1706c',1,'VM']]],
-  ['push_1',['push',['../classVM.html#ab11e352f441abd2fef16eb5f591ca0c5',1,'VM']]]
+  ['write_5fconstant_0',['write_constant',['../classChunk.html#adf7e7ba1595c105d018c0f9b86c98d68',1,'Chunk']]]
 ];
