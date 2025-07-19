@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['write_5fconstant_0',['write_constant',['../classChunk.html#adf7e7ba1595c105d018c0f9b86c98d68',1,'Chunk']]]
+  ['emit_0',['emit',['../classChunk.html#ac9f904f686583189e15d2bde149e56b6',1,'Chunk']]],
+  ['emit_5fmany_1',['emit_many',['../classChunk.html#ad88a54b82dcb53a09830b5498b4626f5',1,'Chunk']]]
 ];
