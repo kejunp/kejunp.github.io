@@ -8,9 +8,9 @@ digraph "parser/lexer/lexer.cpp"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="lexer.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$lexer_8hpp.html",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="utility",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node3 [id="Node000003",label="string",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="string",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node4 [id="Node000004",label="utility",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="common.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$common_8hpp.html",tooltip=" "];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
@@ -21,7 +21,7 @@ digraph "parser/lexer/lexer.cpp"
   Node8 [id="Node000008",label="iostream",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node9 [id="edge8_Node000002_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node9 [id="Node000009",label="tokens.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$tokens_8hpp.html",tooltip=" "];
-  Node9 -> Node4 [id="edge9_Node000009_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node3 [id="edge9_Node000009_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node9 -> Node10 [id="edge10_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
   Node10 [id="Node000010",label="unordered_map",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node11 [id="edge11_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
