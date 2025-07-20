@@ -105,8 +105,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a90997b73a74196097baa4c88ea2512ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes the characters until the section isn't a valid identifier, then returns the identifier.  <br /></td></tr>
 <tr class="separator:a90997b73a74196097baa4c88ea2512ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae235fbcd9d30a28e9b71200f92da0dff" id="r_ae235fbcd9d30a28e9b71200f92da0dff"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff">read_number</a> ()</td></tr>
-<tr class="memdesc:ae235fbcd9d30a28e9b71200f92da0dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes the characters until the section isn't a valid number, then returns the number.  <br /></td></tr>
+<tr class="memdesc:ae235fbcd9d30a28e9b71200f92da0dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes the characters until the section isn't a valid number, then returns the type of the number (a <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a5d5cd46919fa987731fb2edefe0f2a0c">TokenType::INTEGER</a> or <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ae738c26bf4ce1037fa81b039a915cbf6">TokenType::FLOAT</a>) and the number.  <br /></td></tr>
 <tr class="separator:ae235fbcd9d30a28e9b71200f92da0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c40e61f32ba4d028d1a94c3c655d33" id="r_a07c40e61f32ba4d028d1a94c3c655d33"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33">read_string</a> ()</td></tr>
+<tr class="memdesc:a07c40e61f32ba4d028d1a94c3c655d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes the characters until the section isn't a valid string, then returns the string.  <br /></td></tr>
+<tr class="separator:a07c40e61f32ba4d028d1a94c3c655d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fec456cf22a51ad96eac59894bbda6" id="r_a80fec456cf22a51ad96eac59894bbda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexer.html#a80fec456cf22a51ad96eac59894bbda6">consume_whitespace</a> ()</td></tr>
 <tr class="memdesc:a80fec456cf22a51ad96eac59894bbda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips all whitespace.  <br /></td></tr>
 <tr class="separator:a80fec456cf22a51ad96eac59894bbda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -415,7 +418,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Consumes the characters until the section isn't a valid number, then returns the number. </p>
+<p>Consumes the characters until the section isn't a valid number, then returns the type of the number (a <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a5d5cd46919fa987731fb2edefe0f2a0c">TokenType::INTEGER</a> or <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ae738c26bf4ce1037fa81b039a915cbf6">TokenType::FLOAT</a>) and the number. </p>
+
+</div>
+</div>
+<a id="a07c40e61f32ba4d028d1a94c3c655d33" name="a07c40e61f32ba4d028d1a94c3c655d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c40e61f32ba4d028d1a94c3c655d33">&#9670;&#160;</a></span>read_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Lexer::read_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consumes the characters until the section isn't a valid string, then returns the string. </p>
 
 </div>
 </div>

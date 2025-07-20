@@ -5,6 +5,7 @@ var searchData=
   ['read_5fidentifier_2',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
   ['read_5fnumber_3',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
   ['read_5fposition_5f_4',['read_position_',['../classLexer.html#a57a7f02b2e483ae54041e7ccc29f143b',1,'Lexer']]],
-  ['return_5',['RETURN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5',1,'tokens.hpp']]],
-  ['rparen_6',['RPAREN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921afccedc90f87593a3b31536bd658808b1',1,'tokens.hpp']]]
+  ['read_5fstring_5',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]],
+  ['return_6',['RETURN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5',1,'tokens.hpp']]],
+  ['rparen_7',['RPAREN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921afccedc90f87593a3b31536bd658808b1',1,'tokens.hpp']]]
 ];
