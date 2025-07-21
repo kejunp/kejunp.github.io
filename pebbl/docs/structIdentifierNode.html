@@ -92,7 +92,7 @@ Collaboration diagram for IdentifierNode:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a29f9d987eeb0aa61b369a023b12446a5" id="r_a29f9d987eeb0aa61b369a023b12446a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5">type</a> () const noexcept override</td></tr>
-<tr class="memdesc:a29f9d987eeb0aa61b369a023b12446a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the type of the AST node.  <br /></td></tr>
+<tr class="memdesc:a29f9d987eeb0aa61b369a023b12446a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">ASTType::IDENTIFIER</a>.  <br /></td></tr>
 <tr class="separator:a29f9d987eeb0aa61b369a023b12446a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0349a14514d6e236ebefff3d6ee266f5" id="r_a0349a14514d6e236ebefff3d6ee266f5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structToken.html">Token</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5">get_token</a> () const noexcept override</td></tr>
 <tr class="memdesc:a0349a14514d6e236ebefff3d6ee266f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a pointer to the token, if no meaningful token, return nullptr.  <br /></td></tr>
@@ -162,8 +162,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gives the type of the AST node. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns a scoped enum called ASTType (e.g., LetStatement -&gt; AstType::LET_STATEMENT) </dd></dl>
+<p>Returns <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">ASTType::IDENTIFIER</a>. </p>
 
 <p>Implements <a class="el" href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">ASTNode</a>.</p>
 
