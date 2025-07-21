@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['token_0',['token',['../structToken.html',1,'Token'],['../structIdentifierNode.html#a67de89452731f7d90472847eb04232a5',1,'IdentifierNode::token']]],
+  ['token_0',['token',['../structToken.html',1,'Token'],['../structIdentifierNode.html#a67de89452731f7d90472847eb04232a5',1,'IdentifierNode::token'],['../structVariableStatement.html#a72514425d10765850a78b3efbbb4ef24',1,'VariableStatement::token']]],
   ['tokens_2ehpp_1',['tokens.hpp',['../tokens_8hpp.html',1,'']]],
   ['tokentype_2',['TokenType',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921',1,'tokens.hpp']]],
   ['true_3',['TRUE',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ac0d83f0b82a6b30de8811e69e6d95c61',1,'tokens.hpp']]],

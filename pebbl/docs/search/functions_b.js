@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['type_0',['type',['../structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1',1,'ASTNode::type()'],['../structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5',1,'IdentifierNode::type()'],['../structVariableStatement.html#a3834ef5bc90cd7e3297381eaa3671365',1,'VariableStatement::type()']]]
+  ['read_5fidentifier_0',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
+  ['read_5fnumber_1',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
+  ['read_5fstring_2',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]]
 ];

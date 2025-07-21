@@ -9,4 +9,6 @@ digraph "VariableStatement"
   Node2 [id="Node000002",label="StatementNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structStatementNode.html",tooltip="Base class for all statements."];
   Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="ASTNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structASTNode.html",tooltip="Base class of all AST nodes."];
+  Node4 -> Node1 [id="edge3_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" token",fontcolor="grey" ];
+  Node4 [id="Node000004",label="Token",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structToken.html",tooltip=" "];
 }

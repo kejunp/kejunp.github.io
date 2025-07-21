@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['make_5ftoken_1',['make_token',['../classLexer.html#a3e2e069afa2176cc23d314736df53cfb',1,'Lexer::make_token(TokenType type, std::string &amp;&amp;lexeme)'],['../classLexer.html#aabe0e0f5afa8767af534621653d71e32',1,'Lexer::make_token(TokenType type, const std::string &amp;lexeme)']]]
+  ['lexer_0',['Lexer',['../classLexer.html#ab17bc9afbdba18af789b8a8da98044b5',1,'Lexer']]],
+  ['lookup_5fidentifier_1',['lookup_identifier',['../tokens_8hpp.html#a3986510f97a5d35792bb5bd57d07efbe',1,'tokens.hpp']]]
 ];
