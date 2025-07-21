@@ -97,12 +97,12 @@ Inheritance diagram for ASTNode:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a578124183c58a444f3fd7668848ea887" id="r_a578124183c58a444f3fd7668848ea887"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structASTNode.html#a578124183c58a444f3fd7668848ea887">~ASTNode</a> ()=default</td></tr>
 <tr class="separator:a578124183c58a444f3fd7668848ea887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c95573c2712fd7c0c57002f854343dd" id="r_a7c95573c2712fd7c0c57002f854343dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structASTNode.html#a7c95573c2712fd7c0c57002f854343dd">type</a> () const =0</td></tr>
-<tr class="memdesc:a7c95573c2712fd7c0c57002f854343dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the type of the AST node.  <br /></td></tr>
-<tr class="separator:a7c95573c2712fd7c0c57002f854343dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac155be5203ab97e5a4f13d9bca44f9ff" id="r_ac155be5203ab97e5a4f13d9bca44f9ff"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structToken.html">Token</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structASTNode.html#ac155be5203ab97e5a4f13d9bca44f9ff">get_token</a> () const</td></tr>
-<tr class="memdesc:ac155be5203ab97e5a4f13d9bca44f9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a pointer to the token, if no meaningful token, return nullptr.  <br /></td></tr>
-<tr class="separator:ac155be5203ab97e5a4f13d9bca44f9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa2c9208b3223c3eb9843f3ac88d8b1" id="r_a5fa2c9208b3223c3eb9843f3ac88d8b1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">type</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a5fa2c9208b3223c3eb9843f3ac88d8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the type of the AST node.  <br /></td></tr>
+<tr class="separator:a5fa2c9208b3223c3eb9843f3ac88d8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d46b9fdc8b734d633622ce6008b35ef" id="r_a0d46b9fdc8b734d633622ce6008b35ef"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structToken.html">Token</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef">get_token</a> () const noexcept</td></tr>
+<tr class="memdesc:a0d46b9fdc8b734d633622ce6008b35ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a pointer to the token, if no meaningful token, return nullptr.  <br /></td></tr>
+<tr class="separator:a0d46b9fdc8b734d633622ce6008b35ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class of all AST nodes. </p>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac155be5203ab97e5a4f13d9bca44f9ff" name="ac155be5203ab97e5a4f13d9bca44f9ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac155be5203ab97e5a4f13d9bca44f9ff">&#9670;&#160;</a></span>get_token()</h2>
+<a id="a0d46b9fdc8b734d633622ce6008b35ef" name="a0d46b9fdc8b734d633622ce6008b35ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d46b9fdc8b734d633622ce6008b35ef">&#9670;&#160;</a></span>get_token()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -159,10 +159,12 @@ Public Member Functions</h2></td></tr>
 <p>Gives a pointer to the token, if no meaningful token, return nullptr. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the token of the AST node (BinaryExpressionNode will return whatever the operator is, etc.) </dd></dl>
 
+<p>Reimplemented in <a class="el" href="structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5">IdentifierNode</a>.</p>
+
 </div>
 </div>
-<a id="a7c95573c2712fd7c0c57002f854343dd" name="a7c95573c2712fd7c0c57002f854343dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c95573c2712fd7c0c57002f854343dd">&#9670;&#160;</a></span>type()</h2>
+<a id="a5fa2c9208b3223c3eb9843f3ac88d8b1" name="a5fa2c9208b3223c3eb9843f3ac88d8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa2c9208b3223c3eb9843f3ac88d8b1">&#9670;&#160;</a></span>type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,13 +181,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Gives the type of the AST node. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns a scoped enum called ASTType (e.g., LetStatement -&gt; ASTTYPE_LET_STATEMENT) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a scoped enum called ASTType (e.g., LetStatement -&gt; AstType::LET_STATEMENT) </dd></dl>
+
+<p>Implemented in <a class="el" href="structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5">IdentifierNode</a>.</p>
 
 </div>
 </div>
