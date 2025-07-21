@@ -5,5 +5,6 @@ var searchData=
   ['if_2',['IF',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ade6ee2b5d856295add4d5e3631fbfb93',1,'tokens.hpp']]],
   ['input_5f_3',['input_',['../classLexer.html#a51abb9473a2b9e613ac54d9c2ad0813b',1,'Lexer']]],
   ['integer_4',['INTEGER',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a5d5cd46919fa987731fb2edefe0f2a0c',1,'tokens.hpp']]],
-  ['isopcode_5',['IsOpcode',['../conceptIsOpcode.html',1,'']]]
+  ['is_5fmutable_5',['is_mutable',['../structVariableStatement.html#a0244e9716da45e4c132f19380a8ac3ca',1,'VariableStatement']]],
+  ['isopcode_6',['IsOpcode',['../conceptIsOpcode.html',1,'']]]
 ];
