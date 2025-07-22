@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['read_5fposition_5f_0',['read_position_',['../classLexer.html#a57a7f02b2e483ae54041e7ccc29f143b',1,'Lexer']]]
+  ['type_0',['type',['../structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a',1,'Token']]]
 ];

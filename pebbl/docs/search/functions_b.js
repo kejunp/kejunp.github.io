@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['read_5fidentifier_0',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
-  ['read_5fnumber_1',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
-  ['read_5fstring_2',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]]
+  ['type_0',['type',['../structASTNode.html#a7c95573c2712fd7c0c57002f854343dd',1,'ASTNode']]]
 ];
