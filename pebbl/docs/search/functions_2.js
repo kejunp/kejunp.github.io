@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['disassemble_5fchunk_0',['disassemble_chunk',['../debug_8cpp.html#a030860b33406b661f5033013d8f373fc',1,'disassemble_chunk(const Chunk &amp;chunk, std::string_view name):&#160;debug.cpp'],['../debug_8hpp.html#a030860b33406b661f5033013d8f373fc',1,'disassemble_chunk(const Chunk &amp;chunk, std::string_view name):&#160;debug.cpp']]],
-  ['disassemble_5finstruction_1',['disassemble_instruction',['../debug_8cpp.html#a8c17fac80c56964926d0214a79661c61',1,'disassemble_instruction(const Chunk &amp;chunk, std::size_t offset):&#160;debug.cpp'],['../debug_8hpp.html#a8c17fac80c56964926d0214a79661c61',1,'disassemble_instruction(const Chunk &amp;chunk, std::size_t offset):&#160;debug.cpp']]]
+  ['get_5ftoken_0',['get_token',['../structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef',1,'ASTNode::get_token()'],['../structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5',1,'IdentifierNode::get_token()'],['../structVariableStatementNode.html#aa5d6a0f805effeae91aed26e6471cca2',1,'VariableStatementNode::get_token()'],['../structReturnStatementNode.html#a9fae4ebf6c85b18db2950a1f19e416ca',1,'ReturnStatementNode::get_token()']]]
 ];

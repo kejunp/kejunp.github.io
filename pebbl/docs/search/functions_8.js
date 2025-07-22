@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next_5ftoken_0',['next_token',['../classLexer.html#a7fcfd2eb03ec5b00bda2b7722d42f68c',1,'Lexer']]]
+  ['peek_5fchar_0',['peek_char',['../classLexer.html#abc2bd6b00b8481e13a76810b7f24b985',1,'Lexer']]]
 ];

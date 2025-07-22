@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['token_0',['Token',['../structToken.html',1,'']]]
+  ['variablestatementnode_0',['VariableStatementNode',['../structVariableStatementNode.html',1,'']]]
 ];

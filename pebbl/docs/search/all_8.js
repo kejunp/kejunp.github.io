@@ -11,9 +11,7 @@ var searchData=
   ['lexer_2ehpp_8',['lexer.hpp',['../lexer_8hpp.html',1,'']]],
   ['line_9',['line',['../structToken.html#ade6deee497c3814a319db092bc0f4f7f',1,'Token']]],
   ['line_5f_10',['line_',['../classLexer.html#add5cb6f5a87a005b09d9587895280913',1,'Lexer']]],
-  ['line_5frun_5flines_11',['line_run_lines',['../classChunk.html#ac375007c99af9a90d9c36a28745d3e3d',1,'Chunk']]],
-  ['line_5frun_5fstarts_12',['line_run_starts',['../classChunk.html#a0940895c82396f6b4ca53e0c9f657439',1,'Chunk']]],
-  ['literalnode_13',['LiteralNode',['../structLiteralNode.html',1,'']]],
-  ['lookup_5fidentifier_14',['lookup_identifier',['../tokens_8hpp.html#a3986510f97a5d35792bb5bd57d07efbe',1,'tokens.hpp']]],
-  ['lparen_15',['LPAREN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a45bf4f3d35a115aaa2df577ba7861286',1,'tokens.hpp']]]
+  ['literalnode_11',['LiteralNode',['../structLiteralNode.html',1,'']]],
+  ['lookup_5fidentifier_12',['lookup_identifier',['../tokens_8hpp.html#a3986510f97a5d35792bb5bd57d07efbe',1,'tokens.hpp']]],
+  ['lparen_13',['LPAREN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a45bf4f3d35a115aaa2df577ba7861286',1,'tokens.hpp']]]
 ];

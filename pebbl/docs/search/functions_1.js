@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['chunk_0',['Chunk',['../classChunk.html#a41a7fb3fcdb7521e16cd72a65ed090c5',1,'Chunk']]],
-  ['consume_5fchar_1',['consume_char',['../classLexer.html#a57a2fac872bf34cac35dee09d7333141',1,'Lexer']]],
-  ['consume_5fwhitespace_2',['consume_whitespace',['../classLexer.html#a80fec456cf22a51ad96eac59894bbda6',1,'Lexer']]]
+  ['disassemble_5fchunk_0',['disassemble_chunk',['../debug_8cpp.html#a030860b33406b661f5033013d8f373fc',1,'disassemble_chunk(const Chunk &amp;chunk, std::string_view name):&#160;debug.cpp'],['../debug_8hpp.html#a030860b33406b661f5033013d8f373fc',1,'disassemble_chunk(const Chunk &amp;chunk, std::string_view name):&#160;debug.cpp']]],
+  ['disassemble_5finstruction_1',['disassemble_instruction',['../debug_8cpp.html#a8c17fac80c56964926d0214a79661c61',1,'disassemble_instruction(const Chunk &amp;chunk, std::size_t offset):&#160;debug.cpp'],['../debug_8hpp.html#a8c17fac80c56964926d0214a79661c61',1,'disassemble_instruction(const Chunk &amp;chunk, std::size_t offset):&#160;debug.cpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expressionnode_0',['ExpressionNode',['../structExpressionNode.html',1,'']]]
+  ['identifiernode_0',['IdentifierNode',['../structIdentifierNode.html',1,'']]]
 ];
