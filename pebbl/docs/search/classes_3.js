@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lexer_0',['Lexer',['../classLexer.html',1,'']]]
+  ['identifiernode_0',['IdentifierNode',['../structIdentifierNode.html',1,'']]]
 ];

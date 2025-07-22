@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pebbl: parser/ast_generation/ast.hpp Source File</title>
+<title>pebbl: src/parser/ast_generation/ast.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_572890c148f68441e050f6560d78312b.html">parser</a></li><li class="navelem"><a class="el" href="dir_7f8d9154f40b684c72c7367fcc8122d8.html">ast_generation</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6cd8491d143eb218b70983dbdb3c58bc.html">parser</a></li><li class="navelem"><a class="el" href="dir_9722df9a997872902d743a3c4c2bf3cb.html">ast_generation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -99,40 +99,129 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="tokens_8hpp.html">tokens.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">   21</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="tokens_8hpp.html">tokens.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">   23</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> { <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">IDENTIFIER</a>, <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc">VARIABLE_STATEMENT</a>, <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a">RETURN_STATEMENT</a> };</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structASTNode.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structASTNode.html">ASTNode</a> {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structASTNode.html#a578124183c58a444f3fd7668848ea887">   27</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="structASTNode.html#a578124183c58a444f3fd7668848ea887">~ASTNode</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structASTNode.html#a7c95573c2712fd7c0c57002f854343dd">   33</a></span>  <span class="keyword">virtual</span> <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> <a class="code hl_function" href="structASTNode.html#a7c95573c2712fd7c0c57002f854343dd">type</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structASTNode.html#ac155be5203ab97e5a4f13d9bca44f9ff">   40</a></span>  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code hl_struct" href="structToken.html">Token</a>* <a class="code hl_function" href="structASTNode.html#ac155be5203ab97e5a4f13d9bca44f9ff">get_token</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">   34</a></span>  <span class="keyword">virtual</span> <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> <a class="code hl_function" href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">type</a>() const noexcept = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef">   41</a></span>  virtual const <a class="code hl_struct" href="structToken.html">Token</a>* <a class="code hl_function" href="structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef">get_token</a>() const noexcept {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structStatementNode.html">   46</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structStatementNode.html">StatementNode</a> : <a class="code hl_struct" href="structASTNode.html">ASTNode</a> {};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structExpressionNode.html">   49</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structExpressionNode.html">ExpressionNode</a> : <a class="code hl_struct" href="structASTNode.html">ASTNode</a> {};</div>
-<div class="ttc" id="aast_8hpp_html_a79651fcda7a7a8e0caf509aefc4016f1"><div class="ttname"><a href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a></div><div class="ttdeci">ASTType</div><div class="ttdef"><b>Definition</b> ast.hpp:21</div></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structStatementNode.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structStatementNode.html">StatementNode</a> : <a class="code hl_struct" href="structASTNode.html">ASTNode</a> {};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structExpressionNode.html">   50</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structExpressionNode.html">ExpressionNode</a> : <a class="code hl_struct" href="structASTNode.html">ASTNode</a> {};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structLiteralNode.html">   53</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLiteralNode.html">LiteralNode</a> : <a class="code hl_struct" href="structExpressionNode.html">ExpressionNode</a> {};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structIdentifierNode.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structIdentifierNode.html">IdentifierNode</a> final : <a class="code hl_struct" href="structExpressionNode.html">ExpressionNode</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structIdentifierNode.html#a67de89452731f7d90472847eb04232a5">   56</a></span>  <a class="code hl_struct" href="structToken.html">Token</a> <a class="code hl_variable" href="structIdentifierNode.html#a67de89452731f7d90472847eb04232a5">token</a>;       </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45">   57</a></span>  std::string <a class="code hl_variable" href="structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45">name</a>;  </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5">   62</a></span>  <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> <a class="code hl_function" href="structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5">type</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">ASTType::IDENTIFIER</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5">   69</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structToken.html">Token</a>* <a class="code hl_function" href="structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5">get_token</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="structIdentifierNode.html#a67de89452731f7d90472847eb04232a5">token</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html">   74</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structVariableStatementNode.html">VariableStatementNode</a> final : <a class="code hl_struct" href="structStatementNode.html">StatementNode</a> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">   75</a></span>  <a class="code hl_struct" href="structToken.html">Token</a> <a class="code hl_variable" href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">token</a>;  </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6">   77</a></span>  std::unique_ptr&lt;IdentifierNode&gt; <a class="code hl_variable" href="structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6">name</a>;  </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  std::unique_ptr&lt;ExpressionNode&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#a959f3c3f64b5549b8a47cf5436481679">   79</a></span>      <a class="code hl_variable" href="structVariableStatementNode.html#a959f3c3f64b5549b8a47cf5436481679">value</a>;  </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#aaabcee6642d6d48cf81d109991ff76ac">   84</a></span>  <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> <a class="code hl_function" href="structVariableStatementNode.html#aaabcee6642d6d48cf81d109991ff76ac">type</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc">ASTType::VARIABLE_STATEMENT</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#aa5d6a0f805effeae91aed26e6471cca2">   88</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structToken.html">Token</a>* <a class="code hl_function" href="structVariableStatementNode.html#aa5d6a0f805effeae91aed26e6471cca2">get_token</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">token</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structVariableStatementNode.html#aaf458a24b78999016815ba057fce36a3">   96</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structVariableStatementNode.html#aaf458a24b78999016815ba057fce36a3">is_mutible</a>() const noexcept {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">token</a>.<a class="code hl_variable" href="structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a">type</a> == <a class="code hl_enumvalue" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ad6f4440b8633f973d33c78928bdac2e1">TokenType::VAR</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structReturnStatementNode.html">  101</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structReturnStatementNode.html">ReturnStatementNode</a> final : <a class="code hl_struct" href="structStatementNode.html">StatementNode</a> {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023">  102</a></span>  <a class="code hl_struct" href="structToken.html">Token</a> <a class="code hl_variable" href="structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023">token</a>;  </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structReturnStatementNode.html#accfeb2eeb7eca827f2c590aa1f4ad302">  103</a></span>  std::unique_ptr&lt;ExpressionNode&gt; <a class="code hl_variable" href="structReturnStatementNode.html#accfeb2eeb7eca827f2c590aa1f4ad302">return_value</a>;  </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structReturnStatementNode.html#a5d90b23adf9f16f3c939c5d88fbaa688">  108</a></span>  <span class="keyword">virtual</span> <a class="code hl_enumeration" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> <a class="code hl_function" href="structReturnStatementNode.html#a5d90b23adf9f16f3c939c5d88fbaa688">type</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a">ASTType::RETURN_STATEMENT</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structReturnStatementNode.html#a9fae4ebf6c85b18db2950a1f19e416ca">  112</a></span>  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code hl_struct" href="structToken.html">Token</a>* <a class="code hl_function" href="structReturnStatementNode.html#a9fae4ebf6c85b18db2950a1f19e416ca">get_token</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023">token</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+</div>
+<div class="ttc" id="aast_8hpp_html_a79651fcda7a7a8e0caf509aefc4016f1"><div class="ttname"><a href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a></div><div class="ttdeci">ASTType</div><div class="ttdef"><b>Definition</b> ast.hpp:23</div></div>
+<div class="ttc" id="aast_8hpp_html_a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a"><div class="ttname"><a href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a">ASTType::RETURN_STATEMENT</a></div><div class="ttdeci">@ RETURN_STATEMENT</div></div>
+<div class="ttc" id="aast_8hpp_html_a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a"><div class="ttname"><a href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">ASTType::IDENTIFIER</a></div><div class="ttdeci">@ IDENTIFIER</div></div>
+<div class="ttc" id="aast_8hpp_html_a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc"><div class="ttname"><a href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc">ASTType::VARIABLE_STATEMENT</a></div><div class="ttdeci">@ VARIABLE_STATEMENT</div></div>
 <div class="ttc" id="astructASTNode_html"><div class="ttname"><a href="structASTNode.html">ASTNode</a></div><div class="ttdoc">Base class of all AST nodes.</div><div class="ttdef"><b>Definition</b> ast.hpp:26</div></div>
+<div class="ttc" id="astructASTNode_html_a0d46b9fdc8b734d633622ce6008b35ef"><div class="ttname"><a href="structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef">ASTNode::get_token</a></div><div class="ttdeci">virtual const Token * get_token() const noexcept</div><div class="ttdoc">Gives a pointer to the token, if no meaningful token, return nullptr.</div><div class="ttdef"><b>Definition</b> ast.hpp:41</div></div>
 <div class="ttc" id="astructASTNode_html_a578124183c58a444f3fd7668848ea887"><div class="ttname"><a href="structASTNode.html#a578124183c58a444f3fd7668848ea887">ASTNode::~ASTNode</a></div><div class="ttdeci">virtual ~ASTNode()=default</div></div>
-<div class="ttc" id="astructASTNode_html_a7c95573c2712fd7c0c57002f854343dd"><div class="ttname"><a href="structASTNode.html#a7c95573c2712fd7c0c57002f854343dd">ASTNode::type</a></div><div class="ttdeci">virtual ASTType type() const =0</div><div class="ttdoc">Gives the type of the AST node.</div></div>
-<div class="ttc" id="astructASTNode_html_ac155be5203ab97e5a4f13d9bca44f9ff"><div class="ttname"><a href="structASTNode.html#ac155be5203ab97e5a4f13d9bca44f9ff">ASTNode::get_token</a></div><div class="ttdeci">virtual const Token * get_token() const</div><div class="ttdoc">Gives a pointer to the token, if no meaningful token, return nullptr.</div><div class="ttdef"><b>Definition</b> ast.hpp:40</div></div>
-<div class="ttc" id="astructExpressionNode_html"><div class="ttname"><a href="structExpressionNode.html">ExpressionNode</a></div><div class="ttdoc">Base class for all expressions.</div><div class="ttdef"><b>Definition</b> ast.hpp:49</div></div>
-<div class="ttc" id="astructStatementNode_html"><div class="ttname"><a href="structStatementNode.html">StatementNode</a></div><div class="ttdoc">Base class for all statements.</div><div class="ttdef"><b>Definition</b> ast.hpp:46</div></div>
+<div class="ttc" id="astructASTNode_html_a5fa2c9208b3223c3eb9843f3ac88d8b1"><div class="ttname"><a href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">ASTNode::type</a></div><div class="ttdeci">virtual ASTType type() const noexcept=0</div><div class="ttdoc">Gives the type of the AST node.</div></div>
+<div class="ttc" id="astructExpressionNode_html"><div class="ttname"><a href="structExpressionNode.html">ExpressionNode</a></div><div class="ttdoc">Base class for all expressions.</div><div class="ttdef"><b>Definition</b> ast.hpp:50</div></div>
+<div class="ttc" id="astructIdentifierNode_html"><div class="ttname"><a href="structIdentifierNode.html">IdentifierNode</a></div><div class="ttdef"><b>Definition</b> ast.hpp:55</div></div>
+<div class="ttc" id="astructIdentifierNode_html_a0349a14514d6e236ebefff3d6ee266f5"><div class="ttname"><a href="structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5">IdentifierNode::get_token</a></div><div class="ttdeci">const Token * get_token() const noexcept override</div><div class="ttdef"><b>Definition</b> ast.hpp:69</div></div>
+<div class="ttc" id="astructIdentifierNode_html_a29f9d987eeb0aa61b369a023b12446a5"><div class="ttname"><a href="structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5">IdentifierNode::type</a></div><div class="ttdeci">ASTType type() const noexcept override</div><div class="ttdef"><b>Definition</b> ast.hpp:62</div></div>
+<div class="ttc" id="astructIdentifierNode_html_a67de89452731f7d90472847eb04232a5"><div class="ttname"><a href="structIdentifierNode.html#a67de89452731f7d90472847eb04232a5">IdentifierNode::token</a></div><div class="ttdeci">Token token</div><div class="ttdoc">A Identifier token.</div><div class="ttdef"><b>Definition</b> ast.hpp:56</div></div>
+<div class="ttc" id="astructIdentifierNode_html_a89c89491b7ac033d60258d074526ba45"><div class="ttname"><a href="structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45">IdentifierNode::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">The name of the identifier.</div><div class="ttdef"><b>Definition</b> ast.hpp:57</div></div>
+<div class="ttc" id="astructLiteralNode_html"><div class="ttname"><a href="structLiteralNode.html">LiteralNode</a></div><div class="ttdoc">Base class for all literals.</div><div class="ttdef"><b>Definition</b> ast.hpp:53</div></div>
+<div class="ttc" id="astructReturnStatementNode_html"><div class="ttname"><a href="structReturnStatementNode.html">ReturnStatementNode</a></div><div class="ttdef"><b>Definition</b> ast.hpp:101</div></div>
+<div class="ttc" id="astructReturnStatementNode_html_a5d90b23adf9f16f3c939c5d88fbaa688"><div class="ttname"><a href="structReturnStatementNode.html#a5d90b23adf9f16f3c939c5d88fbaa688">ReturnStatementNode::type</a></div><div class="ttdeci">virtual ASTType type() const noexcept override</div><div class="ttdef"><b>Definition</b> ast.hpp:108</div></div>
+<div class="ttc" id="astructReturnStatementNode_html_a9fae4ebf6c85b18db2950a1f19e416ca"><div class="ttname"><a href="structReturnStatementNode.html#a9fae4ebf6c85b18db2950a1f19e416ca">ReturnStatementNode::get_token</a></div><div class="ttdeci">virtual const Token * get_token() const noexcept override</div><div class="ttdoc">Gives a pointer to the token, if no meaningful token, return nullptr.</div><div class="ttdef"><b>Definition</b> ast.hpp:112</div></div>
+<div class="ttc" id="astructReturnStatementNode_html_accfeb2eeb7eca827f2c590aa1f4ad302"><div class="ttname"><a href="structReturnStatementNode.html#accfeb2eeb7eca827f2c590aa1f4ad302">ReturnStatementNode::return_value</a></div><div class="ttdeci">std::unique_ptr&lt; ExpressionNode &gt; return_value</div><div class="ttdoc">Expression to return.</div><div class="ttdef"><b>Definition</b> ast.hpp:103</div></div>
+<div class="ttc" id="astructReturnStatementNode_html_aefa26e2c49cc1db0b36fa3935372a023"><div class="ttname"><a href="structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023">ReturnStatementNode::token</a></div><div class="ttdeci">Token token</div><div class="ttdoc">Always a token with type RETURN, lexeme of return, kept here for line number.</div><div class="ttdef"><b>Definition</b> ast.hpp:102</div></div>
+<div class="ttc" id="astructStatementNode_html"><div class="ttname"><a href="structStatementNode.html">StatementNode</a></div><div class="ttdoc">Base class for all statements.</div><div class="ttdef"><b>Definition</b> ast.hpp:47</div></div>
 <div class="ttc" id="astructToken_html"><div class="ttname"><a href="structToken.html">Token</a></div><div class="ttdef"><b>Definition</b> tokens.hpp:70</div></div>
+<div class="ttc" id="astructToken_html_a67919af9f3a80dc0b28a0ab1e6d5bf8a"><div class="ttname"><a href="structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a">Token::type</a></div><div class="ttdeci">TokenType type</div><div class="ttdoc">The TokenType.</div><div class="ttdef"><b>Definition</b> tokens.hpp:71</div></div>
+<div class="ttc" id="astructVariableStatementNode_html"><div class="ttname"><a href="structVariableStatementNode.html">VariableStatementNode</a></div><div class="ttdef"><b>Definition</b> ast.hpp:74</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_a959f3c3f64b5549b8a47cf5436481679"><div class="ttname"><a href="structVariableStatementNode.html#a959f3c3f64b5549b8a47cf5436481679">VariableStatementNode::value</a></div><div class="ttdeci">std::unique_ptr&lt; ExpressionNode &gt; value</div><div class="ttdoc">The expression that you are assigning to ( let x = [value])</div><div class="ttdef"><b>Definition</b> ast.hpp:79</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_aa5d6a0f805effeae91aed26e6471cca2"><div class="ttname"><a href="structVariableStatementNode.html#aa5d6a0f805effeae91aed26e6471cca2">VariableStatementNode::get_token</a></div><div class="ttdeci">const Token * get_token() const noexcept override</div><div class="ttdoc">Gives a pointer to the token, if no meaningful token, return nullptr.</div><div class="ttdef"><b>Definition</b> ast.hpp:88</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_aaabcee6642d6d48cf81d109991ff76ac"><div class="ttname"><a href="structVariableStatementNode.html#aaabcee6642d6d48cf81d109991ff76ac">VariableStatementNode::type</a></div><div class="ttdeci">ASTType type() const noexcept override</div><div class="ttdef"><b>Definition</b> ast.hpp:84</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_aaf458a24b78999016815ba057fce36a3"><div class="ttname"><a href="structVariableStatementNode.html#aaf458a24b78999016815ba057fce36a3">VariableStatementNode::is_mutible</a></div><div class="ttdeci">bool is_mutible() const noexcept</div><div class="ttdoc">Is the variable mutable?</div><div class="ttdef"><b>Definition</b> ast.hpp:96</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_ab8809715f0d368472ea49de27f78cad6"><div class="ttname"><a href="structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6">VariableStatementNode::name</a></div><div class="ttdeci">std::unique_ptr&lt; IdentifierNode &gt; name</div><div class="ttdoc">The identifier ( let [name] = 25;)</div><div class="ttdef"><b>Definition</b> ast.hpp:77</div></div>
+<div class="ttc" id="astructVariableStatementNode_html_aef6460df0eb47382e82bf558a1d3b7b0"><div class="ttname"><a href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">VariableStatementNode::token</a></div><div class="ttdeci">Token token</div><div class="ttdoc">Either let or var.</div><div class="ttdef"><b>Definition</b> ast.hpp:75</div></div>
 <div class="ttc" id="atokens_8hpp_html"><div class="ttname"><a href="tokens_8hpp.html">tokens.hpp</a></div></div>
+<div class="ttc" id="atokens_8hpp_html_aa520fbf142ba1e7e659590c07da31921ad6f4440b8633f973d33c78928bdac2e1"><div class="ttname"><a href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ad6f4440b8633f973d33c78928bdac2e1">TokenType::VAR</a></div><div class="ttdeci">@ VAR</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

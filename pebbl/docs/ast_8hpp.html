@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pebbl: parser/ast_generation/ast.hpp File Reference</title>
+<title>pebbl: src/parser/ast_generation/ast.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_572890c148f68441e050f6560d78312b.html">parser</a></li><li class="navelem"><a class="el" href="dir_7f8d9154f40b684c72c7367fcc8122d8.html">ast_generation</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6cd8491d143eb218b70983dbdb3c58bc.html">parser</a></li><li class="navelem"><a class="el" href="dir_9722df9a997872902d743a3c4c2bf3cb.html">ast_generation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,12 +79,13 @@ $(function() {
   <div class="headertitle"><div class="title">ast.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="tokens_8hpp_source.html">tokens.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="tokens_8hpp_source.html">tokens.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ast.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="ast_8hpp__incl.png" border="0" usemap="#aparser_2ast__generation_2ast_8hpp" alt=""/></div>
-<map name="aparser_2ast__generation_2ast_8hpp" id="aparser_2ast__generation_2ast_8hpp">
+<div class="center"><img src="ast_8hpp__incl.png" border="0" usemap="#asrc_2parser_2ast__generation_2ast_8hpp" alt=""/></div>
+<map name="asrc_2parser_2ast__generation_2ast_8hpp" id="asrc_2parser_2ast__generation_2ast_8hpp">
 <area shape="rect" title=" " alt="" coords="10,5,174,45"/>
 <area shape="rect" href="tokens_8hpp.html" title=" " alt="" coords="45,93,139,119"/>
 <area shape="poly" title=" " alt="" coords="95,46,95,79,89,79,89,46"/>
@@ -108,10 +109,22 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExpressionNode.html">ExpressionNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all expressions.  <a href="structExpressionNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLiteralNode.html">LiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all literals.  <a href="structLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIdentifierNode.html">IdentifierNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVariableStatementNode.html">VariableStatementNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structReturnStatementNode.html">ReturnStatementNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a79651fcda7a7a8e0caf509aefc4016f1" id="r_a79651fcda7a7a8e0caf509aefc4016f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> </td></tr>
+<tr class="memitem:a79651fcda7a7a8e0caf509aefc4016f1" id="r_a79651fcda7a7a8e0caf509aefc4016f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a> { <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a">IDENTIFIER</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc">VARIABLE_STATEMENT</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a">RETURN_STATEMENT</a>
+ }</td></tr>
 <tr class="separator:a79651fcda7a7a8e0caf509aefc4016f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -134,6 +147,11 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a" name="a79651fcda7a7a8e0caf509aefc4016f1a6fcc416051346daca31c571646af127a"></a>IDENTIFIER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc" name="a79651fcda7a7a8e0caf509aefc4016f1aea7dcdd517ba45833696da63d93dc3fc"></a>VARIABLE_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a" name="a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a"></a>RETURN_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
