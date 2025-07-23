@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A while loop (e.g., while x &lt; y { let x = 5 let y = 4;})  
+ <a href="structWhileLoopStatementNode.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ast_8hpp_source.html">ast.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WhileLoopStatementNode:</div>
@@ -106,11 +109,15 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a9e2bfeeed0a187f23a9e83198c170040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always a token with <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ac0ca84371abbc18f52fd48e32195cd15">TokenType::WHILE</a> and lexeme "while".  <br /></td></tr>
 <tr class="separator:a9e2bfeeed0a187f23a9e83198c170040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43900cd1d23d9269122d66efff23f6d" id="r_ac43900cd1d23d9269122d66efff23f6d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhileLoopStatementNode.html#ac43900cd1d23d9269122d66efff23f6d">condition</a></td></tr>
+<tr class="memdesc:ac43900cd1d23d9269122d66efff23f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The condition.  <br /></td></tr>
 <tr class="separator:ac43900cd1d23d9269122d66efff23f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7723052f7ff0740a5cca8b6c68d9620e" id="r_a7723052f7ff0740a5cca8b6c68d9620e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structBlockStatementNode.html">BlockStatementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWhileLoopStatementNode.html#a7723052f7ff0740a5cca8b6c68d9620e">block</a></td></tr>
+<tr class="memdesc:a7723052f7ff0740a5cca8b6c68d9620e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the condition is true, this happens.  <br /></td></tr>
 <tr class="separator:a7723052f7ff0740a5cca8b6c68d9620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A while loop (e.g., while x &lt; y { let x = 5 let y = 4;}) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92c366c422c1cfbb45bd600c169e80f1" name="a92c366c422c1cfbb45bd600c169e80f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92c366c422c1cfbb45bd600c169e80f1">&#9670;&#160;</a></span>get_token()</h2>
 
@@ -182,6 +189,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>If the condition is true, this happens. </p>
+
 </div>
 </div>
 <a id="ac43900cd1d23d9269122d66efff23f6d" name="ac43900cd1d23d9269122d66efff23f6d"></a>
@@ -195,6 +204,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The condition. </p>
 
 </div>
 </div>
