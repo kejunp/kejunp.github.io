@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eastnode_0',['~ASTNode',['../structASTNode.html#a578124183c58a444f3fd7668848ea887',1,'ASTNode']]]
+  ['type_0',['type',['../structASTNode.html#a7c95573c2712fd7c0c57002f854343dd',1,'ASTNode']]]
 ];
