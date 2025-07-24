@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['token_0',['token',['../structIdentifierNode.html#a67de89452731f7d90472847eb04232a5',1,'IdentifierNode::token'],['../structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0',1,'VariableStatementNode::token'],['../structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023',1,'ReturnStatementNode::token'],['../structWhileLoopStatementNode.html#a9e2bfeeed0a187f23a9e83198c170040',1,'WhileLoopStatementNode::token'],['../structToken.html',1,'Token']]],
+  ['token_0',['token',['../structIdentifierNode.html#a67de89452731f7d90472847eb04232a5',1,'IdentifierNode::token'],['../structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0',1,'VariableStatementNode::token'],['../structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023',1,'ReturnStatementNode::token'],['../structForLoopStatementNode.html#a477e91e5dc56b0cf07322694550fc4f1',1,'ForLoopStatementNode::token'],['../structWhileLoopStatementNode.html#a9e2bfeeed0a187f23a9e83198c170040',1,'WhileLoopStatementNode::token'],['../structToken.html',1,'Token']]],
   ['tokens_2ehpp_1',['tokens.hpp',['../tokens_8hpp.html',1,'']]],
   ['tokentype_2',['TokenType',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921',1,'tokens.hpp']]],
   ['true_3',['TRUE',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ac0d83f0b82a6b30de8811e69e6d95c61',1,'tokens.hpp']]],
