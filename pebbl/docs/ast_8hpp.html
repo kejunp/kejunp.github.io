@@ -81,6 +81,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;boost/multiprecision/cpp_int.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="tokens_8hpp_source.html">tokens.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ast.hpp:</div>
@@ -136,6 +137,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExpressionStatementNode.html">ExpressionStatementNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper around a expression (but it is a statement)  <a href="structExpressionStatementNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIntegerLiteralNode.html">IntegerLiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A integer literal.  <a href="structIntegerLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -149,6 +153,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ab0c732723303482d8b9fa3668e770c2c">BLOCK_STATEMENT</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1abde8d8f37c1b5a466bf83a8080b2d3b6">WHILE_LOOP_STATEMENT</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1">FOR_LOOP_STATEMENT</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7">INTEGER_LITERAL</a>
 <br />
  }</td></tr>
 <tr class="separator:a79651fcda7a7a8e0caf509aefc4016f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +188,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1ab0c732723303482d8b9fa3668e770c2c" name="a79651fcda7a7a8e0caf509aefc4016f1ab0c732723303482d8b9fa3668e770c2c"></a>BLOCK_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1abde8d8f37c1b5a466bf83a8080b2d3b6" name="a79651fcda7a7a8e0caf509aefc4016f1abde8d8f37c1b5a466bf83a8080b2d3b6"></a>WHILE_LOOP_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1" name="a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1"></a>FOR_LOOP_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7" name="a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7"></a>INTEGER_LITERAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
