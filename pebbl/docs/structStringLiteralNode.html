@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A string literal.  
+ <a href="structStringLiteralNode.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ast_8hpp_source.html">ast.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for StringLiteralNode:</div>
@@ -92,7 +95,6 @@ Collaboration diagram for StringLiteralNode:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8d7e582e52b72c9b673c8f5fd8428b5" id="r_ad8d7e582e52b72c9b673c8f5fd8428b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1">ASTType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStringLiteralNode.html#ad8d7e582e52b72c9b673c8f5fd8428b5">type</a> () const noexcept override</td></tr>
-<tr class="memdesc:ad8d7e582e52b72c9b673c8f5fd8428b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the type of the AST node.  <br /></td></tr>
 <tr class="separator:ad8d7e582e52b72c9b673c8f5fd8428b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9c5c6bdae844a6d3f40e58d8c94ab7" id="r_ade9c5c6bdae844a6d3f40e58d8c94ab7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structToken.html">Token</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStringLiteralNode.html#ade9c5c6bdae844a6d3f40e58d8c94ab7">get_token</a> () const noexcept override</td></tr>
 <tr class="memdesc:ade9c5c6bdae844a6d3f40e58d8c94ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a pointer to the token, if no meaningful token, return nullptr.  <br /></td></tr>
@@ -108,7 +110,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae47b17dc2d05def23ab2c7f2935064da" id="r_ae47b17dc2d05def23ab2c7f2935064da"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStringLiteralNode.html#ae47b17dc2d05def23ab2c7f2935064da">value</a></td></tr>
 <tr class="separator:ae47b17dc2d05def23ab2c7f2935064da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A string literal. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ade9c5c6bdae844a6d3f40e58d8c94ab7" name="ade9c5c6bdae844a6d3f40e58d8c94ab7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade9c5c6bdae844a6d3f40e58d8c94ab7">&#9670;&#160;</a></span>get_token()</h2>
 
@@ -161,9 +165,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Gives the type of the AST node. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns a scoped enum called ASTType (e.g., <a class="el" href="structVariableStatementNode.html" title="A variable declaration/definition: let immut = 5; var mut = 5; etc.">VariableStatementNode</a> -&gt; AstType::VARIABLE_STATEMENT) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12">ASTType::STRING_LITERAL</a> </dd></dl>
 
 <p>Implements <a class="el" href="structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1">ASTNode</a>.</p>
 

@@ -15,7 +15,7 @@ digraph "Graphical Class Hierarchy"
   Node3 -> Node4 [id="edge4_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="IntegerLiteralNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$structIntegerLiteralNode.html",tooltip="A integer literal."];
   Node3 -> Node5 [id="edge5_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="StringLiteralNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$structStringLiteralNode.html",tooltip=" "];
+  Node5 [id="Node000005",label="StringLiteralNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$structStringLiteralNode.html",tooltip="A string literal."];
   Node0 -> Node6 [id="edge6_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="ProgramNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$structProgramNode.html",tooltip="The root of all ASTs (sorta like a block statement, but the block is global)"];
   Node0 -> Node7 [id="edge7_Node000000_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
