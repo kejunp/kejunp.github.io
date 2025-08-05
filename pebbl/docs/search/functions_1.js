@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['get_5ftoken_0',['get_token',['../structASTNode.html#a0d46b9fdc8b734d633622ce6008b35ef',1,'ASTNode::get_token()'],['../structIdentifierNode.html#a0349a14514d6e236ebefff3d6ee266f5',1,'IdentifierNode::get_token()'],['../structVariableStatementNode.html#aa5d6a0f805effeae91aed26e6471cca2',1,'VariableStatementNode::get_token()'],['../structReturnStatementNode.html#a02abf6485693ffc3dd4724dff4bc7f6f',1,'ReturnStatementNode::get_token()'],['../structForLoopStatementNode.html#aea760db529ed75606409b45a943eb118',1,'ForLoopStatementNode::get_token()'],['../structWhileLoopStatementNode.html#a92c366c422c1cfbb45bd600c169e80f1',1,'WhileLoopStatementNode::get_token()'],['../structExpressionStatementNode.html#aa16c7852db034c03dec553079ea04af3',1,'ExpressionStatementNode::get_token()'],['../structIntegerLiteralNode.html#a4d1d6c4739a93b5540f420594839bbd7',1,'IntegerLiteralNode::get_token()'],['../structStringLiteralNode.html#ade9c5c6bdae844a6d3f40e58d8c94ab7',1,'StringLiteralNode::get_token()']]]
+  ['check_5ftoken_0',['check_token',['../classASTGenerator.html#a88db79b5a1fbee3cc6c06ef4ef2fd012',1,'ASTGenerator']]],
+  ['consume_5fchar_1',['consume_char',['../classLexer.html#a57a2fac872bf34cac35dee09d7333141',1,'Lexer']]],
+  ['consume_5ftoken_2',['consume_token',['../classASTGenerator.html#ae1d3dfffc3e0d3304ecfbf63e4531344',1,'ASTGenerator']]],
+  ['consume_5fwhitespace_3',['consume_whitespace',['../classLexer.html#a80fec456cf22a51ad96eac59894bbda6',1,'Lexer']]]
 ];

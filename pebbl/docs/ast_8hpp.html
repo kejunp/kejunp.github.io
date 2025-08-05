@@ -97,6 +97,11 @@ Include dependency graph for ast.hpp:</div>
 <area shape="poly" title=" " alt="" coords="104,117,135,155,131,158,100,121"/>
 </map>
 </div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="ast_8hpp__dep__incl.png" border="0" usemap="#asrc_2parser_2ast__generation_2ast_8hppdep" alt=""/></div>
+</div>
 </div>
 <p><a href="ast_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -143,6 +148,24 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStringLiteralNode.html">StringLiteralNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string literal.  <a href="structStringLiteralNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFloatLiteralNode.html">FloatLiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float literal.  <a href="structFloatLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBooleanLiteralNode.html">BooleanLiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean literal (true or false)  <a href="structBooleanLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBinaryExpressionNode.html">BinaryExpressionNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary expression (e.g., a + b, x == y, etc.)  <a href="structBinaryExpressionNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUnaryExpressionNode.html">UnaryExpressionNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unary expression (e.g., !x, -y, etc.)  <a href="structUnaryExpressionNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIfElseExpressionNode.html">IfElseExpressionNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An if-else expression (e.g., if condition { then_expr } else { else_expr })  <a href="structIfElseExpressionNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAssignmentExpressionNode.html">AssignmentExpressionNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An assignment expression (e.g., x = 5, y = func())  <a href="structAssignmentExpressionNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -159,6 +182,13 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7">INTEGER_LITERAL</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12">STRING_LITERAL</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620">FLOAT_LITERAL</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321">BOOLEAN_LITERAL</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336">BINARY_EXPRESSION</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46">UNARY_EXPRESSION</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1">IF_ELSE_EXPRESSION</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1abb99a3f6386ed1965ed3ae17ec3b0584">ASSIGNMENT_EXPRESSION</a>
 <br />
  }</td></tr>
 <tr class="separator:a79651fcda7a7a8e0caf509aefc4016f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +224,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1" name="a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1"></a>FOR_LOOP_STATEMENT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7" name="a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7"></a>INTEGER_LITERAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12" name="a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12"></a>STRING_LITERAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620" name="a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620"></a>FLOAT_LITERAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321" name="a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321"></a>BOOLEAN_LITERAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336" name="a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336"></a>BINARY_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46" name="a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46"></a>UNARY_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1" name="a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1"></a>IF_ELSE_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1abb99a3f6386ed1965ed3ae17ec3b0584" name="a79651fcda7a7a8e0caf509aefc4016f1abb99a3f6386ed1965ed3ae17ec3b0584"></a>ASSIGNMENT_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

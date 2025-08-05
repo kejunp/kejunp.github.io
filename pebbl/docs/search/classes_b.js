@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['whileloopstatementnode_0',['WhileLoopStatementNode',['../structWhileLoopStatementNode.html',1,'']]]
+  ['variablestatementnode_0',['VariableStatementNode',['../structVariableStatementNode.html',1,'']]]
 ];

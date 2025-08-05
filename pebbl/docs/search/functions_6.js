@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3e_3e_0',['operator&gt;&gt;',['../classLexer.html#ac2a7c376612cd061da1d01c8543ea821',1,'Lexer']]]
+  ['next_5ftoken_0',['next_token',['../classLexer.html#a7fcfd2eb03ec5b00bda2b7722d42f68c',1,'Lexer']]]
 ];

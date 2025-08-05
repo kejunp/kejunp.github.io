@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['forloopstatementnode_0',['ForLoopStatementNode',['../structForLoopStatementNode.html',1,'']]]
+  ['floatliteralnode_0',['FloatLiteralNode',['../structFloatLiteralNode.html',1,'']]],
+  ['forloopstatementnode_1',['ForLoopStatementNode',['../structForLoopStatementNode.html',1,'']]]
 ];

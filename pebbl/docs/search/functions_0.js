@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['consume_5fchar_0',['consume_char',['../classLexer.html#a57a2fac872bf34cac35dee09d7333141',1,'Lexer']]],
-  ['consume_5fwhitespace_1',['consume_whitespace',['../classLexer.html#a80fec456cf22a51ad96eac59894bbda6',1,'Lexer']]]
+  ['advance_5ftoken_0',['advance_token',['../classASTGenerator.html#a067700f70b06592f3336c4e6690d2a1c',1,'ASTGenerator']]],
+  ['astgenerator_1',['ASTGenerator',['../classASTGenerator.html#a64a4b3ba53946e528536e9fcb0a5bef6',1,'ASTGenerator']]]
 ];

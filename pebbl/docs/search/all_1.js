@@ -1,7 +1,11 @@
 var searchData=
 [
   ['bang_0',['BANG',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a489b3c14da5e92c8b256b195e92ae93a',1,'tokens.hpp']]],
-  ['block_1',['block',['../structWhileLoopStatementNode.html#a7723052f7ff0740a5cca8b6c68d9620e',1,'WhileLoopStatementNode']]],
-  ['block_5fstatement_2',['BLOCK_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ab0c732723303482d8b9fa3668e770c2c',1,'ast.hpp']]],
-  ['blockstatementnode_3',['BlockStatementNode',['../structBlockStatementNode.html',1,'']]]
+  ['binary_5fexpression_1',['BINARY_EXPRESSION',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336',1,'ast.hpp']]],
+  ['binaryexpressionnode_2',['BinaryExpressionNode',['../structBinaryExpressionNode.html',1,'']]],
+  ['block_3',['block',['../structWhileLoopStatementNode.html#a7723052f7ff0740a5cca8b6c68d9620e',1,'WhileLoopStatementNode']]],
+  ['block_5fstatement_4',['BLOCK_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ab0c732723303482d8b9fa3668e770c2c',1,'ast.hpp']]],
+  ['blockstatementnode_5',['BlockStatementNode',['../structBlockStatementNode.html',1,'']]],
+  ['boolean_5fliteral_6',['BOOLEAN_LITERAL',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321',1,'ast.hpp']]],
+  ['booleanliteralnode_7',['BooleanLiteralNode',['../structBooleanLiteralNode.html',1,'']]]
 ];

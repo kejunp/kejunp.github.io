@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['type_0',['type',['../structASTNode.html#a5fa2c9208b3223c3eb9843f3ac88d8b1',1,'ASTNode::type()'],['../structProgramNode.html#af9943a553fe18e49337add6939b4d7d3',1,'ProgramNode::type()'],['../structIdentifierNode.html#a29f9d987eeb0aa61b369a023b12446a5',1,'IdentifierNode::type()'],['../structVariableStatementNode.html#aaabcee6642d6d48cf81d109991ff76ac',1,'VariableStatementNode::type()'],['../structReturnStatementNode.html#af46d78ff38da728934d0856b31fdc699',1,'ReturnStatementNode::type()'],['../structForLoopStatementNode.html#a2d7a1aebfaa4a9ecddf810157b791dc8',1,'ForLoopStatementNode::type()'],['../structWhileLoopStatementNode.html#a646c69ef9c222944a5ac8183a217dff2',1,'WhileLoopStatementNode::type()'],['../structBlockStatementNode.html#a0f17ac7da7acc6fab82a201f2f26f8bf',1,'BlockStatementNode::type()'],['../structExpressionStatementNode.html#ab6dfe80c3cd9a9dcd926b31d493d726f',1,'ExpressionStatementNode::type()'],['../structIntegerLiteralNode.html#af362672ffdc13114b94b726c168c4c43',1,'IntegerLiteralNode::type()'],['../structStringLiteralNode.html#ad8d7e582e52b72c9b673c8f5fd8428b5',1,'StringLiteralNode::type()']]]
+  ['read_5fidentifier_0',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
+  ['read_5fnumber_1',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
+  ['read_5fstring_2',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]],
+  ['report_5ferror_3',['report_error',['../classASTGenerator.html#aec8d2e24433de89ac2c647cb69763192',1,'ASTGenerator']]]
 ];
