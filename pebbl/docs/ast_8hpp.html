@@ -154,6 +154,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBooleanLiteralNode.html">BooleanLiteralNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean literal (true or false)  <a href="structBooleanLiteralNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArrayLiteralNode.html">ArrayLiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array literal (e.g., [1, 2, 3])  <a href="structArrayLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictEntry.html">DictEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-value pair for dictionary literals.  <a href="structDictEntry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictLiteralNode.html">DictLiteralNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary literal (e.g., {key: value, key2: value2})  <a href="structDictLiteralNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBinaryExpressionNode.html">BinaryExpressionNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary expression (e.g., a + b, x == y, etc.)  <a href="structBinaryExpressionNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +194,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620">FLOAT_LITERAL</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321">BOOLEAN_LITERAL</a>
 , <br />
-&#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336">BINARY_EXPRESSION</a>
+&#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a90ca1b1d37898b07c278fc10e1a08bd1">ARRAY_LITERAL</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6675afd30c440dfce2977a8859f14691">DICT_LITERAL</a>
+, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336">BINARY_EXPRESSION</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46">UNARY_EXPRESSION</a>
-, <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1">IF_ELSE_EXPRESSION</a>
+, <br />
+&#160;&#160;<a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1">IF_ELSE_EXPRESSION</a>
 , <a class="el" href="ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1abb99a3f6386ed1965ed3ae17ec3b0584">ASSIGNMENT_EXPRESSION</a>
 <br />
  }</td></tr>
@@ -226,6 +238,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12" name="a79651fcda7a7a8e0caf509aefc4016f1a544c390254a29bd232dfb1ff2bcf7c12"></a>STRING_LITERAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620" name="a79651fcda7a7a8e0caf509aefc4016f1ad6a575baa5f147de1f44992b210c5620"></a>FLOAT_LITERAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321" name="a79651fcda7a7a8e0caf509aefc4016f1a7e84be69d68b803821c8d1af14149321"></a>BOOLEAN_LITERAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a90ca1b1d37898b07c278fc10e1a08bd1" name="a79651fcda7a7a8e0caf509aefc4016f1a90ca1b1d37898b07c278fc10e1a08bd1"></a>ARRAY_LITERAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a6675afd30c440dfce2977a8859f14691" name="a79651fcda7a7a8e0caf509aefc4016f1a6675afd30c440dfce2977a8859f14691"></a>DICT_LITERAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336" name="a79651fcda7a7a8e0caf509aefc4016f1a75832c2ddfe13f917645df6b7dba0336"></a>BINARY_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46" name="a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46"></a>UNARY_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1" name="a79651fcda7a7a8e0caf509aefc4016f1a6f4864d1dd60c2d4f0817496d9eb87a1"></a>IF_ELSE_EXPRESSION&#160;</td><td class="fielddoc"></td></tr>

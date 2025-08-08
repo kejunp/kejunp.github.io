@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['peek_5ftoken_5f_0',['peek_token_',['../classASTGenerator.html#a47df81679949183e9bba35b4dcb8b556',1,'ASTGenerator']]],
-  ['position_5f_1',['position_',['../classLexer.html#a2f69348cf62831ecba6d1803e683a22c',1,'Lexer']]]
+  ['operand_0',['operand',['../structUnaryExpressionNode.html#a0a8520c976bd8f7a98bfd00016f72525',1,'UnaryExpressionNode']]],
+  ['operator_5ftoken_1',['operator_token',['../structBinaryExpressionNode.html#ad209bfd4bd41904385b5f46b624525af',1,'BinaryExpressionNode::operator_token'],['../structUnaryExpressionNode.html#a367e4296b727c16e635d798af207c6bc',1,'UnaryExpressionNode::operator_token']]]
 ];

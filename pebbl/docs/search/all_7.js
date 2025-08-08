@@ -9,6 +9,8 @@ var searchData=
   ['integer_6',['INTEGER',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a5d5cd46919fa987731fb2edefe0f2a0c',1,'tokens.hpp']]],
   ['integer_5fliteral_7',['INTEGER_LITERAL',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1aaa0615dffdeb6b9dfddb402460d4e4e7',1,'ast.hpp']]],
   ['integerliteralnode_8',['IntegerLiteralNode',['../structIntegerLiteralNode.html',1,'']]],
-  ['is_5fmutible_9',['is_mutible',['../structVariableStatementNode.html#aaf458a24b78999016815ba057fce36a3',1,'VariableStatementNode']]],
-  ['iterable_10',['iterable',['../structForLoopStatementNode.html#a30767d0e977a47f4c3b79b0c4da0379f',1,'ForLoopStatementNode']]]
+  ['is_5fleftover_5fseparator_5ftoken_9',['is_leftover_separator_token',['../classASTGenerator.html#a9135c44a6c049703299965b52bdaeca1',1,'ASTGenerator']]],
+  ['is_5fmutible_10',['is_mutible',['../structVariableStatementNode.html#aaf458a24b78999016815ba057fce36a3',1,'VariableStatementNode']]],
+  ['is_5fprogram_5fcomplete_11',['is_program_complete',['../classASTGenerator.html#af3b3c9affbbbe331a176a6950ae2f487',1,'ASTGenerator']]],
+  ['iterable_12',['iterable',['../structForLoopStatementNode.html#a30767d0e977a47f4c3b79b0c4da0379f',1,'ForLoopStatementNode']]]
 ];

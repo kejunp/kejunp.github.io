@@ -4,17 +4,22 @@ digraph "LiteralNode"
   bgcolor="transparent";
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
   Node1 [id="Node000001",label="LiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Base class for all literals."];
   Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="ExpressionNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structExpressionNode.html",tooltip="Base class for all expressions."];
   Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="ASTNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structASTNode.html",tooltip="Base class of all AST nodes."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="BooleanLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structBooleanLiteralNode.html",tooltip="A boolean literal (true or false)"];
+  Node4 [id="Node000004",label="ArrayLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structArrayLiteralNode.html",tooltip="An array literal (e.g., [1, 2, 3])"];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="FloatLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structFloatLiteralNode.html",tooltip="A float literal."];
+  Node5 [id="Node000005",label="BooleanLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structBooleanLiteralNode.html",tooltip="A boolean literal (true or false)"];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="IntegerLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structIntegerLiteralNode.html",tooltip="A integer literal."];
+  Node6 [id="Node000006",label="DictLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structDictLiteralNode.html",tooltip="A dictionary literal (e.g., {key: value, key2: value2})"];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="StringLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structStringLiteralNode.html",tooltip="A string literal."];
+  Node7 [id="Node000007",label="FloatLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structFloatLiteralNode.html",tooltip="A float literal."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="IntegerLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structIntegerLiteralNode.html",tooltip="A integer literal."];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="StringLiteralNode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structStringLiteralNode.html",tooltip="A string literal."];
 }
