@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['name_0',['name',['../structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45',1,'IdentifierNode::name'],['../structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6',1,'VariableStatementNode::name']]],
-  ['next_5ftoken_1',['next_token',['../classLexer.html#a7fcfd2eb03ec5b00bda2b7722d42f68c',1,'Lexer']]],
-  ['nil_2',['NIL',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abc0b1e8b63f3f00318eee5aeabc14255',1,'tokens.hpp']]],
-  ['not_5fequal_3',['NOT_EQUAL',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a4ea2d378cdec20f59330f113297bc1ce',1,'tokens.hpp']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['make_5ftoken_2',['make_token',['../classLexer.html#a3e2e069afa2176cc23d314736df53cfb',1,'Lexer::make_token(TokenType type, std::string &amp;&amp;lexeme)'],['../classLexer.html#aabe0e0f5afa8767af534621653d71e32',1,'Lexer::make_token(TokenType type, const std::string &amp;lexeme)']]],
+  ['mark_3',['mark',['../classGCHeap.html#a33732177e157859c4b1833320175f3d7',1,'GCHeap::mark()'],['../classTracer.html#a81885e30cdeeec4ef5fc0cfa5a225054',1,'Tracer::mark()']]],
+  ['marked_4',['marked',['../structGCObject.html#a1279a78425557f3becddf3e01a9463ac',1,'GCObject']]],
+  ['minus_5',['MINUS',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921affc0d9b54a1fe677c4c9e6b050e67c81',1,'tokens.hpp']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['statements_0',['statements',['../structProgramNode.html#a92ee9991518a1961d69d73f86a075df9',1,'ProgramNode::statements'],['../structBlockStatementNode.html#a2c1db8c389af2505086a4059cc621a36',1,'BlockStatementNode::statements']]]
+  ['peek_5ftoken_5f_0',['peek_token_',['../classASTGenerator.html#a47df81679949183e9bba35b4dcb8b556',1,'ASTGenerator']]],
+  ['position_5f_1',['position_',['../classLexer.html#a2f69348cf62831ecba6d1803e683a22c',1,'Lexer']]]
 ];

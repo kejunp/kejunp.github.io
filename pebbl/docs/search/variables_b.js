@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['target_0',['target',['../structAssignmentExpressionNode.html#afdde55615f62cdd8f4d5118bffde3535',1,'AssignmentExpressionNode']]],
-  ['then_5fexpression_1',['then_expression',['../structIfElseExpressionNode.html#a965ace361ee57f9c4be335139da5edc4',1,'IfElseExpressionNode']]],
-  ['token_2',['token',['../structIdentifierNode.html#a67de89452731f7d90472847eb04232a5',1,'IdentifierNode::token'],['../structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0',1,'VariableStatementNode::token'],['../structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023',1,'ReturnStatementNode::token'],['../structForLoopStatementNode.html#a477e91e5dc56b0cf07322694550fc4f1',1,'ForLoopStatementNode::token'],['../structWhileLoopStatementNode.html#a9e2bfeeed0a187f23a9e83198c170040',1,'WhileLoopStatementNode::token'],['../structIntegerLiteralNode.html#a6cb4fc3143bfaa04b9f8fff91cc43429',1,'IntegerLiteralNode::token'],['../structStringLiteralNode.html#aa2b3d2d4850c6c9f34dca1af781aeb01',1,'StringLiteralNode::token'],['../structFloatLiteralNode.html#ad090a77f0b24dc08af7706625abf13b0',1,'FloatLiteralNode::token'],['../structBooleanLiteralNode.html#a8701d1121bc50e7e4f5a38f309b75ff4',1,'BooleanLiteralNode::token'],['../structArrayLiteralNode.html#aa9925622dee230a4742cc6dd7df935dd',1,'ArrayLiteralNode::token'],['../structDictLiteralNode.html#afbeddb1c52c1325741e8a2661e4b345f',1,'DictLiteralNode::token'],['../structIfElseExpressionNode.html#a1b957d4ccb3b8c8306053ba85bfd90fe',1,'IfElseExpressionNode::token'],['../structAssignmentExpressionNode.html#ae0beea1bc2dc1d008de0764d5fb72e6f',1,'AssignmentExpressionNode::token']]],
-  ['type_3',['type',['../structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a',1,'Token']]]
+  ['read_5fposition_5f_0',['read_position_',['../classLexer.html#a57a7f02b2e483ae54041e7ccc29f143b',1,'Lexer']]],
+  ['ref_5f_1',['ref_',['../classRootHandle.html#a6fb0937ae7692eee00efb3f44946ea68',1,'RootHandle']]],
+  ['return_5fvalue_2',['return_value',['../structReturnStatementNode.html#accfeb2eeb7eca827f2c590aa1f4ad302',1,'ReturnStatementNode']]],
+  ['right_3',['right',['../structBinaryExpressionNode.html#a9e2083cf8c03299e56ce77b8d7758a5d',1,'BinaryExpressionNode']]],
+  ['roots_5f_4',['roots_',['../classGCHeap.html#a88622e22138bf593b95cf078180c449b',1,'GCHeap']]]
 ];

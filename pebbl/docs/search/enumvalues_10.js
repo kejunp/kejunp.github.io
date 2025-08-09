@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unary_5fexpression_0',['UNARY_EXPRESSION',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46',1,'ast.hpp']]]
+  ['unary_5fexpression_0',['UNARY_EXPRESSION',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a7f669fa1f9c86cf5c69c0b542529cb46',1,'ast.hpp']]],
+  ['upvalue_1',['UPVALUE',['../gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4dbac24465ccaa62ea56305df0848e0f55ed',1,'gc.hpp']]]
 ];

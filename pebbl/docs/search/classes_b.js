@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unaryexpressionnode_0',['UnaryExpressionNode',['../structUnaryExpressionNode.html',1,'']]]
+  ['token_0',['Token',['../structToken.html',1,'']]],
+  ['tracer_1',['Tracer',['../classTracer.html',1,'']]]
 ];
