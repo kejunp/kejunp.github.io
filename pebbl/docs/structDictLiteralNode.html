@@ -108,9 +108,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afbeddb1c52c1325741e8a2661e4b345f" id="r_afbeddb1c52c1325741e8a2661e4b345f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structToken.html">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictLiteralNode.html#afbeddb1c52c1325741e8a2661e4b345f">token</a></td></tr>
 <tr class="memdesc:afbeddb1c52c1325741e8a2661e4b345f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LBRACE token ({)  <br /></td></tr>
 <tr class="separator:afbeddb1c52c1325741e8a2661e4b345f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ac2b5fa030c59138c2437d72d71c9a" id="r_a49ac2b5fa030c59138c2437d72d71c9a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structDictEntry.html">DictEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictLiteralNode.html#a49ac2b5fa030c59138c2437d72d71c9a">entries</a></td></tr>
-<tr class="memdesc:a49ac2b5fa030c59138c2437d72d71c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary entries.  <br /></td></tr>
-<tr class="separator:a49ac2b5fa030c59138c2437d72d71c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192106e3a074bc10f4c190902a8a92c9" id="r_a192106e3a074bc10f4c190902a8a92c9"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> *, std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictLiteralNode.html#a192106e3a074bc10f4c190902a8a92c9">entries</a></td></tr>
+<tr class="memdesc:a192106e3a074bc10f4c190902a8a92c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary entries (raw pointer key -&gt; unique_ptr value)  <br /></td></tr>
+<tr class="separator:a192106e3a074bc10f4c190902a8a92c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c230ffe9a22c7fef078885abc88c460" id="r_a4c230ffe9a22c7fef078885abc88c460"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDictLiteralNode.html#a4c230ffe9a22c7fef078885abc88c460">keys</a></td></tr>
+<tr class="memdesc:a4c230ffe9a22c7fef078885abc88c460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for the key expressions.  <br /></td></tr>
+<tr class="separator:a4c230ffe9a22c7fef078885abc88c460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A dictionary literal (e.g., {key: value, key2: value2}) </p>
@@ -174,19 +177,35 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a49ac2b5fa030c59138c2437d72d71c9a" name="a49ac2b5fa030c59138c2437d72d71c9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49ac2b5fa030c59138c2437d72d71c9a">&#9670;&#160;</a></span>entries</h2>
+<a id="a192106e3a074bc10f4c190902a8a92c9" name="a192106e3a074bc10f4c190902a8a92c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192106e3a074bc10f4c190902a8a92c9">&#9670;&#160;</a></span>entries</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structDictEntry.html">DictEntry</a>&gt; DictLiteralNode::entries</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="structExpressionNode.html">ExpressionNode</a>*, std::unique_ptr&lt;<a class="el" href="structExpressionNode.html">ExpressionNode</a>&gt; &gt; DictLiteralNode::entries</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Dictionary entries. </p>
+<p>Dictionary entries (raw pointer key -&gt; unique_ptr value) </p>
+
+</div>
+</div>
+<a id="a4c230ffe9a22c7fef078885abc88c460" name="a4c230ffe9a22c7fef078885abc88c460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c230ffe9a22c7fef078885abc88c460">&#9670;&#160;</a></span>keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="structExpressionNode.html">ExpressionNode</a>&gt; &gt; DictLiteralNode::keys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Storage for the key expressions. </p>
 
 </div>
 </div>
