@@ -7,4 +7,6 @@ digraph "src/runtime/gc.hpp"
   Node1 [id="Node000001",label="src/runtime/gc.hpp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="src/runtime/gc.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$gc_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="src/runtime/object\l/object.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$object_8cpp.html",tooltip=" "];
 }
