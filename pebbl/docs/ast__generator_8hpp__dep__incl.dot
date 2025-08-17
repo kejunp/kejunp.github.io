@@ -4,9 +4,9 @@ digraph "src/parser/ast_generation/ast_generator.hpp"
   bgcolor="transparent";
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
-  Node1 [id="Node000001",label="src/parser/ast_generation\l/ast_generator.hpp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [id="Node000001",label="src/parser/ast_generation\l/ast_generator.hpp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Recursive descent parser for generating Abstract Syntax Trees from tokens."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="src/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip=" "];
+  Node2 [id="Node000002",label="src/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main entry point and testing for the PEBBL language compiler."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="src/parser/ast_generation\l/ast_generator.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ast__generator_8cpp.html",tooltip=" "];
+  Node3 [id="Node000003",label="src/parser/ast_generation\l/ast_generator.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ast__generator_8cpp.html",tooltip="Implementation of the recursive descent parser for generating ASTs."];
 }

@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for all garbage-collected objects.  
+ <a href="structGCObject.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="gc_8hpp_source.html">gc.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for GCObject:</div>
@@ -87,22 +90,31 @@ Collaboration diagram for GCObject:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae66224d8eab8262dabef8685be66bd73" id="r_ae66224d8eab8262dabef8685be66bd73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#ae66224d8eab8262dabef8685be66bd73">GCObject</a> (<a class="el" href="gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4db">GCTag</a> t)</td></tr>
+<tr class="memdesc:ae66224d8eab8262dabef8685be66bd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the object type tag.  <br /></td></tr>
 <tr class="separator:ae66224d8eab8262dabef8685be66bd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ed0e23925277fa520a69d5eaa4b87f" id="r_a92ed0e23925277fa520a69d5eaa4b87f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#a92ed0e23925277fa520a69d5eaa4b87f">~GCObject</a> ()=default</td></tr>
+<tr class="memdesc:a92ed0e23925277fa520a69d5eaa4b87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for proper cleanup.  <br /></td></tr>
 <tr class="separator:a92ed0e23925277fa520a69d5eaa4b87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6daee7ed3b0b566d7074fe0dbc3d5083" id="r_a6daee7ed3b0b566d7074fe0dbc3d5083"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#a6daee7ed3b0b566d7074fe0dbc3d5083">trace</a> (<a class="el" href="classTracer.html">Tracer</a> &amp;tracer)=0</td></tr>
+<tr class="memdesc:a6daee7ed3b0b566d7074fe0dbc3d5083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace method for marking reachable objects.  <br /></td></tr>
 <tr class="separator:a6daee7ed3b0b566d7074fe0dbc3d5083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1279a78425557f3becddf3e01a9463ac" id="r_a1279a78425557f3becddf3e01a9463ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#a1279a78425557f3becddf3e01a9463ac">marked</a> = false</td></tr>
+<tr class="memdesc:a1279a78425557f3becddf3e01a9463ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark flag for garbage collection.  <br /></td></tr>
 <tr class="separator:a1279a78425557f3becddf3e01a9463ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230915377c2e7a38457cc395fde3f26a" id="r_a230915377c2e7a38457cc395fde3f26a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4db">GCTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#a230915377c2e7a38457cc395fde3f26a">tag</a></td></tr>
+<tr class="memdesc:a230915377c2e7a38457cc395fde3f26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type tag for this object.  <br /></td></tr>
 <tr class="separator:a230915377c2e7a38457cc395fde3f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada46f984810ae3794a07c7a77b95fb93" id="r_ada46f984810ae3794a07c7a77b95fb93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGCObject.html">GCObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGCObject.html#ada46f984810ae3794a07c7a77b95fb93">next</a> = nullptr</td></tr>
+<tr class="memdesc:ada46f984810ae3794a07c7a77b95fb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next object in the allocation list.  <br /></td></tr>
 <tr class="separator:ada46f984810ae3794a07c7a77b95fb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all garbage-collected objects. </p>
+<p>All objects that need to be managed by the garbage collector must inherit from this class. The GC uses a mark-and-sweep algorithm with a linked list of all allocated objects. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae66224d8eab8262dabef8685be66bd73" name="ae66224d8eab8262dabef8685be66bd73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66224d8eab8262dabef8685be66bd73">&#9670;&#160;</a></span>GCObject()</h2>
 
@@ -126,6 +138,14 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor that sets the object type tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The type tag for this object </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -151,6 +171,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Virtual destructor for proper cleanup. </p>
 
 </div>
 </div>
@@ -179,6 +201,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Trace method for marking reachable objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tracer</td><td>The tracer object to use for marking</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Each <a class="el" href="structGCObject.html" title="Base class for all garbage-collected objects.">GCObject</a> subclass must implement this method to mark any other GCObjects that this object references. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -194,6 +225,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mark flag for garbage collection. </p>
+
 </div>
 </div>
 <a id="ada46f984810ae3794a07c7a77b95fb93" name="ada46f984810ae3794a07c7a77b95fb93"></a>
@@ -208,6 +241,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Next object in the allocation list. </p>
+
 </div>
 </div>
 <a id="a230915377c2e7a38457cc395fde3f26a" name="a230915377c2e7a38457cc395fde3f26a"></a>
@@ -221,6 +256,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Type tag for this object. </p>
 
 </div>
 </div>
