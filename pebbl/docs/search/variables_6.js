@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['left_0',['left',['../structBinaryExpressionNode.html#a09b3e10b72f064fb2fe828839b0583f5',1,'BinaryExpressionNode']]],
-  ['lexeme_1',['lexeme',['../structToken.html#abbff29ede445ed4a8520580f12490832',1,'Token']]],
-  ['lexer_5f_2',['lexer_',['../classASTGenerator.html#a92e43cfb57ac8178e55bb0e6a6dac939',1,'ASTGenerator']]],
-  ['line_3',['line',['../structToken.html#ade6deee497c3814a319db092bc0f4f7f',1,'Token']]],
-  ['line_5f_4',['line_',['../classLexer.html#add5cb6f5a87a005b09d9587895280913',1,'Lexer']]]
+  ['has_5freturn_5f_0',['has_return_',['../classInterpreter.html#a22a39d192bdac128ce93ffe3a87becc4',1,'Interpreter']]],
+  ['heap_5f_1',['heap_',['../classInterpreter.html#a0b6aacffcdafd3afdbc98297f1f4369b',1,'Interpreter::heap_'],['../classRootHandle.html#a29161bcae4ab51e8ad3cee3bae7f7b1c',1,'RootHandle::heap_'],['../classTracer.html#a7e283d54bcc204c7c2bc2e69450bb347',1,'Tracer::heap_']]]
 ];

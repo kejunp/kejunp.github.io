@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['identifiernode_0',['IdentifierNode',['../structIdentifierNode.html',1,'']]],
-  ['ifelseexpressionnode_1',['IfElseExpressionNode',['../structIfElseExpressionNode.html',1,'']]],
-  ['integerliteralnode_2',['IntegerLiteralNode',['../structIntegerLiteralNode.html',1,'']]]
+  ['gcheap_0',['GCHeap',['../classGCHeap.html',1,'']]],
+  ['gcobject_1',['GCObject',['../structGCObject.html',1,'']]]
 ];

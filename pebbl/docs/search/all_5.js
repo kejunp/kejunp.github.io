@@ -8,5 +8,7 @@ var searchData=
   ['for_5floop_5fstatement_5',['FOR_LOOP_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1',1,'ast.hpp']]],
   ['forloopstatementnode_6',['ForLoopStatementNode',['../structForLoopStatementNode.html',1,'']]],
   ['func_7',['FUNC',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a1e49c8ad07b69571bfcafaf18ac9fa5b',1,'tokens.hpp']]],
-  ['function_8',['FUNCTION',['../gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4dba6a72a6a776662a244f82d31e9274a07b',1,'gc.hpp']]]
+  ['function_8',['function',['../structCallExpressionNode.html#a8ab8b5e6868b43f34050bf1a3addde6e',1,'CallExpressionNode::function'],['../classPEBBLBuiltinFunction.html#a03b0e7e75024cd742d50ba86698196a6',1,'PEBBLBuiltinFunction::function'],['../gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4dba6a72a6a776662a244f82d31e9274a07b',1,'FUNCTION:&#160;gc.hpp']]],
+  ['function_5fstatement_9',['FUNCTION_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a477e51f71721de868ca357208b36ab00',1,'ast.hpp']]],
+  ['functionstatementnode_10',['FunctionStatementNode',['../structFunctionStatementNode.html',1,'']]]
 ];

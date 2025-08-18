@@ -86,6 +86,13 @@ $(function() {
 Collaboration diagram for ASTGenerator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classASTGenerator__coll__graph.png" border="0" usemap="#aASTGenerator_coll__map" alt="Collaboration graph"/></div>
+<map name="aASTGenerator_coll__map" id="aASTGenerator_coll__map">
+<area shape="rect" title="Recursive descent parser for generating AST from tokens." alt="" coords="19,108,131,133"/>
+<area shape="rect" href="classLexer.html" title="Token stream implementation." alt="" coords="5,5,63,31"/>
+<area shape="poly" title=" " alt="" coords="37,44,40,64,46,83,64,106,59,109,41,85,34,65,32,45"/>
+<area shape="rect" href="structToken.html" title=" " alt="" coords="87,5,146,31"/>
+<area shape="poly" title=" " alt="" coords="109,44,82,109,78,107,104,42"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -137,6 +144,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:adb2542f0b0f4d23ac4bf69168b0cf049" id="r_adb2542f0b0f4d23ac4bf69168b0cf049"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structForLoopStatementNode.html">ForLoopStatementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#adb2542f0b0f4d23ac4bf69168b0cf049">parse_for_statement</a> ()</td></tr>
 <tr class="memdesc:adb2542f0b0f4d23ac4bf69168b0cf049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a for loop statement.  <br /></td></tr>
 <tr class="separator:adb2542f0b0f4d23ac4bf69168b0cf049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31c5b992e9774e3a50afbd18b31c2e4" id="r_af31c5b992e9774e3a50afbd18b31c2e4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structFunctionStatementNode.html">FunctionStatementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#af31c5b992e9774e3a50afbd18b31c2e4">parse_function_statement</a> ()</td></tr>
+<tr class="memdesc:af31c5b992e9774e3a50afbd18b31c2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a function declaration statement.  <br /></td></tr>
+<tr class="separator:af31c5b992e9774e3a50afbd18b31c2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa87901bf8a299679cd9161dad7fda60" id="r_aaa87901bf8a299679cd9161dad7fda60"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionStatementNode.html">ExpressionStatementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#aaa87901bf8a299679cd9161dad7fda60">parse_expression_statement</a> ()</td></tr>
 <tr class="memdesc:aaa87901bf8a299679cd9161dad7fda60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an expression statement.  <br /></td></tr>
 <tr class="separator:aaa87901bf8a299679cd9161dad7fda60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +180,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a05f0e50b5479d3b4685bbefc8a897810" id="r_a05f0e50b5479d3b4685bbefc8a897810"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#a05f0e50b5479d3b4685bbefc8a897810">parse_unary</a> ()</td></tr>
 <tr class="memdesc:a05f0e50b5479d3b4685bbefc8a897810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a unary expression (! -)  <br /></td></tr>
 <tr class="separator:a05f0e50b5479d3b4685bbefc8a897810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2d12e27e0f7d12a48538956109172b" id="r_a5a2d12e27e0f7d12a48538956109172b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#a5a2d12e27e0f7d12a48538956109172b">parse_call</a> ()</td></tr>
+<tr class="memdesc:a5a2d12e27e0f7d12a48538956109172b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a call expression chain (function calls)  <br /></td></tr>
+<tr class="separator:a5a2d12e27e0f7d12a48538956109172b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575669dd97110a27c707aa637a23395f" id="r_a575669dd97110a27c707aa637a23395f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#a575669dd97110a27c707aa637a23395f">parse_primary</a> ()</td></tr>
 <tr class="memdesc:a575669dd97110a27c707aa637a23395f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a primary expression (literals, identifiers, parentheses)  <br /></td></tr>
 <tr class="separator:a575669dd97110a27c707aa637a23395f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ef604a02600c998a07e9289c78a6be" id="r_ad8ef604a02600c998a07e9289c78a6be"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structCallExpressionNode.html">CallExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#ad8ef604a02600c998a07e9289c78a6be">parse_call_expression</a> (std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt; function)</td></tr>
+<tr class="memdesc:ad8ef604a02600c998a07e9289c78a6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a call expression (function calls)  <br /></td></tr>
+<tr class="separator:ad8ef604a02600c998a07e9289c78a6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ff6327e3c77b258ea2a01a07580e2b" id="r_a37ff6327e3c77b258ea2a01a07580e2b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structIntegerLiteralNode.html">IntegerLiteralNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTGenerator.html#a37ff6327e3c77b258ea2a01a07580e2b">parse_integer_literal</a> ()</td></tr>
 <tr class="memdesc:a37ff6327e3c77b258ea2a01a07580e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an integer literal.  <br /></td></tr>
 <tr class="separator:a37ff6327e3c77b258ea2a01a07580e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -513,6 +529,63 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5a2d12e27e0f7d12a48538956109172b" name="a5a2d12e27e0f7d12a48538956109172b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2d12e27e0f7d12a48538956109172b">&#9670;&#160;</a></span>parse_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt; ASTGenerator::parse_call </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses a call expression chain (function calls) </p>
+<dl class="section return"><dt>Returns</dt><dd>Expression AST node </dd></dl>
+
+</div>
+</div>
+<a id="ad8ef604a02600c998a07e9289c78a6be" name="ad8ef604a02600c998a07e9289c78a6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ef604a02600c998a07e9289c78a6be">&#9670;&#160;</a></span>parse_call_expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="structCallExpressionNode.html">CallExpressionNode</a> &gt; ASTGenerator::parse_call_expression </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses a call expression (function calls) </p>
+<dl class="section return"><dt>Returns</dt><dd>Call expression AST node </dd></dl>
+
+</div>
+</div>
 <a id="a18789bde45f89ad01b03742e50094f91" name="a18789bde45f89ad01b03742e50094f91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18789bde45f89ad01b03742e50094f91">&#9670;&#160;</a></span>parse_comparison()</h2>
 
@@ -734,6 +807,34 @@ Private Attributes</h2></td></tr>
 
 <p>Parses a for loop statement. </p>
 <dl class="section return"><dt>Returns</dt><dd>For loop statement AST node </dd></dl>
+
+</div>
+</div>
+<a id="af31c5b992e9774e3a50afbd18b31c2e4" name="af31c5b992e9774e3a50afbd18b31c2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31c5b992e9774e3a50afbd18b31c2e4">&#9670;&#160;</a></span>parse_function_statement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="structFunctionStatementNode.html">FunctionStatementNode</a> &gt; ASTGenerator::parse_function_statement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses a function declaration statement. </p>
+<dl class="section return"><dt>Returns</dt><dd>Function statement AST node </dd></dl>
 
 </div>
 </div>

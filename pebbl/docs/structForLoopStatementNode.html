@@ -82,11 +82,27 @@ $(function() {
 Inheritance diagram for ForLoopStatementNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="structForLoopStatementNode__inherit__graph.png" border="0" usemap="#aForLoopStatementNode_inherit__map" alt="Inheritance graph"/></div>
+<map name="aForLoopStatementNode_inherit__map" id="aForLoopStatementNode_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,152,180,177"/>
+<area shape="rect" href="structStatementNode.html" title="Base class for all statements." alt="" coords="31,79,155,104"/>
+<area shape="poly" title=" " alt="" coords="95,118,95,152,90,152,90,118"/>
+<area shape="rect" href="structASTNode.html" title="Base class of all AST nodes." alt="" coords="52,5,133,31"/>
+<area shape="poly" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for ForLoopStatementNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="structForLoopStatementNode__coll__graph.png" border="0" usemap="#aForLoopStatementNode_coll__map" alt="Collaboration graph"/></div>
+<map name="aForLoopStatementNode_coll__map" id="aForLoopStatementNode_coll__map">
+<area shape="rect" title=" " alt="" coords="37,168,212,193"/>
+<area shape="rect" href="structStatementNode.html" title="Base class for all statements." alt="" coords="5,80,129,105"/>
+<area shape="poly" title=" " alt="" coords="85,115,119,166,114,169,80,118"/>
+<area shape="rect" href="structASTNode.html" title="Base class of all AST nodes." alt="" coords="27,5,108,31"/>
+<area shape="poly" title=" " alt="" coords="70,45,70,80,65,80,65,45"/>
+<area shape="rect" href="structToken.html" title=" " alt="" coords="154,80,213,105"/>
+<area shape="poly" title=" " alt="" coords="170,118,135,169,131,166,165,115"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -111,6 +127,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a30767d0e977a47f4c3b79b0c4da0379f" id="r_a30767d0e977a47f4c3b79b0c4da0379f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structExpressionNode.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structForLoopStatementNode.html#a30767d0e977a47f4c3b79b0c4da0379f">iterable</a></td></tr>
 <tr class="memdesc:a30767d0e977a47f4c3b79b0c4da0379f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thing to iterate over (e.g., a list)  <br /></td></tr>
 <tr class="separator:a30767d0e977a47f4c3b79b0c4da0379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6509f0ce2137807d3362b3c7f1c5d007" id="r_a6509f0ce2137807d3362b3c7f1c5d007"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structBlockStatementNode.html">BlockStatementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structForLoopStatementNode.html#a6509f0ce2137807d3362b3c7f1c5d007">body</a></td></tr>
+<tr class="memdesc:a6509f0ce2137807d3362b3c7f1c5d007"><td class="mdescLeft">&#160;</td><td class="mdescRight">The loop body.  <br /></td></tr>
+<tr class="separator:a6509f0ce2137807d3362b3c7f1c5d007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aea760db529ed75606409b45a943eb118" name="aea760db529ed75606409b45a943eb118"></a>
@@ -172,6 +191,22 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6509f0ce2137807d3362b3c7f1c5d007" name="a6509f0ce2137807d3362b3c7f1c5d007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6509f0ce2137807d3362b3c7f1c5d007">&#9670;&#160;</a></span>body</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structBlockStatementNode.html">BlockStatementNode</a>&gt; ForLoopStatementNode::body</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The loop body. </p>
+
+</div>
+</div>
 <a id="aeed0f81ea5b6dcc5d9db0c003770a11c" name="aeed0f81ea5b6dcc5d9db0c003770a11c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeed0f81ea5b6dcc5d9db0c003770a11c">&#9670;&#160;</a></span>identifier</h2>
 

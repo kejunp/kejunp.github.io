@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keys_0',['keys',['../structDictLiteralNode.html#a4c230ffe9a22c7fef078885abc88c460',1,'DictLiteralNode']]]
+  ['global_5fenv_5f_0',['global_env_',['../classInterpreter.html#ad6395890bca87a0daf2cc3a64edd9a8f',1,'Interpreter']]]
 ];

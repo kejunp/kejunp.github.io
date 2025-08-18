@@ -87,6 +87,12 @@ $(function() {
 Collaboration diagram for GCHeap:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGCHeap__coll__graph.png" border="0" usemap="#aGCHeap_coll__map" alt="Collaboration graph"/></div>
+<map name="aGCHeap_coll__map" id="aGCHeap_coll__map">
+<area shape="rect" title="Garbage collection heap manager." alt="" coords="9,93,84,119"/>
+<area shape="rect" href="structGCObject.html" title="Base class for all garbage&#45;collected objects." alt="" coords="5,5,88,31"/>
+<area shape="poly" title=" " alt="" coords="49,45,49,93,44,93,44,45"/>
+<area shape="poly" title=" " alt="" coords="102,9,111,12,115,18,106,26,88,29,88,23,104,21,109,18,108,16,101,14"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,6 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac939b5b46022555fedcf65cb175a50d6" id="r_ac939b5b46022555fedcf65cb175a50d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#ac939b5b46022555fedcf65cb175a50d6">remove_root</a> (<a class="el" href="structGCObject.html">GCObject</a> **ref)</td></tr>
 <tr class="memdesc:ac939b5b46022555fedcf65cb175a50d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a root reference from the GC system.  <br /></td></tr>
 <tr class="separator:ac939b5b46022555fedcf65cb175a50d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f4bb644887bd1c9cb487358c6282b6" id="r_a14f4bb644887bd1c9cb487358c6282b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#a14f4bb644887bd1c9cb487358c6282b6">add_root_tracer</a> (std::function&lt; void(class <a class="el" href="classTracer.html">Tracer</a> &amp;)&gt; tracer)</td></tr>
+<tr class="memdesc:a14f4bb644887bd1c9cb487358c6282b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom root tracer callback.  <br /></td></tr>
+<tr class="separator:a14f4bb644887bd1c9cb487358c6282b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a49fc96d3097360d9a6c70ab33ffb4d" id="r_a7a49fc96d3097360d9a6c70ab33ffb4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#a7a49fc96d3097360d9a6c70ab33ffb4d">remove_root_tracer</a> (std::function&lt; void(class <a class="el" href="classTracer.html">Tracer</a> &amp;)&gt; tracer)</td></tr>
+<tr class="memdesc:a7a49fc96d3097360d9a6c70ab33ffb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a custom root tracer callback.  <br /></td></tr>
+<tr class="separator:a7a49fc96d3097360d9a6c70ab33ffb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce58b9833e82a314a626d43234c335c" id="r_adce58b9833e82a314a626d43234c335c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#adce58b9833e82a314a626d43234c335c">collect</a> ()</td></tr>
 <tr class="memdesc:adce58b9833e82a314a626d43234c335c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a garbage collection cycle.  <br /></td></tr>
 <tr class="separator:adce58b9833e82a314a626d43234c335c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +146,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a88622e22138bf593b95cf078180c449b" id="r_a88622e22138bf593b95cf078180c449b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structGCObject.html">GCObject</a> ** &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#a88622e22138bf593b95cf078180c449b">roots_</a></td></tr>
 <tr class="memdesc:a88622e22138bf593b95cf078180c449b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of registered root references.  <br /></td></tr>
 <tr class="separator:a88622e22138bf593b95cf078180c449b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d711862233682c42ba78eaa6fa8c575" id="r_a2d711862233682c42ba78eaa6fa8c575"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; void(<a class="el" href="classTracer.html">Tracer</a> &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGCHeap.html#a2d711862233682c42ba78eaa6fa8c575">root_tracers_</a></td></tr>
+<tr class="memdesc:a2d711862233682c42ba78eaa6fa8c575"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of custom root tracers.  <br /></td></tr>
+<tr class="separator:a2d711862233682c42ba78eaa6fa8c575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -203,6 +218,32 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ref</td><td>Pointer to a <a class="el" href="structGCObject.html" title="Base class for all garbage-collected objects.">GCObject</a> pointer to register as a root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14f4bb644887bd1c9cb487358c6282b6" name="a14f4bb644887bd1c9cb487358c6282b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f4bb644887bd1c9cb487358c6282b6">&#9670;&#160;</a></span>add_root_tracer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GCHeap::add_root_tracer </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(class <a class="el" href="classTracer.html">Tracer</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>tracer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a custom root tracer callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tracer</td><td>Function that traces additional roots during GC </td></tr>
   </table>
   </dd>
 </dl>
@@ -322,6 +363,32 @@ template&lt;typename T , typename... Args&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ref</td><td>Pointer to a <a class="el" href="structGCObject.html" title="Base class for all garbage-collected objects.">GCObject</a> pointer to unregister as a root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a49fc96d3097360d9a6c70ab33ffb4d" name="a7a49fc96d3097360d9a6c70ab33ffb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a49fc96d3097360d9a6c70ab33ffb4d">&#9670;&#160;</a></span>remove_root_tracer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GCHeap::remove_root_tracer </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(class <a class="el" href="classTracer.html">Tracer</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>tracer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a custom root tracer callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tracer</td><td>Function to remove from root tracing </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,6 +516,30 @@ template&lt;typename T , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Linked list of all allocated objects. </p>
+
+</div>
+</div>
+<a id="a2d711862233682c42ba78eaa6fa8c575" name="a2d711862233682c42ba78eaa6fa8c575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d711862233682c42ba78eaa6fa8c575">&#9670;&#160;</a></span>root_tracers_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::function&lt;void(<a class="el" href="classTracer.html">Tracer</a>&amp;)&gt; &gt; GCHeap::root_tracers_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of custom root tracers. </p>
 
 </div>
 </div>

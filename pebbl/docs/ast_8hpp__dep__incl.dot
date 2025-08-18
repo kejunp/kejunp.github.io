@@ -8,7 +8,12 @@ digraph "src/parser/ast_generation/ast.hpp"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="src/parser/ast_generation\l/ast_generator.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ast__generator_8hpp.html",tooltip="Recursive descent parser for generating Abstract Syntax Trees from tokens."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="src/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main entry point and testing for the PEBBL language compiler."];
+  Node3 [id="Node000003",label="src/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main entry point for the PEBBL language interpreter."];
   Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="src/parser/ast_generation\l/ast_generator.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ast__generator_8cpp.html",tooltip="Implementation of the recursive descent parser for generating ASTs."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="src/runtime/evaluator\l/interpreter.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interpreter_8hpp.html",tooltip="Main interpreter/evaluator for executing PEBBL AST."];
+  Node5 -> Node3 [id="edge5_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="src/runtime/evaluator\l/interpreter.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interpreter_8cpp.html",tooltip="Implementation of the main interpreter."];
 }

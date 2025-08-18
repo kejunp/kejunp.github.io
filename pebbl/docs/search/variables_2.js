@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['elements_0',['elements',['../structArrayLiteralNode.html#aeba52523f3a53a6605a6582a56f1da42',1,'ArrayLiteralNode']]],
-  ['else_5fexpression_1',['else_expression',['../structIfElseExpressionNode.html#aea623096627b6d2d3e6ce374d6515147',1,'IfElseExpressionNode']]],
-  ['entries_2',['entries',['../structDictLiteralNode.html#a192106e3a074bc10f4c190902a8a92c9',1,'DictLiteralNode']]],
-  ['exp_5fmask_3',['EXP_MASK',['../structPEBBLObject.html#aaed043729e302c5cb065e9fa40827830',1,'PEBBLObject']]],
-  ['expression_4',['expression',['../structExpressionStatementNode.html#a75d342aefc9dab12a0ea81d314a9a66b',1,'ExpressionStatementNode']]]
+  ['closure_0',['closure',['../classPEBBLFunction.html#ad73f0a60ab14933679994cce8aaeca06',1,'PEBBLFunction']]],
+  ['condition_1',['condition',['../structWhileLoopStatementNode.html#ac43900cd1d23d9269122d66efff23f6d',1,'WhileLoopStatementNode::condition'],['../structIfElseExpressionNode.html#aa9f1c05743f9de64e831757336f7993f',1,'IfElseExpressionNode::condition']]],
+  ['current_5fchar_5f_2',['current_char_',['../classLexer.html#ad458f3280a7cc36dd092f111ca5f1e7a',1,'Lexer']]],
+  ['current_5fenv_5f_3',['current_env_',['../classInterpreter.html#ab8c0842cfc3c806678e45544e96ed22d',1,'Interpreter']]],
+  ['current_5ftoken_5f_4',['current_token_',['../classASTGenerator.html#a6b36211abe3f5065e1428646bbfd8068',1,'ASTGenerator']]]
 ];

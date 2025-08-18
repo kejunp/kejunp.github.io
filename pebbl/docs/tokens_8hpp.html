@@ -90,11 +90,11 @@ Include dependency graph for tokens.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="tokens_8hpp__incl.png" border="0" usemap="#asrc_2parser_2lexer_2tokens_8hpp" alt=""/></div>
 <map name="asrc_2parser_2lexer_2tokens_8hpp" id="asrc_2parser_2lexer_2tokens_8hpp">
-<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
-<area shape="rect" title=" " alt="" coords="6,79,65,104"/>
-<area shape="poly" title=" " alt="" coords="85,33,55,70,51,66,81,29"/>
-<area shape="rect" title=" " alt="" coords="89,79,213,104"/>
-<area shape="poly" title=" " alt="" coords="104,29,135,67,131,70,100,33"/>
+<area shape="rect" title="Token definitions and utilities for the PEBBL lexer." alt="" coords="5,5,203,31"/>
+<area shape="rect" title=" " alt="" coords="17,79,76,104"/>
+<area shape="poly" title=" " alt="" coords="97,33,67,70,63,66,92,29"/>
+<area shape="rect" title=" " alt="" coords="101,79,225,104"/>
+<area shape="poly" title=" " alt="" coords="116,29,147,67,143,70,112,33"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -102,13 +102,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="tokens_8hpp__dep__incl.png" border="0" usemap="#asrc_2parser_2lexer_2tokens_8hppdep" alt=""/></div>
 <map name="asrc_2parser_2lexer_2tokens_8hppdep" id="asrc_2parser_2lexer_2tokens_8hppdep">
-<area shape="rect" title=" " alt="" coords="93,5,268,31"/>
-<area shape="rect" href="ast_8hpp.html" title=" " alt="" coords="5,79,169,119"/>
-<area shape="poly" title=" " alt="" coords="158,42,112,81,108,76,155,38"/>
-<area shape="rect" href="lexer_8hpp.html" title=" " alt="" coords="194,86,357,111"/>
-<area shape="poly" title=" " alt="" coords="207,38,263,84,260,88,204,42"/>
-<area shape="rect" href="lexer_8cpp.html" title=" " alt="" coords="195,167,356,192"/>
-<area shape="poly" title=" " alt="" coords="278,125,278,166,273,166,273,125"/>
+<area shape="rect" title="Token definitions and utilities for the PEBBL lexer." alt="" coords="105,5,303,31"/>
+<area shape="rect" href="ast_8hpp.html" title="Abstract Syntax Tree node definitions for the PEBBL language." alt="" coords="5,79,192,119"/>
+<area shape="poly" title=" " alt="" coords="179,41,126,81,122,76,176,37"/>
+<area shape="rect" href="lexer_8hpp.html" title="Lexical analyzer for tokenizing PEBBL source code." alt="" coords="217,86,402,111"/>
+<area shape="poly" title=" " alt="" coords="232,37,295,84,292,88,229,41"/>
+<area shape="rect" href="ast__generator_8hpp.html" title="Recursive descent parser for generating Abstract Syntax Trees from tokens." alt="" coords="45,167,232,207"/>
+<area shape="poly" title=" " alt="" coords="116,130,132,165,127,168,111,132"/>
+<area shape="rect" href="main_8cpp.html" title="Main entry point and testing for the PEBBL language compiler." alt="" coords="237,262,342,287"/>
+<area shape="poly" title=" " alt="" coords="185,211,271,260,268,264,182,216"/>
+<area shape="rect" href="ast__generator_8cpp.html" title="Implementation of the recursive descent parser for generating ASTs." alt="" coords="25,255,212,295"/>
+<area shape="poly" title=" " alt="" coords="134,221,126,255,120,254,129,220"/>
+<area shape="poly" title=" " alt="" coords="275,120,178,169,175,164,273,115"/>
+<area shape="poly" title=" " alt="" coords="309,125,293,262,288,261,304,125"/>
+<area shape="rect" href="lexer_8cpp.html" title="Implementation of the lexical analyzer for PEBBL source code." alt="" coords="327,174,511,199"/>
+<area shape="poly" title=" " alt="" coords="337,118,405,172,402,176,333,122"/>
 </map>
 </div>
 </div>
@@ -163,16 +171,17 @@ Enumerations</h2></td></tr>
 , <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a946003f97ccc52d5d3b54ac0ec31bbfc">FALSE</a>
 , <br />
 &#160;&#160;<a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a7885ad399f9cab93cb42befbe402c588">FOR</a>
+, <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ac86ee0d9d7ed3e7b4fdbf486fa6c0ebb">IN</a>
 , <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ac0ca84371abbc18f52fd48e32195cd15">WHILE</a>
 , <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a1e49c8ad07b69571bfcafaf18ac9fa5b">FUNC</a>
-, <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5">RETURN</a>
 , <br />
-&#160;&#160;<a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ada02466f9a4224e477bd63afbcf573c5">LET</a>
+&#160;&#160;<a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5">RETURN</a>
+, <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ada02466f9a4224e477bd63afbcf573c5">LET</a>
 , <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921ad6f4440b8633f973d33c78928bdac2e1">VAR</a>
 , <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abc0b1e8b63f3f00318eee5aeabc14255">NIL</a>
-, <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</a>
 , <br />
-&#160;&#160;<a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a3c9a1b7db6f263d681c1bcbb2348b2cb">EOF_TYPE</a>
+&#160;&#160;<a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</a>
+, <a class="el" href="tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a3c9a1b7db6f263d681c1bcbb2348b2cb">EOF_TYPE</a>
 <br />
  }</td></tr>
 <tr class="separator:aa520fbf142ba1e7e659590c07da31921"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +247,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921ac0d83f0b82a6b30de8811e69e6d95c61" name="aa520fbf142ba1e7e659590c07da31921ac0d83f0b82a6b30de8811e69e6d95c61"></a>TRUE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921a946003f97ccc52d5d3b54ac0ec31bbfc" name="aa520fbf142ba1e7e659590c07da31921a946003f97ccc52d5d3b54ac0ec31bbfc"></a>FALSE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921a7885ad399f9cab93cb42befbe402c588" name="aa520fbf142ba1e7e659590c07da31921a7885ad399f9cab93cb42befbe402c588"></a>FOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921ac86ee0d9d7ed3e7b4fdbf486fa6c0ebb" name="aa520fbf142ba1e7e659590c07da31921ac86ee0d9d7ed3e7b4fdbf486fa6c0ebb"></a>IN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921ac0ca84371abbc18f52fd48e32195cd15" name="aa520fbf142ba1e7e659590c07da31921ac0ca84371abbc18f52fd48e32195cd15"></a>WHILE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921a1e49c8ad07b69571bfcafaf18ac9fa5b" name="aa520fbf142ba1e7e659590c07da31921a1e49c8ad07b69571bfcafaf18ac9fa5b"></a>FUNC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5" name="aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5"></a>RETURN&#160;</td><td class="fielddoc"></td></tr>

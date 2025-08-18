@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['read_5fidentifier_0',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
-  ['read_5fnumber_1',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
-  ['read_5fstring_2',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]],
-  ['remove_5froot_3',['remove_root',['../classGCHeap.html#ac939b5b46022555fedcf65cb175a50d6',1,'GCHeap']]],
-  ['report_5ferror_4',['report_error',['../classASTGenerator.html#aec8d2e24433de89ac2c647cb69763192',1,'ASTGenerator']]],
-  ['roothandle_5',['roothandle',['../classRootHandle.html#a61b0fd368745f59d0eb8aee0fa2db972',1,'RootHandle::RootHandle(GCHeap &amp;heap, GCObject *&amp;ref)'],['../classRootHandle.html#a6db1eb3932662cd4b627f8f9b059968f',1,'RootHandle::RootHandle(const RootHandle &amp;)=delete']]]
+  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['make_5fbool_1',['make_bool',['../structPEBBLObject.html#af3a319d43f91c0a90b979eed3d2ea62a',1,'PEBBLObject']]],
+  ['make_5fdouble_2',['make_double',['../structPEBBLObject.html#aa17d9c5f5145d36bfc412b7d31558a5b',1,'PEBBLObject']]],
+  ['make_5fgc_5fptr_3',['make_gc_ptr',['../structPEBBLObject.html#ac69367821a5d12496433f7a164c07edd',1,'PEBBLObject']]],
+  ['make_5fint32_4',['make_int32',['../structPEBBLObject.html#aad0990be76e14eb227cb7ec116e9f767',1,'PEBBLObject']]],
+  ['make_5fnull_5',['make_null',['../structPEBBLObject.html#ab89d15e402acacdc6e2ad8f809b50e6f',1,'PEBBLObject']]],
+  ['make_5ftoken_6',['make_token',['../classLexer.html#a3e2e069afa2176cc23d314736df53cfb',1,'Lexer::make_token(TokenType type, std::string &amp;&amp;lexeme)'],['../classLexer.html#aabe0e0f5afa8767af534621653d71e32',1,'Lexer::make_token(TokenType type, const std::string &amp;lexeme)']]],
+  ['make_5fundefined_7',['make_undefined',['../structPEBBLObject.html#a05ff01cfdf4188119e278f61d34f47a9',1,'PEBBLObject']]],
+  ['mark_8',['mark',['../classGCHeap.html#a33732177e157859c4b1833320175f3d7',1,'GCHeap::mark()'],['../classTracer.html#a81885e30cdeeec4ef5fc0cfa5a225054',1,'Tracer::mark()']]]
 ];
