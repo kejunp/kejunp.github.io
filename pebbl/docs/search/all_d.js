@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['object_2ecpp_0',['object.cpp',['../object_8cpp.html',1,'']]],
-  ['object_2ehpp_1',['object.hpp',['../object_8hpp.html',1,'']]],
-  ['object_5fcount_5f_2',['object_count_',['../classGCHeap.html#ab5cdc22c1704939684c8d3668f3ac1d2',1,'GCHeap']]],
-  ['objects_5f_3',['objects_',['../classGCHeap.html#a5abfbd848632c24558e47b4bdd7bedc8',1,'GCHeap']]],
-  ['operand_4',['operand',['../structUnaryExpressionNode.html#a0a8520c976bd8f7a98bfd00016f72525',1,'UnaryExpressionNode']]],
-  ['operator_3d_5',['operator=',['../classRootHandle.html#ac6bee67cc96f5a5bcee142389b4b75bb',1,'RootHandle']]],
-  ['operator_3e_3e_6',['operator&gt;&gt;',['../classLexer.html#ac2a7c376612cd061da1d01c8543ea821',1,'Lexer']]],
-  ['operator_5ftoken_7',['operator_token',['../structBinaryExpressionNode.html#ad209bfd4bd41904385b5f46b624525af',1,'BinaryExpressionNode::operator_token'],['../structUnaryExpressionNode.html#a367e4296b727c16e635d798af207c6bc',1,'UnaryExpressionNode::operator_token']]],
-  ['or_8',['OR',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a1d00e7dce692e8dc3f6877f035e3a616',1,'tokens.hpp']]]
+  ['name_0',['name',['../structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45',1,'IdentifierNode::name'],['../structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6',1,'VariableStatementNode::name'],['../structFunctionStatementNode.html#a3248792c541e4bc47bf6086cc446fd34',1,'FunctionStatementNode::name'],['../classPEBBLFunction.html#aeb22b80c7f32e8ef96d0bcd460254897',1,'PEBBLFunction::name'],['../classPEBBLBuiltinFunction.html#a89a2d2da8b776dede7a9af33564e0b31',1,'PEBBLBuiltinFunction::name'],['../structVariableInfo.html#ad65bc0df64598c66e1d694e64ecb4d03',1,'VariableInfo::name']]],
+  ['nativefn_1',['NativeFn',['../classPEBBLBuiltinFunction.html#a6b83d2878c3517ce9d81d19ee947c168',1,'PEBBLBuiltinFunction']]],
+  ['negate_2',['NEGATE',['../bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20ad2bfe823de977bec55fc1459621da7c6',1,'bytecode.hpp']]],
+  ['next_3',['next',['../structGCObject.html#ada46f984810ae3794a07c7a77b95fb93',1,'GCObject']]],
+  ['next_5fgc_5f_4',['next_gc_',['../classGCHeap.html#a3223a10a6729ea3c9f5e6236794a3277',1,'GCHeap']]],
+  ['next_5ftoken_5',['next_token',['../classLexer.html#a7fcfd2eb03ec5b00bda2b7722d42f68c',1,'Lexer']]],
+  ['nil_6',['nil',['../structPEBBLObject.html#af708d6afd2ab0ed5a3f070327fe26d16abc0b1e8b63f3f00318eee5aeabc14255',1,'PEBBLObject::NIL'],['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abc0b1e8b63f3f00318eee5aeabc14255',1,'NIL:&#160;tokens.hpp']]],
+  ['not_7',['NOT',['../bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20a10df3d67626099df882920ba6552f16d',1,'bytecode.hpp']]],
+  ['not_5fequal_8',['not_equal',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a4ea2d378cdec20f59330f113297bc1ce',1,'NOT_EQUAL:&#160;tokens.hpp'],['../bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20a4ea2d378cdec20f59330f113297bc1ce',1,'NOT_EQUAL:&#160;bytecode.hpp']]]
 ];

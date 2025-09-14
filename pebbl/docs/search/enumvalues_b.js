@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['or_0',['OR',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a1d00e7dce692e8dc3f6877f035e3a616',1,'tokens.hpp']]]
+  ['minus_0',['MINUS',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921affc0d9b54a1fe677c4c9e6b050e67c81',1,'tokens.hpp']]],
+  ['multiply_1',['MULTIPLY',['../bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20a080aaf8d817ada96fca7096b7b55bd30',1,'bytecode.hpp']]]
 ];

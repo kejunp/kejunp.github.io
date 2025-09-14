@@ -71,57 +71,185 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classVM-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">VM Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Virtual Machine for interpreting bytecode in a <a class="el" href="classChunk.html">Chunk</a>.  
+<p>Virtual machine for executing bytecode.  
  <a href="classVM.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vm_8hpp_source.html">vm.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for VM:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVM__coll__graph.png" border="0" usemap="#aVM_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d317e9453b7f5ac6299fd5c46ced08b" id="r_a1d317e9453b7f5ac6299fd5c46ced08b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a1d317e9453b7f5ac6299fd5c46ced08b">VM</a> (<a class="el" href="classChunk.html">Chunk</a> &amp;chunk_ref)</td></tr>
-<tr class="memdesc:a1d317e9453b7f5ac6299fd5c46ced08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> operating on the given <a class="el" href="classChunk.html">Chunk</a>.  <br /></td></tr>
-<tr class="separator:a1d317e9453b7f5ac6299fd5c46ced08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceaf97e828b0c0a5a52e10047515e780" id="r_aceaf97e828b0c0a5a52e10047515e780"><td class="memItemLeft" align="right" valign="top"><a id="aceaf97e828b0c0a5a52e10047515e780" name="aceaf97e828b0c0a5a52e10047515e780"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VM</b> (const <a class="el" href="classVM.html">VM</a> &amp;)=delete</td></tr>
-<tr class="separator:aceaf97e828b0c0a5a52e10047515e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44586142358a21fc96e74ff071abcd52" id="r_a44586142358a21fc96e74ff071abcd52"><td class="memItemLeft" align="right" valign="top"><a id="a44586142358a21fc96e74ff071abcd52" name="a44586142358a21fc96e74ff071abcd52"></a>
-<a class="el" href="classVM.html">VM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classVM.html">VM</a> &amp;)=delete</td></tr>
-<tr class="separator:a44586142358a21fc96e74ff071abcd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98bd8e555fc104c231e834a3cd88e427" id="r_a98bd8e555fc104c231e834a3cd88e427"><td class="memItemLeft" align="right" valign="top"><a id="a98bd8e555fc104c231e834a3cd88e427" name="a98bd8e555fc104c231e834a3cd88e427"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VM</b> (<a class="el" href="classVM.html">VM</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a98bd8e555fc104c231e834a3cd88e427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc6b8cafa6e45636cb523e47e189ac2" id="r_a7bc6b8cafa6e45636cb523e47e189ac2"><td class="memItemLeft" align="right" valign="top"><a id="a7bc6b8cafa6e45636cb523e47e189ac2" name="a7bc6b8cafa6e45636cb523e47e189ac2"></a>
-<a class="el" href="classVM.html">VM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classVM.html">VM</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a7bc6b8cafa6e45636cb523e47e189ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11e352f441abd2fef16eb5f591ca0c5" id="r_ab11e352f441abd2fef16eb5f591ca0c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#ab11e352f441abd2fef16eb5f591ca0c5">push</a> (const Value &amp;value)</td></tr>
-<tr class="memdesc:ab11e352f441abd2fef16eb5f591ca0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a value onto the <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> stack.  <br /></td></tr>
-<tr class="separator:ab11e352f441abd2fef16eb5f591ca0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f97f93ca522dd02dbaba309fd1706c" id="r_af5f97f93ca522dd02dbaba309fd1706c"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af5f97f93ca522dd02dbaba309fd1706c">pop</a> ()</td></tr>
-<tr class="memdesc:af5f97f93ca522dd02dbaba309fd1706c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops a value from the <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> stack.  <br /></td></tr>
-<tr class="separator:af5f97f93ca522dd02dbaba309fd1706c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a498c68a38c387e9b95c41a825d322" id="r_a32a498c68a38c387e9b95c41a825d322"><td class="memItemLeft" align="right" valign="top"><a id="a32a498c68a38c387e9b95c41a825d322" name="a32a498c68a38c387e9b95c41a825d322"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>stack_size</b> () const</td></tr>
-<tr class="memdesc:a32a498c68a38c387e9b95c41a825d322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current stack size. <br /></td></tr>
-<tr class="separator:a32a498c68a38c387e9b95c41a825d322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3472c92119a55b30848bce95395fb85" id="r_af3472c92119a55b30848bce95395fb85"><td class="memItemLeft" align="right" valign="top"><a id="af3472c92119a55b30848bce95395fb85" name="af3472c92119a55b30848bce95395fb85"></a>
-const <a class="el" href="classChunk.html">Chunk</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_chunk</b> () const</td></tr>
-<tr class="memdesc:af3472c92119a55b30848bce95395fb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a const reference to the chunk. <br /></td></tr>
-<tr class="separator:af3472c92119a55b30848bce95395fb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dfe7c9aa89d1af4ca643e195ba3cd72" id="r_a9dfe7c9aa89d1af4ca643e195ba3cd72"><td class="memItemLeft" align="right" valign="top"><a id="a9dfe7c9aa89d1af4ca643e195ba3cd72" name="a9dfe7c9aa89d1af4ca643e195ba3cd72"></a>
-std::vector&lt; uint8_t &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>get_instr_ptr</b> () const</td></tr>
-<tr class="memdesc:a9dfe7c9aa89d1af4ca643e195ba3cd72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the instruction pointer (iterator). <br /></td></tr>
-<tr class="separator:a9dfe7c9aa89d1af4ca643e195ba3cd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbe0839e1ec987c9e84df46aedb9157" id="r_afdbe0839e1ec987c9e84df46aedb9157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#afdbe0839e1ec987c9e84df46aedb9157">VM</a> (<a class="el" href="classGCHeap.html">GCHeap</a> &amp;heap)</td></tr>
+<tr class="memdesc:afdbe0839e1ec987c9e84df46aedb9157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:afdbe0839e1ec987c9e84df46aedb9157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe0568994c79dcd1b823895542baf6f" id="r_aafe0568994c79dcd1b823895542baf6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vm_8hpp.html#a44e48b8dced56a906c6b461410e810c7">VMResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#aafe0568994c79dcd1b823895542baf6f">execute</a> (const <a class="el" href="classChunk.html">Chunk</a> &amp;chunk)</td></tr>
+<tr class="memdesc:aafe0568994c79dcd1b823895542baf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a bytecode chunk.  <br /></td></tr>
+<tr class="separator:aafe0568994c79dcd1b823895542baf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075ed8dca08dbbd4e4df1bff3bd9aa87" id="r_a075ed8dca08dbbd4e4df1bff3bd9aa87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a075ed8dca08dbbd4e4df1bff3bd9aa87">get_result</a> () const</td></tr>
+<tr class="memdesc:a075ed8dca08dbbd4e4df1bff3bd9aa87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the top value from the stack (result of execution)  <br /></td></tr>
+<tr class="separator:a075ed8dca08dbbd4e4df1bff3bd9aa87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaafb4177d97af17296f9622fbaec1140" id="r_aaafb4177d97af17296f9622fbaec1140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#aaafb4177d97af17296f9622fbaec1140">reset</a> ()</td></tr>
+<tr class="memdesc:aaafb4177d97af17296f9622fbaec1140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the <a class="el" href="classVM.html" title="Virtual machine for executing bytecode.">VM</a> state.  <br /></td></tr>
+<tr class="separator:aaafb4177d97af17296f9622fbaec1140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a254454c564a8ab34b4154d62eb679" id="r_a42a254454c564a8ab34b4154d62eb679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a42a254454c564a8ab34b4154d62eb679">has_error</a> () const</td></tr>
+<tr class="memdesc:a42a254454c564a8ab34b4154d62eb679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the <a class="el" href="classVM.html" title="Virtual machine for executing bytecode.">VM</a> has a runtime error.  <br /></td></tr>
+<tr class="separator:a42a254454c564a8ab34b4154d62eb679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5aef903feda5250260ead87cb9e3be8" id="r_ac5aef903feda5250260ead87cb9e3be8"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#ac5aef903feda5250260ead87cb9e3be8">get_error</a> () const</td></tr>
+<tr class="memdesc:ac5aef903feda5250260ead87cb9e3be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error message.  <br /></td></tr>
+<tr class="separator:ac5aef903feda5250260ead87cb9e3be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350e1900a8b6275af2fc71a78cd5908e" id="r_a350e1900a8b6275af2fc71a78cd5908e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a350e1900a8b6275af2fc71a78cd5908e">set_global</a> (const std::string &amp;name, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> value)</td></tr>
+<tr class="memdesc:a350e1900a8b6275af2fc71a78cd5908e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a global variable (for builtin functions)  <br /></td></tr>
+<tr class="separator:a350e1900a8b6275af2fc71a78cd5908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84b86cb26fd4e0a278b817617d164f6" id="r_af84b86cb26fd4e0a278b817617d164f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af84b86cb26fd4e0a278b817617d164f6">get_global</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:af84b86cb26fd4e0a278b817617d164f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a global variable (for builtin functions)  <br /></td></tr>
+<tr class="separator:af84b86cb26fd4e0a278b817617d164f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc5d685595dece384e2322d1ea49bce" id="r_a9cc5d685595dece384e2322d1ea49bce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a9cc5d685595dece384e2322d1ea49bce">trace_roots</a> (class <a class="el" href="classTracer.html">Tracer</a> &amp;tracer)</td></tr>
+<tr class="memdesc:a9cc5d685595dece384e2322d1ea49bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace GC roots.  <br /></td></tr>
+<tr class="separator:a9cc5d685595dece384e2322d1ea49bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ceae2dc4b120edfe2de01b764feba04" id="r_a6ceae2dc4b120edfe2de01b764feba04"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a6ceae2dc4b120edfe2de01b764feba04">stringify</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> value)</td></tr>
+<tr class="memdesc:a6ceae2dc4b120edfe2de01b764feba04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a value to its string representation.  <br /></td></tr>
+<tr class="separator:a6ceae2dc4b120edfe2de01b764feba04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a147bcdde68c813c98dac54202ec7d3c3" id="r_a147bcdde68c813c98dac54202ec7d3c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vm_8hpp.html#a44e48b8dced56a906c6b461410e810c7">VMResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a147bcdde68c813c98dac54202ec7d3c3">run</a> ()</td></tr>
+<tr class="separator:a147bcdde68c813c98dac54202ec7d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78964cfd84a5e251e5e7c17a7cf31ff9" id="r_a78964cfd84a5e251e5e7c17a7cf31ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a78964cfd84a5e251e5e7c17a7cf31ff9">push</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> value)</td></tr>
+<tr class="separator:a78964cfd84a5e251e5e7c17a7cf31ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bde6172f2a16ced2da063d27d397150" id="r_a3bde6172f2a16ced2da063d27d397150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a3bde6172f2a16ced2da063d27d397150">pop</a> ()</td></tr>
+<tr class="separator:a3bde6172f2a16ced2da063d27d397150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2ade69fe35f297f610557237d78882" id="r_acc2ade69fe35f297f610557237d78882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#acc2ade69fe35f297f610557237d78882">peek</a> (uint32_t distance=0)</td></tr>
+<tr class="separator:acc2ade69fe35f297f610557237d78882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59cb7c01fa4e7c42bca5376b0972d47" id="r_af59cb7c01fa4e7c42bca5376b0972d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af59cb7c01fa4e7c42bca5376b0972d47">reset_stack</a> ()</td></tr>
+<tr class="separator:af59cb7c01fa4e7c42bca5376b0972d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da238b9241787b779b1b7b76cb61ad4" id="r_a5da238b9241787b779b1b7b76cb61ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a5da238b9241787b779b1b7b76cb61ad4">handle_load_const</a> (uint32_t operand)</td></tr>
+<tr class="separator:a5da238b9241787b779b1b7b76cb61ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bfa7e5d388d3ed325b14409588b3a74" id="r_a9bfa7e5d388d3ed325b14409588b3a74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a9bfa7e5d388d3ed325b14409588b3a74">handle_load_null</a> ()</td></tr>
+<tr class="separator:a9bfa7e5d388d3ed325b14409588b3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4adee87f5b764ee6e10622cdb54c3f" id="r_a9a4adee87f5b764ee6e10622cdb54c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a9a4adee87f5b764ee6e10622cdb54c3f">handle_load_true</a> ()</td></tr>
+<tr class="separator:a9a4adee87f5b764ee6e10622cdb54c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54b688f54f30fa2b1db87601fe25c56" id="r_ad54b688f54f30fa2b1db87601fe25c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#ad54b688f54f30fa2b1db87601fe25c56">handle_load_false</a> ()</td></tr>
+<tr class="separator:ad54b688f54f30fa2b1db87601fe25c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f2a05b7a62f5b6d77990c261a1e166" id="r_af3f2a05b7a62f5b6d77990c261a1e166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af3f2a05b7a62f5b6d77990c261a1e166">handle_load_var</a> (uint32_t operand)</td></tr>
+<tr class="separator:af3f2a05b7a62f5b6d77990c261a1e166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9cc1c481e958e000adedbd7a021994" id="r_a0f9cc1c481e958e000adedbd7a021994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a0f9cc1c481e958e000adedbd7a021994">handle_store_var</a> (uint32_t operand)</td></tr>
+<tr class="separator:a0f9cc1c481e958e000adedbd7a021994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675e847e51f569cb07596e871066113b" id="r_a675e847e51f569cb07596e871066113b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a675e847e51f569cb07596e871066113b">handle_define_var</a> (uint32_t operand)</td></tr>
+<tr class="separator:a675e847e51f569cb07596e871066113b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a9ad75cc61b99a84a94fd25c2e65e5" id="r_a92a9ad75cc61b99a84a94fd25c2e65e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a92a9ad75cc61b99a84a94fd25c2e65e5">handle_add</a> ()</td></tr>
+<tr class="separator:a92a9ad75cc61b99a84a94fd25c2e65e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f8d4aee555cdc0a5781d7230294ba4" id="r_ae2f8d4aee555cdc0a5781d7230294ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#ae2f8d4aee555cdc0a5781d7230294ba4">handle_subtract</a> ()</td></tr>
+<tr class="separator:ae2f8d4aee555cdc0a5781d7230294ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8045f36f7aeeb03a77d46da30dde75a8" id="r_a8045f36f7aeeb03a77d46da30dde75a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a8045f36f7aeeb03a77d46da30dde75a8">handle_multiply</a> ()</td></tr>
+<tr class="separator:a8045f36f7aeeb03a77d46da30dde75a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15827778226f86af571a363059567e08" id="r_a15827778226f86af571a363059567e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a15827778226f86af571a363059567e08">handle_divide</a> ()</td></tr>
+<tr class="separator:a15827778226f86af571a363059567e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b68f8a699c97f797c74baa1350e4a3b" id="r_a0b68f8a699c97f797c74baa1350e4a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a0b68f8a699c97f797c74baa1350e4a3b">handle_negate</a> ()</td></tr>
+<tr class="separator:a0b68f8a699c97f797c74baa1350e4a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd1b4725ed1490d97712ff71b05dab1" id="r_a1fd1b4725ed1490d97712ff71b05dab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a1fd1b4725ed1490d97712ff71b05dab1">handle_equal</a> ()</td></tr>
+<tr class="separator:a1fd1b4725ed1490d97712ff71b05dab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6336230ad4f30165c0edbefda282a476" id="r_a6336230ad4f30165c0edbefda282a476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a6336230ad4f30165c0edbefda282a476">handle_not_equal</a> ()</td></tr>
+<tr class="separator:a6336230ad4f30165c0edbefda282a476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afded9936a9d77a24020bedc8f8218e58" id="r_afded9936a9d77a24020bedc8f8218e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#afded9936a9d77a24020bedc8f8218e58">handle_less</a> ()</td></tr>
+<tr class="separator:afded9936a9d77a24020bedc8f8218e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ff41dc3d8aa79de4002e79032095bd" id="r_a75ff41dc3d8aa79de4002e79032095bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a75ff41dc3d8aa79de4002e79032095bd">handle_greater</a> ()</td></tr>
+<tr class="separator:a75ff41dc3d8aa79de4002e79032095bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7057a605d9392f12f14dbb0444644d50" id="r_a7057a605d9392f12f14dbb0444644d50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a7057a605d9392f12f14dbb0444644d50">handle_less_equal</a> ()</td></tr>
+<tr class="separator:a7057a605d9392f12f14dbb0444644d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ca39485e355ea417caf1c35b835856" id="r_af7ca39485e355ea417caf1c35b835856"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af7ca39485e355ea417caf1c35b835856">handle_greater_equal</a> ()</td></tr>
+<tr class="separator:af7ca39485e355ea417caf1c35b835856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af164afccc1992cc186256680a2da3e96" id="r_af164afccc1992cc186256680a2da3e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af164afccc1992cc186256680a2da3e96">handle_not</a> ()</td></tr>
+<tr class="separator:af164afccc1992cc186256680a2da3e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ef4a0bb068e4013e3b4d70a58022d1" id="r_a44ef4a0bb068e4013e3b4d70a58022d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a44ef4a0bb068e4013e3b4d70a58022d1">handle_and</a> ()</td></tr>
+<tr class="separator:a44ef4a0bb068e4013e3b4d70a58022d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408be175e6ad54060cc3b4e994b3f09d" id="r_a408be175e6ad54060cc3b4e994b3f09d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a408be175e6ad54060cc3b4e994b3f09d">handle_or</a> ()</td></tr>
+<tr class="separator:a408be175e6ad54060cc3b4e994b3f09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5894f540f53a81debe570bd97c86cc81" id="r_a5894f540f53a81debe570bd97c86cc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a5894f540f53a81debe570bd97c86cc81">handle_jump</a> (uint32_t operand)</td></tr>
+<tr class="separator:a5894f540f53a81debe570bd97c86cc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ecffe8f595568104b5bd2ea5443b0c" id="r_a31ecffe8f595568104b5bd2ea5443b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a31ecffe8f595568104b5bd2ea5443b0c">handle_jump_if_false</a> (uint32_t operand)</td></tr>
+<tr class="separator:a31ecffe8f595568104b5bd2ea5443b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8ab9176e3cd5aee4e0b85056e97350" id="r_a8b8ab9176e3cd5aee4e0b85056e97350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a8b8ab9176e3cd5aee4e0b85056e97350">handle_jump_if_true</a> (uint32_t operand)</td></tr>
+<tr class="separator:a8b8ab9176e3cd5aee4e0b85056e97350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7ab3923b953db7596a37d533fd31ee" id="r_aca7ab3923b953db7596a37d533fd31ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#aca7ab3923b953db7596a37d533fd31ee">handle_call</a> (uint32_t argc)</td></tr>
+<tr class="separator:aca7ab3923b953db7596a37d533fd31ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ea8f52172bece878d4ecc95f8af467" id="r_a34ea8f52172bece878d4ecc95f8af467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a34ea8f52172bece878d4ecc95f8af467">handle_return</a> ()</td></tr>
+<tr class="separator:a34ea8f52172bece878d4ecc95f8af467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6205914e6d88603afcf81ef91f512f" id="r_acc6205914e6d88603afcf81ef91f512f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#acc6205914e6d88603afcf81ef91f512f">handle_build_array</a> (uint32_t count)</td></tr>
+<tr class="separator:acc6205914e6d88603afcf81ef91f512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ca85c18977c94cef158515a2336b4f" id="r_a67ca85c18977c94cef158515a2336b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a67ca85c18977c94cef158515a2336b4f">handle_build_dict</a> (uint32_t count)</td></tr>
+<tr class="separator:a67ca85c18977c94cef158515a2336b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb75d05cd2563af546cb3d7f581ab88" id="r_a4cb75d05cd2563af546cb3d7f581ab88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a4cb75d05cd2563af546cb3d7f581ab88">handle_pop</a> ()</td></tr>
+<tr class="separator:a4cb75d05cd2563af546cb3d7f581ab88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1535a11f27251ed8c256b4819ead72ed" id="r_a1535a11f27251ed8c256b4819ead72ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a1535a11f27251ed8c256b4819ead72ed">handle_dup</a> ()</td></tr>
+<tr class="separator:a1535a11f27251ed8c256b4819ead72ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60261a508ec5ab686593444c61c9bd95" id="r_a60261a508ec5ab686593444c61c9bd95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a60261a508ec5ab686593444c61c9bd95">is_truthy</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> value)</td></tr>
+<tr class="separator:a60261a508ec5ab686593444c61c9bd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1b6a91645a4ceaf53b792597465f4a" id="r_a9a1b6a91645a4ceaf53b792597465f4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a9a1b6a91645a4ceaf53b792597465f4a">are_equal</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> left, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> right)</td></tr>
+<tr class="separator:a9a1b6a91645a4ceaf53b792597465f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b789aa273953d01133b1c0663ffb6e2" id="r_a7b789aa273953d01133b1c0663ffb6e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCallFrame.html">CallFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a7b789aa273953d01133b1c0663ffb6e2">current_frame</a> ()</td></tr>
+<tr class="separator:a7b789aa273953d01133b1c0663ffb6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a6d823c6cf819ef0e3d69a82d9d2ac" id="r_af4a6d823c6cf819ef0e3d69a82d9d2ac"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classChunk.html">Chunk</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#af4a6d823c6cf819ef0e3d69a82d9d2ac">current_chunk</a> ()</td></tr>
+<tr class="separator:af4a6d823c6cf819ef0e3d69a82d9d2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f8233b5ab6ff20197b702e6923d972" id="r_a93f8233b5ab6ff20197b702e6923d972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a93f8233b5ab6ff20197b702e6923d972">runtime_error</a> (const std::string &amp;message)</td></tr>
+<tr class="separator:a93f8233b5ab6ff20197b702e6923d972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d979c0541fca35a271bf8b19ab1061" id="r_a15d979c0541fca35a271bf8b19ab1061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a15d979c0541fca35a271bf8b19ab1061">runtime_error</a> (const std::string &amp;message, uint32_t instruction)</td></tr>
+<tr class="separator:a15d979c0541fca35a271bf8b19ab1061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1102eb98687034a371dd87f0aa292e" id="r_a4c1102eb98687034a371dd87f0aa292e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a4c1102eb98687034a371dd87f0aa292e">push_environment</a> (std::shared_ptr&lt; <a class="el" href="classEnvironment.html">Environment</a> &gt; env)</td></tr>
+<tr class="separator:a4c1102eb98687034a371dd87f0aa292e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d011ab7a3ce34d580cee7ed9130bc68" id="r_a5d011ab7a3ce34d580cee7ed9130bc68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a5d011ab7a3ce34d580cee7ed9130bc68">pop_environment</a> ()</td></tr>
+<tr class="separator:a5d011ab7a3ce34d580cee7ed9130bc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a978600250532b0b2bca5203a587ca" id="r_a30a978600250532b0b2bca5203a587ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a30a978600250532b0b2bca5203a587ca">call_builtin_function</a> (<a class="el" href="classPEBBLBuiltinFunction.html">PEBBLBuiltinFunction</a> *func, const std::vector&lt; <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &gt; &amp;args)</td></tr>
+<tr class="separator:a30a978600250532b0b2bca5203a587ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a53dadf3be3d01cb8a3340b12d21ae" id="r_a52a53dadf3be3d01cb8a3340b12d21ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a52a53dadf3be3d01cb8a3340b12d21ae">call_function</a> (<a class="el" href="classPEBBLFunction.html">PEBBLFunction</a> *function, uint32_t argc)</td></tr>
+<tr class="separator:a52a53dadf3be3d01cb8a3340b12d21ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133fee86cd0939fcb9f0f039ddad688d" id="r_a133fee86cd0939fcb9f0f039ddad688d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a133fee86cd0939fcb9f0f039ddad688d">call_builtin</a> (<a class="el" href="classPEBBLBuiltinFunction.html">PEBBLBuiltinFunction</a> *function, uint32_t argc)</td></tr>
+<tr class="separator:a133fee86cd0939fcb9f0f039ddad688d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fba82e8c0b13866a45f73458fbef82d" id="r_a9fba82e8c0b13866a45f73458fbef82d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a9fba82e8c0b13866a45f73458fbef82d">perform_numeric_operation</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> left, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> right, <a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a> operation, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp;result)</td></tr>
+<tr class="separator:a9fba82e8c0b13866a45f73458fbef82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa32bdb2e7ad203fa47c3664b1d9cd4" id="r_afaa32bdb2e7ad203fa47c3664b1d9cd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#afaa32bdb2e7ad203fa47c3664b1d9cd4">perform_comparison_operation</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> left, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> right, <a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a> operation, <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp;result)</td></tr>
+<tr class="separator:afaa32bdb2e7ad203fa47c3664b1d9cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acab4833911b8fc71cadb8b45d4970955" id="r_acab4833911b8fc71cadb8b45d4970955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGCHeap.html">GCHeap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#acab4833911b8fc71cadb8b45d4970955">heap_</a></td></tr>
+<tr class="separator:acab4833911b8fc71cadb8b45d4970955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928c0c939bbdb36c769840341f6625b3" id="r_a928c0c939bbdb36c769840341f6625b3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a928c0c939bbdb36c769840341f6625b3">stack_</a></td></tr>
+<tr class="separator:a928c0c939bbdb36c769840341f6625b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac82899e2bd22fa7d9fa4cb2c0f4a62" id="r_a6ac82899e2bd22fa7d9fa4cb2c0f4a62"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structCallFrame.html">CallFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a6ac82899e2bd22fa7d9fa4cb2c0f4a62">frames_</a></td></tr>
+<tr class="separator:a6ac82899e2bd22fa7d9fa4cb2c0f4a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d20f8630a5da46b0c617ef6bf4b9f66" id="r_a4d20f8630a5da46b0c617ef6bf4b9f66"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classEnvironment.html">Environment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a4d20f8630a5da46b0c617ef6bf4b9f66">global_env_</a></td></tr>
+<tr class="separator:a4d20f8630a5da46b0c617ef6bf4b9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5f45aa3f9d8e85f0fd447daf08c676" id="r_a3f5f45aa3f9d8e85f0fd447daf08c676"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classEnvironment.html">Environment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a3f5f45aa3f9d8e85f0fd447daf08c676">current_env_</a></td></tr>
+<tr class="separator:a3f5f45aa3f9d8e85f0fd447daf08c676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e8a393cd2c34bcbb9597f777f794bb" id="r_a60e8a393cd2c34bcbb9597f777f794bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a60e8a393cd2c34bcbb9597f777f794bb">has_error_</a></td></tr>
+<tr class="separator:a60e8a393cd2c34bcbb9597f777f794bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc5118affe929c5d273fd46f2935df9" id="r_a6fc5118affe929c5d273fd46f2935df9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a6fc5118affe929c5d273fd46f2935df9">error_message_</a></td></tr>
+<tr class="separator:a6fc5118affe929c5d273fd46f2935df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3cbeb718fdc258a3697b72cc204a5bce" id="r_a3cbeb718fdc258a3697b72cc204a5bce"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a3cbeb718fdc258a3697b72cc204a5bce">STACK_MAX</a> = 256</td></tr>
+<tr class="separator:a3cbeb718fdc258a3697b72cc204a5bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f578cce9c3829f188c9be5c82d5bb67" id="r_a5f578cce9c3829f188c9be5c82d5bb67"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVM.html#a5f578cce9c3829f188c9be5c82d5bb67">FRAMES_MAX</a> = 64</td></tr>
+<tr class="separator:a5f578cce9c3829f188c9be5c82d5bb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Virtual Machine for interpreting bytecode in a <a class="el" href="classChunk.html">Chunk</a>. </p>
+<div class="textblock"><p>Virtual machine for executing bytecode. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1d317e9453b7f5ac6299fd5c46ced08b" name="a1d317e9453b7f5ac6299fd5c46ced08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d317e9453b7f5ac6299fd5c46ced08b">&#9670;&#160;</a></span>VM()</h2>
+<a id="afdbe0839e1ec987c9e84df46aedb9157" name="afdbe0839e1ec987c9e84df46aedb9157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbe0839e1ec987c9e84df46aedb9157">&#9670;&#160;</a></span>VM()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,8 +260,8 @@ std::vector&lt; uint8_t &gt;::const_iterator&#160;</td><td class="memItemRight" 
         <tr>
           <td class="memname">VM::VM </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classChunk.html">Chunk</a> &amp;&#160;</td>
-          <td class="paramname"><em>chunk_ref</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classGCHeap.html">GCHeap</a> &amp;&#160;</td>
+          <td class="paramname"><em>heap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -144,10 +272,10 @@ std::vector&lt; uint8_t &gt;::const_iterator&#160;</td><td class="memItemRight" 
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> operating on the given <a class="el" href="classChunk.html">Chunk</a>. </p>
+<p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">chunk_ref</td><td>Reference to the bytecode chunk to execute. </td></tr>
+    <tr><td class="paramname">heap</td><td>GC heap for object allocation </td></tr>
   </table>
   </dd>
 </dl>
@@ -155,14 +283,1348 @@ std::vector&lt; uint8_t &gt;::const_iterator&#160;</td><td class="memItemRight" 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5f97f93ca522dd02dbaba309fd1706c" name="af5f97f93ca522dd02dbaba309fd1706c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f97f93ca522dd02dbaba309fd1706c">&#9670;&#160;</a></span>pop()</h2>
+<a id="a9a1b6a91645a4ceaf53b792597465f4a" name="a9a1b6a91645a4ceaf53b792597465f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1b6a91645a4ceaf53b792597465f4a">&#9670;&#160;</a></span>are_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::are_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a133fee86cd0939fcb9f0f039ddad688d" name="a133fee86cd0939fcb9f0f039ddad688d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133fee86cd0939fcb9f0f039ddad688d">&#9670;&#160;</a></span>call_builtin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::call_builtin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPEBBLBuiltinFunction.html">PEBBLBuiltinFunction</a> *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30a978600250532b0b2bca5203a587ca" name="a30a978600250532b0b2bca5203a587ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a978600250532b0b2bca5203a587ca">&#9670;&#160;</a></span>call_builtin_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> VM::call_builtin_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPEBBLBuiltinFunction.html">PEBBLBuiltinFunction</a> *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52a53dadf3be3d01cb8a3340b12d21ae" name="a52a53dadf3be3d01cb8a3340b12d21ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a53dadf3be3d01cb8a3340b12d21ae">&#9670;&#160;</a></span>call_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::call_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPEBBLFunction.html">PEBBLFunction</a> *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4a6d823c6cf819ef0e3d69a82d9d2ac" name="af4a6d823c6cf819ef0e3d69a82d9d2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a6d823c6cf819ef0e3d69a82d9d2ac">&#9670;&#160;</a></span>current_chunk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classChunk.html">Chunk</a> &amp; VM::current_chunk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b789aa273953d01133b1c0663ffb6e2" name="a7b789aa273953d01133b1c0663ffb6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b789aa273953d01133b1c0663ffb6e2">&#9670;&#160;</a></span>current_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCallFrame.html">CallFrame</a> &amp; VM::current_frame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafe0568994c79dcd1b823895542baf6f" name="aafe0568994c79dcd1b823895542baf6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe0568994c79dcd1b823895542baf6f">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Value VM::pop </td>
+          <td class="memname"><a class="el" href="vm_8hpp.html#a44e48b8dced56a906c6b461410e810c7">VMResult</a> VM::execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classChunk.html">Chunk</a> &amp;&#160;</td>
+          <td class="paramname"><em>chunk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute a bytecode chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chunk</td><td>The bytecode chunk to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Execution result </dd></dl>
+
+</div>
+</div>
+<a id="ac5aef903feda5250260ead87cb9e3be8" name="ac5aef903feda5250260ead87cb9e3be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5aef903feda5250260ead87cb9e3be8">&#9670;&#160;</a></span>get_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; VM::get_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the last error message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Error message </dd></dl>
+
+</div>
+</div>
+<a id="af84b86cb26fd4e0a278b817617d164f6" name="af84b86cb26fd4e0a278b817617d164f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84b86cb26fd4e0a278b817617d164f6">&#9670;&#160;</a></span>get_global()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> VM::get_global </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a global variable (for builtin functions) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Variable name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Variable value </dd></dl>
+
+</div>
+</div>
+<a id="a075ed8dca08dbbd4e4df1bff3bd9aa87" name="a075ed8dca08dbbd4e4df1bff3bd9aa87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075ed8dca08dbbd4e4df1bff3bd9aa87">&#9670;&#160;</a></span>get_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> VM::get_result </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the top value from the stack (result of execution) </p>
+<dl class="section return"><dt>Returns</dt><dd>Top stack value </dd></dl>
+
+</div>
+</div>
+<a id="a92a9ad75cc61b99a84a94fd25c2e65e5" name="a92a9ad75cc61b99a84a94fd25c2e65e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a9ad75cc61b99a84a94fd25c2e65e5">&#9670;&#160;</a></span>handle_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_add </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44ef4a0bb068e4013e3b4d70a58022d1" name="a44ef4a0bb068e4013e3b4d70a58022d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ef4a0bb068e4013e3b4d70a58022d1">&#9670;&#160;</a></span>handle_and()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_and </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc6205914e6d88603afcf81ef91f512f" name="acc6205914e6d88603afcf81ef91f512f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6205914e6d88603afcf81ef91f512f">&#9670;&#160;</a></span>handle_build_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_build_array </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67ca85c18977c94cef158515a2336b4f" name="a67ca85c18977c94cef158515a2336b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ca85c18977c94cef158515a2336b4f">&#9670;&#160;</a></span>handle_build_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_build_dict </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca7ab3923b953db7596a37d533fd31ee" name="aca7ab3923b953db7596a37d533fd31ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7ab3923b953db7596a37d533fd31ee">&#9670;&#160;</a></span>handle_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_call </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>argc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a675e847e51f569cb07596e871066113b" name="a675e847e51f569cb07596e871066113b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675e847e51f569cb07596e871066113b">&#9670;&#160;</a></span>handle_define_var()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_define_var </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15827778226f86af571a363059567e08" name="a15827778226f86af571a363059567e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15827778226f86af571a363059567e08">&#9670;&#160;</a></span>handle_divide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_divide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1535a11f27251ed8c256b4819ead72ed" name="a1535a11f27251ed8c256b4819ead72ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1535a11f27251ed8c256b4819ead72ed">&#9670;&#160;</a></span>handle_dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_dup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fd1b4725ed1490d97712ff71b05dab1" name="a1fd1b4725ed1490d97712ff71b05dab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd1b4725ed1490d97712ff71b05dab1">&#9670;&#160;</a></span>handle_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_equal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75ff41dc3d8aa79de4002e79032095bd" name="a75ff41dc3d8aa79de4002e79032095bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ff41dc3d8aa79de4002e79032095bd">&#9670;&#160;</a></span>handle_greater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_greater </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7ca39485e355ea417caf1c35b835856" name="af7ca39485e355ea417caf1c35b835856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ca39485e355ea417caf1c35b835856">&#9670;&#160;</a></span>handle_greater_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_greater_equal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5894f540f53a81debe570bd97c86cc81" name="a5894f540f53a81debe570bd97c86cc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5894f540f53a81debe570bd97c86cc81">&#9670;&#160;</a></span>handle_jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_jump </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31ecffe8f595568104b5bd2ea5443b0c" name="a31ecffe8f595568104b5bd2ea5443b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ecffe8f595568104b5bd2ea5443b0c">&#9670;&#160;</a></span>handle_jump_if_false()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_jump_if_false </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b8ab9176e3cd5aee4e0b85056e97350" name="a8b8ab9176e3cd5aee4e0b85056e97350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8ab9176e3cd5aee4e0b85056e97350">&#9670;&#160;</a></span>handle_jump_if_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_jump_if_true </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afded9936a9d77a24020bedc8f8218e58" name="afded9936a9d77a24020bedc8f8218e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afded9936a9d77a24020bedc8f8218e58">&#9670;&#160;</a></span>handle_less()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_less </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7057a605d9392f12f14dbb0444644d50" name="a7057a605d9392f12f14dbb0444644d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7057a605d9392f12f14dbb0444644d50">&#9670;&#160;</a></span>handle_less_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_less_equal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da238b9241787b779b1b7b76cb61ad4" name="a5da238b9241787b779b1b7b76cb61ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da238b9241787b779b1b7b76cb61ad4">&#9670;&#160;</a></span>handle_load_const()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_load_const </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad54b688f54f30fa2b1db87601fe25c56" name="ad54b688f54f30fa2b1db87601fe25c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54b688f54f30fa2b1db87601fe25c56">&#9670;&#160;</a></span>handle_load_false()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_load_false </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bfa7e5d388d3ed325b14409588b3a74" name="a9bfa7e5d388d3ed325b14409588b3a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bfa7e5d388d3ed325b14409588b3a74">&#9670;&#160;</a></span>handle_load_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_load_null </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a4adee87f5b764ee6e10622cdb54c3f" name="a9a4adee87f5b764ee6e10622cdb54c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4adee87f5b764ee6e10622cdb54c3f">&#9670;&#160;</a></span>handle_load_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_load_true </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3f2a05b7a62f5b6d77990c261a1e166" name="af3f2a05b7a62f5b6d77990c261a1e166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f2a05b7a62f5b6d77990c261a1e166">&#9670;&#160;</a></span>handle_load_var()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_load_var </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8045f36f7aeeb03a77d46da30dde75a8" name="a8045f36f7aeeb03a77d46da30dde75a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8045f36f7aeeb03a77d46da30dde75a8">&#9670;&#160;</a></span>handle_multiply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_multiply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b68f8a699c97f797c74baa1350e4a3b" name="a0b68f8a699c97f797c74baa1350e4a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b68f8a699c97f797c74baa1350e4a3b">&#9670;&#160;</a></span>handle_negate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_negate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af164afccc1992cc186256680a2da3e96" name="af164afccc1992cc186256680a2da3e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af164afccc1992cc186256680a2da3e96">&#9670;&#160;</a></span>handle_not()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_not </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6336230ad4f30165c0edbefda282a476" name="a6336230ad4f30165c0edbefda282a476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6336230ad4f30165c0edbefda282a476">&#9670;&#160;</a></span>handle_not_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_not_equal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a408be175e6ad54060cc3b4e994b3f09d" name="a408be175e6ad54060cc3b4e994b3f09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408be175e6ad54060cc3b4e994b3f09d">&#9670;&#160;</a></span>handle_or()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_or </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb75d05cd2563af546cb3d7f581ab88" name="a4cb75d05cd2563af546cb3d7f581ab88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb75d05cd2563af546cb3d7f581ab88">&#9670;&#160;</a></span>handle_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34ea8f52172bece878d4ecc95f8af467" name="a34ea8f52172bece878d4ecc95f8af467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ea8f52172bece878d4ecc95f8af467">&#9670;&#160;</a></span>handle_return()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_return </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f9cc1c481e958e000adedbd7a021994" name="a0f9cc1c481e958e000adedbd7a021994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9cc1c481e958e000adedbd7a021994">&#9670;&#160;</a></span>handle_store_var()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_store_var </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2f8d4aee555cdc0a5781d7230294ba4" name="ae2f8d4aee555cdc0a5781d7230294ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f8d4aee555cdc0a5781d7230294ba4">&#9670;&#160;</a></span>handle_subtract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::handle_subtract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42a254454c564a8ab34b4154d62eb679" name="a42a254454c564a8ab34b4154d62eb679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a254454c564a8ab34b4154d62eb679">&#9670;&#160;</a></span>has_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::has_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the <a class="el" href="classVM.html" title="Virtual machine for executing bytecode.">VM</a> has a runtime error. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if there was a runtime error </dd></dl>
+
+</div>
+</div>
+<a id="a60261a508ec5ab686593444c61c9bd95" name="a60261a508ec5ab686593444c61c9bd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60261a508ec5ab686593444c61c9bd95">&#9670;&#160;</a></span>is_truthy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::is_truthy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc2ade69fe35f297f610557237d78882" name="acc2ade69fe35f297f610557237d78882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc2ade69fe35f297f610557237d78882">&#9670;&#160;</a></span>peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> VM::peek </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>distance</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa32bdb2e7ad203fa47c3664b1d9cd4" name="afaa32bdb2e7ad203fa47c3664b1d9cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa32bdb2e7ad203fa47c3664b1d9cd4">&#9670;&#160;</a></span>perform_comparison_operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::perform_comparison_operation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a>&#160;</td>
+          <td class="paramname"><em>operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fba82e8c0b13866a45f73458fbef82d" name="a9fba82e8c0b13866a45f73458fbef82d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fba82e8c0b13866a45f73458fbef82d">&#9670;&#160;</a></span>perform_numeric_operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::perform_numeric_operation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a>&#160;</td>
+          <td class="paramname"><em>operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bde6172f2a16ced2da063d27d397150" name="a3bde6172f2a16ced2da063d27d397150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bde6172f2a16ced2da063d27d397150">&#9670;&#160;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> VM::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d011ab7a3ce34d580cee7ed9130bc68" name="a5d011ab7a3ce34d580cee7ed9130bc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d011ab7a3ce34d580cee7ed9130bc68">&#9670;&#160;</a></span>pop_environment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::pop_environment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78964cfd84a5e251e5e7c17a7cf31ff9" name="a78964cfd84a5e251e5e7c17a7cf31ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78964cfd84a5e251e5e7c17a7cf31ff9">&#9670;&#160;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c1102eb98687034a371dd87f0aa292e" name="a4c1102eb98687034a371dd87f0aa292e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1102eb98687034a371dd87f0aa292e">&#9670;&#160;</a></span>push_environment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::push_environment </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classEnvironment.html">Environment</a> &gt;&#160;</td>
+          <td class="paramname"><em>env</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaafb4177d97af17296f9622fbaec1140" name="aaafb4177d97af17296f9622fbaec1140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaafb4177d97af17296f9622fbaec1140">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -170,40 +1632,414 @@ std::vector&lt; uint8_t &gt;::const_iterator&#160;</td><td class="memItemRight" 
       </table>
 </div><div class="memdoc">
 
-<p>Pops a value from the <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> stack. </p>
-<dl class="section return"><dt>Returns</dt><dd>The popped value. </dd></dl>
+<p>Reset the <a class="el" href="classVM.html" title="Virtual machine for executing bytecode.">VM</a> state. </p>
 
 </div>
 </div>
-<a id="ab11e352f441abd2fef16eb5f591ca0c5" name="ab11e352f441abd2fef16eb5f591ca0c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab11e352f441abd2fef16eb5f591ca0c5">&#9670;&#160;</a></span>push()</h2>
+<a id="af59cb7c01fa4e7c42bca5376b0972d47" name="af59cb7c01fa4e7c42bca5376b0972d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59cb7c01fa4e7c42bca5376b0972d47">&#9670;&#160;</a></span>reset_stack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::reset_stack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a147bcdde68c813c98dac54202ec7d3c3" name="a147bcdde68c813c98dac54202ec7d3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147bcdde68c813c98dac54202ec7d3c3">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vm_8hpp.html#a44e48b8dced56a906c6b461410e810c7">VMResult</a> VM::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93f8233b5ab6ff20197b702e6923d972" name="a93f8233b5ab6ff20197b702e6923d972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f8233b5ab6ff20197b702e6923d972">&#9670;&#160;</a></span>runtime_error() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::runtime_error </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d979c0541fca35a271bf8b19ab1061" name="a15d979c0541fca35a271bf8b19ab1061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d979c0541fca35a271bf8b19ab1061">&#9670;&#160;</a></span>runtime_error() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::runtime_error </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>instruction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a350e1900a8b6275af2fc71a78cd5908e" name="a350e1900a8b6275af2fc71a78cd5908e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350e1900a8b6275af2fc71a78cd5908e">&#9670;&#160;</a></span>set_global()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VM::push </td>
+          <td class="memname">void VM::set_global </td>
           <td>(</td>
-          <td class="paramtype">const Value &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pushes a value onto the <a class="el" href="classVM.html" title="Virtual Machine for interpreting bytecode in a Chunk.">VM</a> stack. </p>
+<p>Set a global variable (for builtin functions) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value to push. </td></tr>
+    <tr><td class="paramname">name</td><td>Variable name </td></tr>
+    <tr><td class="paramname">value</td><td>Variable value </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
+<a id="a6ceae2dc4b120edfe2de01b764feba04" name="a6ceae2dc4b120edfe2de01b764feba04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ceae2dc4b120edfe2de01b764feba04">&#9670;&#160;</a></span>stringify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VM::stringify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a value to its string representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to stringify </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String representation </dd></dl>
+
+</div>
+</div>
+<a id="a9cc5d685595dece384e2322d1ea49bce" name="a9cc5d685595dece384e2322d1ea49bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc5d685595dece384e2322d1ea49bce">&#9670;&#160;</a></span>trace_roots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VM::trace_roots </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classTracer.html">Tracer</a> &amp;&#160;</td>
+          <td class="paramname"><em>tracer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trace GC roots. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tracer</td><td>GC tracer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f5f45aa3f9d8e85f0fd447daf08c676" name="a3f5f45aa3f9d8e85f0fd447daf08c676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5f45aa3f9d8e85f0fd447daf08c676">&#9670;&#160;</a></span>current_env_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classEnvironment.html">Environment</a>&gt; VM::current_env_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc5118affe929c5d273fd46f2935df9" name="a6fc5118affe929c5d273fd46f2935df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc5118affe929c5d273fd46f2935df9">&#9670;&#160;</a></span>error_message_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VM::error_message_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac82899e2bd22fa7d9fa4cb2c0f4a62" name="a6ac82899e2bd22fa7d9fa4cb2c0f4a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac82899e2bd22fa7d9fa4cb2c0f4a62">&#9670;&#160;</a></span>frames_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structCallFrame.html">CallFrame</a>&gt; VM::frames_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f578cce9c3829f188c9be5c82d5bb67" name="a5f578cce9c3829f188c9be5c82d5bb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f578cce9c3829f188c9be5c82d5bb67">&#9670;&#160;</a></span>FRAMES_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t VM::FRAMES_MAX = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d20f8630a5da46b0c617ef6bf4b9f66" name="a4d20f8630a5da46b0c617ef6bf4b9f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d20f8630a5da46b0c617ef6bf4b9f66">&#9670;&#160;</a></span>global_env_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classEnvironment.html">Environment</a>&gt; VM::global_env_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60e8a393cd2c34bcbb9597f777f794bb" name="a60e8a393cd2c34bcbb9597f777f794bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e8a393cd2c34bcbb9597f777f794bb">&#9670;&#160;</a></span>has_error_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VM::has_error_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acab4833911b8fc71cadb8b45d4970955" name="acab4833911b8fc71cadb8b45d4970955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab4833911b8fc71cadb8b45d4970955">&#9670;&#160;</a></span>heap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGCHeap.html">GCHeap</a>&amp; VM::heap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a928c0c939bbdb36c769840341f6625b3" name="a928c0c939bbdb36c769840341f6625b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928c0c939bbdb36c769840341f6625b3">&#9670;&#160;</a></span>stack_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structPEBBLObject.html">PEBBLObject</a>&gt; VM::stack_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cbeb718fdc258a3697b72cc204a5bce" name="a3cbeb718fdc258a3697b72cc204a5bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbeb718fdc258a3697b72cc204a5bce">&#9670;&#160;</a></span>STACK_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t VM::STACK_MAX = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>interpreter/runtime/<a class="el" href="vm_8hpp_source.html">vm.hpp</a></li>
-<li>interpreter/runtime/<b>vm.cpp</b></li>
+<li>src/runtime/bytecode/<a class="el" href="vm_8hpp_source.html">vm.hpp</a></li>
+<li>src/runtime/bytecode/<a class="el" href="vm_8cpp.html">vm.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

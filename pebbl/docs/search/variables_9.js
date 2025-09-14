@@ -4,5 +4,7 @@ var searchData=
   ['lexeme_1',['lexeme',['../structToken.html#abbff29ede445ed4a8520580f12490832',1,'Token']]],
   ['lexer_5f_2',['lexer_',['../classASTGenerator.html#a92e43cfb57ac8178e55bb0e6a6dac939',1,'ASTGenerator']]],
   ['line_3',['line',['../structToken.html#ade6deee497c3814a319db092bc0f4f7f',1,'Token']]],
-  ['line_5f_4',['line_',['../classLexer.html#add5cb6f5a87a005b09d9587895280913',1,'Lexer']]]
+  ['line_5f_4',['line_',['../classLexer.html#add5cb6f5a87a005b09d9587895280913',1,'Lexer']]],
+  ['loop_5fexit_5',['loop_exit',['../structCompilationScope.html#a66a3dba4e536f7e907d27b7582532e6b',1,'CompilationScope']]],
+  ['loop_5fstart_6',['loop_start',['../structCompilationScope.html#a075570b4112a9ffd1c9d0bcd3cf6cffa',1,'CompilationScope']]]
 ];

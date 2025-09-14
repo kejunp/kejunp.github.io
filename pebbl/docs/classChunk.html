@@ -72,54 +72,66 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classChunk-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Chunk Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="chunk_8hpp_source.html">chunk.hpp</a>&gt;</code></p>
+<p>Bytecode chunk containing instructions and constants.  
+ <a href="classChunk.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bytecode_8hpp_source.html">bytecode.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41a7fb3fcdb7521e16cd72a65ed090c5" id="r_a41a7fb3fcdb7521e16cd72a65ed090c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a41a7fb3fcdb7521e16cd72a65ed090c5">Chunk</a> ()=default</td></tr>
-<tr class="separator:a41a7fb3fcdb7521e16cd72a65ed090c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37ac71c006fe0c7ac620f375ea5d5b5" id="r_ab37ac71c006fe0c7ac620f375ea5d5b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#ab37ac71c006fe0c7ac620f375ea5d5b5">~Chunk</a> ()=default</td></tr>
-<tr class="separator:ab37ac71c006fe0c7ac620f375ea5d5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2cc4c1b0850244f93a8aae26766d22" id="r_a3f2cc4c1b0850244f93a8aae26766d22"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a3f2cc4c1b0850244f93a8aae26766d22">add_constant</a> (<a class="el" href="value_8hpp.html#a26310d1d7e0f767c02bf4dc71c929bcc">Value</a> constant)</td></tr>
-<tr class="memdesc:a3f2cc4c1b0850244f93a8aae26766d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a constant to the constant pool of this (<a class="el" href="classChunk.html">Chunk</a> class)  <br /></td></tr>
-<tr class="separator:a3f2cc4c1b0850244f93a8aae26766d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7e7ba1595c105d018c0f9b86c98d68" id="r_adf7e7ba1595c105d018c0f9b86c98d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#adf7e7ba1595c105d018c0f9b86c98d68">write_constant</a> (<a class="el" href="value_8hpp.html#a26310d1d7e0f767c02bf4dc71c929bcc">Value</a> constant, size_t line)</td></tr>
-<tr class="memdesc:adf7e7ba1595c105d018c0f9b86c98d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the opcodes for a constant (does not just write to pool)  <br /></td></tr>
-<tr class="separator:adf7e7ba1595c105d018c0f9b86c98d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db627587cd44332ac57545627de1713" id="r_a2db627587cd44332ac57545627de1713"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a2db627587cd44332ac57545627de1713">get_line</a> (size_t instruction) const</td></tr>
-<tr class="memdesc:a2db627587cd44332ac57545627de1713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the line of a given instruction offset.  <br /></td></tr>
-<tr class="separator:a2db627587cd44332ac57545627de1713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f904f686583189e15d2bde149e56b6" id="r_ac9f904f686583189e15d2bde149e56b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#ac9f904f686583189e15d2bde149e56b6">emit</a> (uint8_t byte, size_t line)</td></tr>
-<tr class="memdesc:ac9f904f686583189e15d2bde149e56b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a opcode this (<a class="el" href="classChunk.html">Chunk</a> class)  <br /></td></tr>
-<tr class="separator:ac9f904f686583189e15d2bde149e56b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88a54b82dcb53a09830b5498b4626f5" id="r_ad88a54b82dcb53a09830b5498b4626f5"><td class="memTemplParams" colspan="2">template&lt;IsOpcode... Bytes&gt; </td></tr>
-<tr class="memitem:ad88a54b82dcb53a09830b5498b4626f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classChunk.html#ad88a54b82dcb53a09830b5498b4626f5">emit_many</a> (Bytes... bytes, size_t line)</td></tr>
-<tr class="memdesc:ad88a54b82dcb53a09830b5498b4626f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes many opcodes to this (<a class="el" href="classChunk.html">Chunk</a> class)  <br /></td></tr>
-<tr class="separator:ad88a54b82dcb53a09830b5498b4626f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302f187081aa88c34eac98fcf91c5911" id="r_a302f187081aa88c34eac98fcf91c5911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a302f187081aa88c34eac98fcf91c5911">add_instruction</a> (<a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a> opcode)</td></tr>
+<tr class="memdesc:a302f187081aa88c34eac98fcf91c5911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an instruction to the chunk.  <br /></td></tr>
+<tr class="separator:a302f187081aa88c34eac98fcf91c5911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f0d55672fc60d4ca09a08667174b01" id="r_a01f0d55672fc60d4ca09a08667174b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a01f0d55672fc60d4ca09a08667174b01">add_instruction</a> (<a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a> opcode, uint32_t operand)</td></tr>
+<tr class="memdesc:a01f0d55672fc60d4ca09a08667174b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an instruction with operand.  <br /></td></tr>
+<tr class="separator:a01f0d55672fc60d4ca09a08667174b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb90483030255fa4b417fd54efbd85f" id="r_a0cb90483030255fa4b417fd54efbd85f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a0cb90483030255fa4b417fd54efbd85f">add_constant</a> (<a class="el" href="structPEBBLObject.html">PEBBLObject</a> constant)</td></tr>
+<tr class="memdesc:a0cb90483030255fa4b417fd54efbd85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constant to the constant pool.  <br /></td></tr>
+<tr class="separator:a0cb90483030255fa4b417fd54efbd85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7278561b245be308203a9da5538bb72" id="r_aa7278561b245be308203a9da5538bb72"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#aa7278561b245be308203a9da5538bb72">add_variable_name</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:aa7278561b245be308203a9da5538bb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a variable name for debugging.  <br /></td></tr>
+<tr class="separator:aa7278561b245be308203a9da5538bb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacc1d2d110288e4511d0c44b8f5ccf4" id="r_aeacc1d2d110288e4511d0c44b8f5ccf4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#aeacc1d2d110288e4511d0c44b8f5ccf4">get_instruction_count</a> () const</td></tr>
+<tr class="memdesc:aeacc1d2d110288e4511d0c44b8f5ccf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current instruction count (for jump targets)  <br /></td></tr>
+<tr class="separator:aeacc1d2d110288e4511d0c44b8f5ccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ac8239f6bfe516b1f13eabebef1401" id="r_a23ac8239f6bfe516b1f13eabebef1401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a23ac8239f6bfe516b1f13eabebef1401">patch_jump</a> (uint32_t instruction_index, uint32_t target)</td></tr>
+<tr class="memdesc:a23ac8239f6bfe516b1f13eabebef1401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Patch a jump instruction with the correct offset.  <br /></td></tr>
+<tr class="separator:a23ac8239f6bfe516b1f13eabebef1401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73994a92a35155d85975cda76f2601b4" id="r_a73994a92a35155d85975cda76f2601b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a73994a92a35155d85975cda76f2601b4">clear</a> ()</td></tr>
+<tr class="memdesc:a73994a92a35155d85975cda76f2601b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all data.  <br /></td></tr>
+<tr class="separator:a73994a92a35155d85975cda76f2601b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c9c74d9537ee379ba46b3c432b6d21" id="r_ae6c9c74d9537ee379ba46b3c432b6d21"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structInstruction.html">Instruction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#ae6c9c74d9537ee379ba46b3c432b6d21">get_instruction</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:ae6c9c74d9537ee379ba46b3c432b6d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get instruction at index (for debugging)  <br /></td></tr>
+<tr class="separator:ae6c9c74d9537ee379ba46b3c432b6d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac105f486811504ef8ff58004f06eb7ed" id="r_ac105f486811504ef8ff58004f06eb7ed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#ac105f486811504ef8ff58004f06eb7ed">get_constant</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:ac105f486811504ef8ff58004f06eb7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get constant at index.  <br /></td></tr>
+<tr class="separator:ac105f486811504ef8ff58004f06eb7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772a532cd9aa3a770375a7cee65e8d09" id="r_a772a532cd9aa3a770375a7cee65e8d09"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a772a532cd9aa3a770375a7cee65e8d09">get_variable_name</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:a772a532cd9aa3a770375a7cee65e8d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get variable name at index.  <br /></td></tr>
+<tr class="separator:a772a532cd9aa3a770375a7cee65e8d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f0434d001d143c632724311b8130b7" id="r_aa0f0434d001d143c632724311b8130b7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#aa0f0434d001d143c632724311b8130b7">size_bytes</a> () const</td></tr>
+<tr class="memdesc:aa0f0434d001d143c632724311b8130b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total size in bytes (for memory usage estimation)  <br /></td></tr>
+<tr class="separator:aa0f0434d001d143c632724311b8130b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afaae71340f63b6a29d5f8a49d93116d5" id="r_afaae71340f63b6a29d5f8a49d93116d5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#afaae71340f63b6a29d5f8a49d93116d5">code</a></td></tr>
-<tr class="separator:afaae71340f63b6a29d5f8a49d93116d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef3ac2a64667a4635b414daca1196af" id="r_a6ef3ac2a64667a4635b414daca1196af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="value_8hpp.html#a1e6770aaf6473182f0496e97cc7d8ac0">ValueArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a6ef3ac2a64667a4635b414daca1196af">constants</a></td></tr>
-<tr class="separator:a6ef3ac2a64667a4635b414daca1196af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a0940895c82396f6b4ca53e0c9f657439" id="r_a0940895c82396f6b4ca53e0c9f657439"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a0940895c82396f6b4ca53e0c9f657439">line_run_starts</a></td></tr>
-<tr class="separator:a0940895c82396f6b4ca53e0c9f657439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac375007c99af9a90d9c36a28745d3e3d" id="r_ac375007c99af9a90d9c36a28745d3e3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#ac375007c99af9a90d9c36a28745d3e3d">line_run_lines</a></td></tr>
-<tr class="separator:ac375007c99af9a90d9c36a28745d3e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec7b72c3de33c0e6fcf63224b6c1eab" id="r_a5ec7b72c3de33c0e6fcf63224b6c1eab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structInstruction.html">Instruction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a5ec7b72c3de33c0e6fcf63224b6c1eab">instructions</a></td></tr>
+<tr class="separator:a5ec7b72c3de33c0e6fcf63224b6c1eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac86dee7ec5cc3d02f9787a9cc7fd7b3" id="r_aac86dee7ec5cc3d02f9787a9cc7fd7b3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#aac86dee7ec5cc3d02f9787a9cc7fd7b3">constants</a></td></tr>
+<tr class="separator:aac86dee7ec5cc3d02f9787a9cc7fd7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85121ef79fd6c0663ac9194115ca31c8" id="r_a85121ef79fd6c0663ac9194115ca31c8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChunk.html#a85121ef79fd6c0663ac9194115ca31c8">variable_names</a></td></tr>
+<tr class="separator:a85121ef79fd6c0663ac9194115ca31c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a41a7fb3fcdb7521e16cd72a65ed090c5" name="a41a7fb3fcdb7521e16cd72a65ed090c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41a7fb3fcdb7521e16cd72a65ed090c5">&#9670;&#160;</a></span>Chunk()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Bytecode chunk containing instructions and constants. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0cb90483030255fa4b417fd54efbd85f" name="a0cb90483030255fa4b417fd54efbd85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb90483030255fa4b417fd54efbd85f">&#9670;&#160;</a></span>add_constant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,133 +140,73 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::Chunk </td>
+          <td class="memname">uint32_t Chunk::add_constant </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab37ac71c006fe0c7ac620f375ea5d5b5" name="ab37ac71c006fe0c7ac620f375ea5d5b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37ac71c006fe0c7ac620f375ea5d5b5">&#9670;&#160;</a></span>~Chunk()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::~Chunk </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f2cc4c1b0850244f93a8aae26766d22" name="a3f2cc4c1b0850244f93a8aae26766d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f2cc4c1b0850244f93a8aae26766d22">&#9670;&#160;</a></span>add_constant()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Chunk::add_constant </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="value_8hpp.html#a26310d1d7e0f767c02bf4dc71c929bcc">Value</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td>
           <td class="paramname"><em>constant</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Adds a constant to the constant pool of this (<a class="el" href="classChunk.html">Chunk</a> class) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">constant</td><td>The constant to write </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Index of the constant written </dd></dl>
+<p>Add a constant to the constant pool. </p>
+<dl class="section return"><dt>Returns</dt><dd>Index of the constant in the pool </dd></dl>
 
 </div>
 </div>
-<a id="ac9f904f686583189e15d2bde149e56b6" name="ac9f904f686583189e15d2bde149e56b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9f904f686583189e15d2bde149e56b6">&#9670;&#160;</a></span>emit()</h2>
+<a id="a302f187081aa88c34eac98fcf91c5911" name="a302f187081aa88c34eac98fcf91c5911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302f187081aa88c34eac98fcf91c5911">&#9670;&#160;</a></span>add_instruction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Chunk::emit </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>byte</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes a opcode this (<a class="el" href="classChunk.html">Chunk</a> class) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">byte</td><td>Opcode to write </td></tr>
-    <tr><td class="paramname">line</td><td>The line to write the opcode to (for debugging) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad88a54b82dcb53a09830b5498b4626f5" name="ad88a54b82dcb53a09830b5498b4626f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad88a54b82dcb53a09830b5498b4626f5">&#9670;&#160;</a></span>emit_many()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;IsOpcode... Bytes&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Chunk::emit_many </td>
+          <td class="memname">void Chunk::add_instruction </td>
           <td>(</td>
-          <td class="paramtype">Bytes...&#160;</td>
-          <td class="paramname"><em>bytes</em>, </td>
+          <td class="paramtype"><a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a>&#160;</td>
+          <td class="paramname"><em>opcode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an instruction to the chunk. </p>
+
+</div>
+</div>
+<a id="a01f0d55672fc60d4ca09a08667174b01" name="a01f0d55672fc60d4ca09a08667174b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f0d55672fc60d4ca09a08667174b01">&#9670;&#160;</a></span>add_instruction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::add_instruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20">OpCode</a>&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>operand</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -269,61 +221,197 @@ template&lt;IsOpcode... Bytes&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Writes many opcodes to this (<a class="el" href="classChunk.html">Chunk</a> class) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bytes</td><td>Bytes to write to the code </td></tr>
-    <tr><td class="paramname">line</td><td>Line to emit to </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Add an instruction with operand. </p>
 
 </div>
 </div>
-<a id="a2db627587cd44332ac57545627de1713" name="a2db627587cd44332ac57545627de1713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2db627587cd44332ac57545627de1713">&#9670;&#160;</a></span>get_line()</h2>
+<a id="aa7278561b245be308203a9da5538bb72" name="aa7278561b245be308203a9da5538bb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7278561b245be308203a9da5538bb72">&#9670;&#160;</a></span>add_variable_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Chunk::get_line </td>
+          <td class="memname">uint32_t Chunk::add_variable_name </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a variable name for debugging. </p>
+<dl class="section return"><dt>Returns</dt><dd>Index of the variable name </dd></dl>
+
+</div>
+</div>
+<a id="a73994a92a35155d85975cda76f2601b4" name="a73994a92a35155d85975cda76f2601b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73994a92a35155d85975cda76f2601b4">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear all data. </p>
+
+</div>
+</div>
+<a id="ac105f486811504ef8ff58004f06eb7ed" name="ac105f486811504ef8ff58004f06eb7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac105f486811504ef8ff58004f06eb7ed">&#9670;&#160;</a></span>get_constant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structPEBBLObject.html">PEBBLObject</a> &amp; Chunk::get_constant </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Finds the line of a given instruction offset. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">instruction</td><td>The offset of the instruction </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The line number </dd></dl>
+<p>Get constant at index. </p>
 
 </div>
 </div>
-<a id="adf7e7ba1595c105d018c0f9b86c98d68" name="adf7e7ba1595c105d018c0f9b86c98d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf7e7ba1595c105d018c0f9b86c98d68">&#9670;&#160;</a></span>write_constant()</h2>
+<a id="ae6c9c74d9537ee379ba46b3c432b6d21" name="ae6c9c74d9537ee379ba46b3c432b6d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c9c74d9537ee379ba46b3c432b6d21">&#9670;&#160;</a></span>get_instruction()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Chunk::write_constant </td>
+          <td class="memname">const <a class="el" href="structInstruction.html">Instruction</a> &amp; Chunk::get_instruction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="value_8hpp.html#a26310d1d7e0f767c02bf4dc71c929bcc">Value</a>&#160;</td>
-          <td class="paramname"><em>constant</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get instruction at index (for debugging) </p>
+
+</div>
+</div>
+<a id="aeacc1d2d110288e4511d0c44b8f5ccf4" name="aeacc1d2d110288e4511d0c44b8f5ccf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacc1d2d110288e4511d0c44b8f5ccf4">&#9670;&#160;</a></span>get_instruction_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Chunk::get_instruction_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get current instruction count (for jump targets) </p>
+
+</div>
+</div>
+<a id="a772a532cd9aa3a770375a7cee65e8d09" name="a772a532cd9aa3a770375a7cee65e8d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772a532cd9aa3a770375a7cee65e8d09">&#9670;&#160;</a></span>get_variable_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Chunk::get_variable_name </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get variable name at index. </p>
+
+</div>
+</div>
+<a id="a23ac8239f6bfe516b1f13eabebef1401" name="a23ac8239f6bfe516b1f13eabebef1401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ac8239f6bfe516b1f13eabebef1401">&#9670;&#160;</a></span>patch_jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::patch_jump </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>instruction_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -331,95 +419,89 @@ template&lt;IsOpcode... Bytes&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Writes the opcodes for a constant (does not just write to pool) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">constant</td><td>Constant to write </td></tr>
-    <tr><td class="paramname">line</td><td>The line in which the opcodes will be stored </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Patch a jump instruction with the correct offset. </p>
+
+</div>
+</div>
+<a id="aa0f0434d001d143c632724311b8130b7" name="aa0f0434d001d143c632724311b8130b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f0434d001d143c632724311b8130b7">&#9670;&#160;</a></span>size_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Chunk::size_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get total size in bytes (for memory usage estimation) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afaae71340f63b6a29d5f8a49d93116d5" name="afaae71340f63b6a29d5f8a49d93116d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaae71340f63b6a29d5f8a49d93116d5">&#9670;&#160;</a></span>code</h2>
+<a id="aac86dee7ec5cc3d02f9787a9cc7fd7b3" name="aac86dee7ec5cc3d02f9787a9cc7fd7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac86dee7ec5cc3d02f9787a9cc7fd7b3">&#9670;&#160;</a></span>constants</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; Chunk::code</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structPEBBLObject.html">PEBBLObject</a>&gt; Chunk::constants</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6ef3ac2a64667a4635b414daca1196af" name="a6ef3ac2a64667a4635b414daca1196af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ef3ac2a64667a4635b414daca1196af">&#9670;&#160;</a></span>constants</h2>
+<a id="a5ec7b72c3de33c0e6fcf63224b6c1eab" name="a5ec7b72c3de33c0e6fcf63224b6c1eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec7b72c3de33c0e6fcf63224b6c1eab">&#9670;&#160;</a></span>instructions</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="value_8hpp.html#a1e6770aaf6473182f0496e97cc7d8ac0">ValueArray</a> Chunk::constants</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structInstruction.html">Instruction</a>&gt; Chunk::instructions</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac375007c99af9a90d9c36a28745d3e3d" name="ac375007c99af9a90d9c36a28745d3e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac375007c99af9a90d9c36a28745d3e3d">&#9670;&#160;</a></span>line_run_lines</h2>
+<a id="a85121ef79fd6c0663ac9194115ca31c8" name="a85121ef79fd6c0663ac9194115ca31c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85121ef79fd6c0663ac9194115ca31c8">&#9670;&#160;</a></span>variable_names</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;size_t&gt; Chunk::line_run_lines</td>
+          <td class="memname">std::vector&lt;std::string&gt; Chunk::variable_names</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0940895c82396f6b4ca53e0c9f657439" name="a0940895c82396f6b4ca53e0c9f657439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0940895c82396f6b4ca53e0c9f657439">&#9670;&#160;</a></span>line_run_starts</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;size_t&gt; Chunk::line_run_starts</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>interpreter/bytecode/<a class="el" href="chunk_8hpp_source.html">chunk.hpp</a></li>
-<li>interpreter/bytecode/<a class="el" href="chunk_8cpp.html">chunk.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/runtime/bytecode/<a class="el" href="bytecode_8hpp_source.html">bytecode.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

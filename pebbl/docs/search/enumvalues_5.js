@@ -6,6 +6,6 @@ var searchData=
   ['for_3',['FOR',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a7885ad399f9cab93cb42befbe402c588',1,'tokens.hpp']]],
   ['for_5floop_5fstatement_4',['FOR_LOOP_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1ad817bcd906b5edb11fa7cc0a613212a1',1,'ast.hpp']]],
   ['func_5',['FUNC',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a1e49c8ad07b69571bfcafaf18ac9fa5b',1,'tokens.hpp']]],
-  ['function_6',['FUNCTION',['../gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4dba6a72a6a776662a244f82d31e9274a07b',1,'gc.hpp']]],
+  ['function_6',['function',['../compiler_8hpp.html#a3169a8b21215d4fbbf99939d8f51c755a6a72a6a776662a244f82d31e9274a07b',1,'FUNCTION:&#160;compiler.hpp'],['../gc_8hpp.html#ad47f9bc93431f4e02b6b22820b3ee4dba6a72a6a776662a244f82d31e9274a07b',1,'FUNCTION:&#160;gc.hpp']]],
   ['function_5fstatement_7',['FUNCTION_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a477e51f71721de868ca357208b36ab00',1,'ast.hpp']]]
 ];

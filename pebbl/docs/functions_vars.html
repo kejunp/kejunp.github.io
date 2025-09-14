@@ -86,10 +86,14 @@ $(function() {
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>chunk&#160;:&#160;<a class="el" href="structCallFrame.html#a4ed4489995112883839846cee8b02f4b">CallFrame</a></li>
 <li>closure&#160;:&#160;<a class="el" href="classPEBBLFunction.html#ad73f0a60ab14933679994cce8aaeca06">PEBBLFunction</a></li>
+<li>compiler_&#160;:&#160;<a class="el" href="classInterpreter.html#afbb1a9e486df5ebebdbd71c965385da0">Interpreter</a></li>
 <li>condition&#160;:&#160;<a class="el" href="structIfElseExpressionNode.html#aa9f1c05743f9de64e831757336f7993f">IfElseExpressionNode</a>, <a class="el" href="structWhileLoopStatementNode.html#ac43900cd1d23d9269122d66efff23f6d">WhileLoopStatementNode</a></li>
+<li>constants&#160;:&#160;<a class="el" href="classChunk.html#aac86dee7ec5cc3d02f9787a9cc7fd7b3">Chunk</a></li>
 <li>current_char_&#160;:&#160;<a class="el" href="classLexer.html#ad458f3280a7cc36dd092f111ca5f1e7a">Lexer</a></li>
-<li>current_env_&#160;:&#160;<a class="el" href="classInterpreter.html#ab8c0842cfc3c806678e45544e96ed22d">Interpreter</a></li>
+<li>current_chunk_&#160;:&#160;<a class="el" href="classCompiler.html#ae29186aaa84afe1127e615bd8a12e602">Compiler</a></li>
+<li>current_env_&#160;:&#160;<a class="el" href="classInterpreter.html#ab8c0842cfc3c806678e45544e96ed22d">Interpreter</a>, <a class="el" href="classVM.html#a3f5f45aa3f9d8e85f0fd447daf08c676">VM</a></li>
 <li>current_token_&#160;:&#160;<a class="el" href="classASTGenerator.html#a6b36211abe3f5065e1428646bbfd8068">ASTGenerator</a></li>
 </ul>
 
@@ -98,31 +102,38 @@ $(function() {
 <li>elements&#160;:&#160;<a class="el" href="structArrayLiteralNode.html#aeba52523f3a53a6605a6582a56f1da42">ArrayLiteralNode</a>, <a class="el" href="classPEBBLArray.html#a144fbee0df9b7af5adf826ec407b0342">PEBBLArray</a></li>
 <li>else_expression&#160;:&#160;<a class="el" href="structIfElseExpressionNode.html#aea623096627b6d2d3e6ce374d6515147">IfElseExpressionNode</a></li>
 <li>entries&#160;:&#160;<a class="el" href="structDictLiteralNode.html#a192106e3a074bc10f4c190902a8a92c9">DictLiteralNode</a>, <a class="el" href="classPEBBLDict.html#a259f51bd55da9d8f87ebd161bfac9dca">PEBBLDict</a></li>
+<li>error_message_&#160;:&#160;<a class="el" href="classCompiler.html#a8e4db581c1280a121e53ee8ddce16084">Compiler</a>, <a class="el" href="classVM.html#a6fc5118affe929c5d273fd46f2935df9">VM</a></li>
 <li>EXP_MASK&#160;:&#160;<a class="el" href="structPEBBLObject.html#aaed043729e302c5cb065e9fa40827830">PEBBLObject</a></li>
 <li>expression&#160;:&#160;<a class="el" href="structExpressionStatementNode.html#a75d342aefc9dab12a0ea81d314a9a66b">ExpressionStatementNode</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>frames_&#160;:&#160;<a class="el" href="classVM.html#a6ac82899e2bd22fa7d9fa4cb2c0f4a62">VM</a></li>
+<li>FRAMES_MAX&#160;:&#160;<a class="el" href="classVM.html#a5f578cce9c3829f188c9be5c82d5bb67">VM</a></li>
 <li>function&#160;:&#160;<a class="el" href="structCallExpressionNode.html#a8ab8b5e6868b43f34050bf1a3addde6e">CallExpressionNode</a>, <a class="el" href="classPEBBLBuiltinFunction.html#a03b0e7e75024cd742d50ba86698196a6">PEBBLBuiltinFunction</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>global_env_&#160;:&#160;<a class="el" href="classInterpreter.html#ad6395890bca87a0daf2cc3a64edd9a8f">Interpreter</a></li>
+<li>global_env_&#160;:&#160;<a class="el" href="classInterpreter.html#ad6395890bca87a0daf2cc3a64edd9a8f">Interpreter</a>, <a class="el" href="classVM.html#a4d20f8630a5da46b0c617ef6bf4b9f66">VM</a></li>
 </ul>
 
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
+<li>has_error_&#160;:&#160;<a class="el" href="classCompiler.html#aad7cd84ac330739e590ac9b75d569fd2">Compiler</a>, <a class="el" href="classVM.html#a60e8a393cd2c34bcbb9597f777f794bb">VM</a></li>
 <li>has_return_&#160;:&#160;<a class="el" href="classInterpreter.html#a22a39d192bdac128ce93ffe3a87becc4">Interpreter</a></li>
-<li>heap_&#160;:&#160;<a class="el" href="classInterpreter.html#a0b6aacffcdafd3afdbc98297f1f4369b">Interpreter</a>, <a class="el" href="classRootHandle.html#a29161bcae4ab51e8ad3cee3bae7f7b1c">RootHandle</a>, <a class="el" href="classTracer.html#a7e283d54bcc204c7c2bc2e69450bb347">Tracer</a></li>
+<li>heap_&#160;:&#160;<a class="el" href="classCompiler.html#a59bd698c4e890f3b66f09ffd5ebf0eee">Compiler</a>, <a class="el" href="classInterpreter.html#a0b6aacffcdafd3afdbc98297f1f4369b">Interpreter</a>, <a class="el" href="classRootHandle.html#a29161bcae4ab51e8ad3cee3bae7f7b1c">RootHandle</a>, <a class="el" href="classTracer.html#a7e283d54bcc204c7c2bc2e69450bb347">Tracer</a>, <a class="el" href="classVM.html#acab4833911b8fc71cadb8b45d4970955">VM</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>identifier&#160;:&#160;<a class="el" href="structForLoopStatementNode.html#aeed0f81ea5b6dcc5d9db0c003770a11c">ForLoopStatementNode</a></li>
+<li>index&#160;:&#160;<a class="el" href="structVariableInfo.html#a7888109db750944177a242f3f38df6c6">VariableInfo</a></li>
 <li>input_&#160;:&#160;<a class="el" href="classLexer.html#a51abb9473a2b9e613ac54d9c2ad0813b">Lexer</a></li>
-<li>is_mutable&#160;:&#160;<a class="el" href="structEnvironment_1_1Variable.html#a9e6fc02a9f7d8d3bd23f093b006f02e1">Environment::Variable</a></li>
+<li>instruction_pointer&#160;:&#160;<a class="el" href="structCallFrame.html#a2c5ce4a9d2e1cde215a4582cf91a1359">CallFrame</a></li>
+<li>instructions&#160;:&#160;<a class="el" href="classChunk.html#a5ec7b72c3de33c0e6fcf63224b6c1eab">Chunk</a></li>
+<li>is_mutable&#160;:&#160;<a class="el" href="structEnvironment_1_1Variable.html#a9e6fc02a9f7d8d3bd23f093b006f02e1">Environment::Variable</a>, <a class="el" href="structVariableInfo.html#ad41b20ab51cd25ab991919402d78198f">VariableInfo</a></li>
 <li>iterable&#160;:&#160;<a class="el" href="structForLoopStatementNode.html#a30767d0e977a47f4c3b79b0c4da0379f">ForLoopStatementNode</a></li>
 </ul>
 
@@ -138,6 +149,8 @@ $(function() {
 <li>lexer_&#160;:&#160;<a class="el" href="classASTGenerator.html#a92e43cfb57ac8178e55bb0e6a6dac939">ASTGenerator</a></li>
 <li>line&#160;:&#160;<a class="el" href="structToken.html#ade6deee497c3814a319db092bc0f4f7f">Token</a></li>
 <li>line_&#160;:&#160;<a class="el" href="classLexer.html#add5cb6f5a87a005b09d9587895280913">Lexer</a></li>
+<li>loop_exit&#160;:&#160;<a class="el" href="structCompilationScope.html#a66a3dba4e536f7e907d27b7582532e6b">CompilationScope</a></li>
+<li>loop_start&#160;:&#160;<a class="el" href="structCompilationScope.html#a075570b4112a9ffd1c9d0bcd3cf6cffa">CompilationScope</a></li>
 </ul>
 
 
@@ -147,7 +160,7 @@ $(function() {
 
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>name&#160;:&#160;<a class="el" href="structFunctionStatementNode.html#a3248792c541e4bc47bf6086cc446fd34">FunctionStatementNode</a>, <a class="el" href="structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45">IdentifierNode</a>, <a class="el" href="classPEBBLBuiltinFunction.html#a89a2d2da8b776dede7a9af33564e0b31">PEBBLBuiltinFunction</a>, <a class="el" href="classPEBBLFunction.html#aeb22b80c7f32e8ef96d0bcd460254897">PEBBLFunction</a>, <a class="el" href="structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6">VariableStatementNode</a></li>
+<li>name&#160;:&#160;<a class="el" href="structFunctionStatementNode.html#a3248792c541e4bc47bf6086cc446fd34">FunctionStatementNode</a>, <a class="el" href="structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45">IdentifierNode</a>, <a class="el" href="classPEBBLBuiltinFunction.html#a89a2d2da8b776dede7a9af33564e0b31">PEBBLBuiltinFunction</a>, <a class="el" href="classPEBBLFunction.html#aeb22b80c7f32e8ef96d0bcd460254897">PEBBLFunction</a>, <a class="el" href="structVariableInfo.html#ad65bc0df64598c66e1d694e64ecb4d03">VariableInfo</a>, <a class="el" href="structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6">VariableStatementNode</a></li>
 <li>next&#160;:&#160;<a class="el" href="structGCObject.html#ada46f984810ae3794a07c7a77b95fb93">GCObject</a></li>
 <li>next_gc_&#160;:&#160;<a class="el" href="classGCHeap.html#a3223a10a6729ea3c9f5e6236794a3277">GCHeap</a></li>
 </ul>
@@ -156,7 +169,8 @@ $(function() {
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
 <li>object_count_&#160;:&#160;<a class="el" href="classGCHeap.html#ab5cdc22c1704939684c8d3668f3ac1d2">GCHeap</a></li>
 <li>objects_&#160;:&#160;<a class="el" href="classGCHeap.html#a5abfbd848632c24558e47b4bdd7bedc8">GCHeap</a></li>
-<li>operand&#160;:&#160;<a class="el" href="structUnaryExpressionNode.html#a0a8520c976bd8f7a98bfd00016f72525">UnaryExpressionNode</a></li>
+<li>opcode&#160;:&#160;<a class="el" href="structInstruction.html#af9e127f67ac61c359902aaef3d35f53f">Instruction</a></li>
+<li>operand&#160;:&#160;<a class="el" href="structInstruction.html#ae6ef97ca990241a38f032600aac953dd">Instruction</a>, <a class="el" href="structUnaryExpressionNode.html#a0a8520c976bd8f7a98bfd00016f72525">UnaryExpressionNode</a></li>
 <li>operator_token&#160;:&#160;<a class="el" href="structBinaryExpressionNode.html#ad209bfd4bd41904385b5f46b624525af">BinaryExpressionNode</a>, <a class="el" href="structUnaryExpressionNode.html#a367e4296b727c16e635d798af207c6bc">UnaryExpressionNode</a></li>
 </ul>
 
@@ -187,6 +201,10 @@ $(function() {
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>scope_stack_&#160;:&#160;<a class="el" href="classCompiler.html#a8528a1bb117a7ac69c2748c06969ad45">Compiler</a></li>
+<li>stack_&#160;:&#160;<a class="el" href="classVM.html#a928c0c939bbdb36c769840341f6625b3">VM</a></li>
+<li>stack_base&#160;:&#160;<a class="el" href="structCallFrame.html#ac2ec684e545ceedfc8aa5b0f4b8eb353">CallFrame</a></li>
+<li>STACK_MAX&#160;:&#160;<a class="el" href="classVM.html#a3cbeb718fdc258a3697b72cc204a5bce">VM</a></li>
 <li>statements&#160;:&#160;<a class="el" href="structBlockStatementNode.html#a2c1db8c389af2505086a4059cc621a36">BlockStatementNode</a>, <a class="el" href="structProgramNode.html#a92ee9991518a1961d69d73f86a075df9">ProgramNode</a></li>
 </ul>
 
@@ -199,13 +217,22 @@ $(function() {
 <li>then_expression&#160;:&#160;<a class="el" href="structIfElseExpressionNode.html#a965ace361ee57f9c4be335139da5edc4">IfElseExpressionNode</a></li>
 <li>token&#160;:&#160;<a class="el" href="structArrayLiteralNode.html#aa9925622dee230a4742cc6dd7df935dd">ArrayLiteralNode</a>, <a class="el" href="structAssignmentExpressionNode.html#ae0beea1bc2dc1d008de0764d5fb72e6f">AssignmentExpressionNode</a>, <a class="el" href="structBooleanLiteralNode.html#a8701d1121bc50e7e4f5a38f309b75ff4">BooleanLiteralNode</a>, <a class="el" href="structCallExpressionNode.html#a937fa39d670fa3615559db5f84e457a9">CallExpressionNode</a>, <a class="el" href="structDictLiteralNode.html#afbeddb1c52c1325741e8a2661e4b345f">DictLiteralNode</a>, <a class="el" href="structFloatLiteralNode.html#ad090a77f0b24dc08af7706625abf13b0">FloatLiteralNode</a>, <a class="el" href="structForLoopStatementNode.html#a477e91e5dc56b0cf07322694550fc4f1">ForLoopStatementNode</a>, <a class="el" href="structFunctionStatementNode.html#a5d385490a6eafe3e8e7ffde142bfa20a">FunctionStatementNode</a>, <a class="el" href="structIdentifierNode.html#a67de89452731f7d90472847eb04232a5">IdentifierNode</a>, <a class="el" href="structIfElseExpressionNode.html#a1b957d4ccb3b8c8306053ba85bfd90fe">IfElseExpressionNode</a>, <a class="el" href="structIntegerLiteralNode.html#a6cb4fc3143bfaa04b9f8fff91cc43429">IntegerLiteralNode</a>, <a class="el" href="structReturnStatementNode.html#aefa26e2c49cc1db0b36fa3935372a023">ReturnStatementNode</a>, <a class="el" href="structStringLiteralNode.html#aa2b3d2d4850c6c9f34dca1af781aeb01">StringLiteralNode</a>, <a class="el" href="structVariableStatementNode.html#aef6460df0eb47382e82bf558a1d3b7b0">VariableStatementNode</a>, <a class="el" href="structWhileLoopStatementNode.html#a9e2bfeeed0a187f23a9e83198c170040">WhileLoopStatementNode</a></li>
 <li>token_&#160;:&#160;<a class="el" href="classRuntimeError.html#a33b8c64dbdedca1793ef11c5f053dab2">RuntimeError</a></li>
-<li>type&#160;:&#160;<a class="el" href="structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a">Token</a></li>
+<li>type&#160;:&#160;<a class="el" href="structCompilationScope.html#a82b63d0f84839fbf33d498ba114e6653">CompilationScope</a>, <a class="el" href="structToken.html#a67919af9f3a80dc0b28a0ab1e6d5bf8a">Token</a></li>
+</ul>
+
+
+<h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>use_bytecode_&#160;:&#160;<a class="el" href="classInterpreter.html#a53fc9ff347edd3db4d169a1975b9787a">Interpreter</a></li>
 </ul>
 
 
 <h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
-<li>value&#160;:&#160;<a class="el" href="structAssignmentExpressionNode.html#a566044d3156786ffe57e39fe4a2e6c6d">AssignmentExpressionNode</a>, <a class="el" href="structBooleanLiteralNode.html#a1bcffdc8ed0f961651ba2cbe056b34eb">BooleanLiteralNode</a>, <a class="el" href="structEnvironment_1_1Variable.html#a1f052372ca724f41d6e66ce2692e2084">Environment::Variable</a>, <a class="el" href="structFloatLiteralNode.html#a492cab13496e68f1bdbdbd050d750cdc">FloatLiteralNode</a>, <a class="el" href="structIntegerLiteralNode.html#a4025f9e36531261ae5acd187033c2884">IntegerLiteralNode</a>, <a class="el" href="classPEBBLString.html#a52fc1ae77171bdce0c1656fcac6822ba">PEBBLString</a>, <a class="el" href="structStringLiteralNode.html#ae47b17dc2d05def23ab2c7f2935064da">StringLiteralNode</a>, <a class="el" href="structVariableStatementNode.html#a959f3c3f64b5549b8a47cf5436481679">VariableStatementNode</a></li>
+<li>value&#160;:&#160;<a class="el" href="structAssignmentExpressionNode.html#a566044d3156786ffe57e39fe4a2e6c6d">AssignmentExpressionNode</a>, <a class="el" href="structBooleanLiteralNode.html#a1bcffdc8ed0f961651ba2cbe056b34eb">BooleanLiteralNode</a>, <a class="el" href="structEnvironment_1_1Variable.html#a1f052372ca724f41d6e66ce2692e2084">Environment::Variable</a>, <a class="el" href="structFloatLiteralNode.html#a492cab13496e68f1bdbdbd050d750cdc">FloatLiteralNode</a>, <a class="el" href="structIntegerLiteralNode.html#a8dc6f009f483ac173746e961cab73b4c">IntegerLiteralNode</a>, <a class="el" href="classPEBBLString.html#a52fc1ae77171bdce0c1656fcac6822ba">PEBBLString</a>, <a class="el" href="structStringLiteralNode.html#ae47b17dc2d05def23ab2c7f2935064da">StringLiteralNode</a>, <a class="el" href="structVariableStatementNode.html#a959f3c3f64b5549b8a47cf5436481679">VariableStatementNode</a></li>
+<li>variable_count&#160;:&#160;<a class="el" href="structCompilationScope.html#aea1e96f3552b2594581bd09907e18a52">CompilationScope</a></li>
+<li>variable_names&#160;:&#160;<a class="el" href="classChunk.html#a85121ef79fd6c0663ac9194115ca31c8">Chunk</a></li>
+<li>variables&#160;:&#160;<a class="el" href="structCompilationScope.html#addd0ce0bcddbe5b428af5cbc4b0b102f">CompilationScope</a></li>
 <li>variables_&#160;:&#160;<a class="el" href="classEnvironment.html#a2ece5161172a7b25d3cae007e6723cd7">Environment</a></li>
+<li>vm_&#160;:&#160;<a class="el" href="classInterpreter.html#af607357ac4b46c9f42e589fa850f45db">Interpreter</a></li>
 </ul>
 
 

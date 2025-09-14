@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['rbrace_0',['RBRACE',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a7907975edd3cb3611c6808f3ea6bd290',1,'tokens.hpp']]],
-  ['rbracket_1',['RBRACKET',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a270adbd249f9997adc3208e92a57e066',1,'tokens.hpp']]],
-  ['read_5fidentifier_2',['read_identifier',['../classLexer.html#a90997b73a74196097baa4c88ea2512ce',1,'Lexer']]],
-  ['read_5fnumber_3',['read_number',['../classLexer.html#ae235fbcd9d30a28e9b71200f92da0dff',1,'Lexer']]],
-  ['read_5fposition_5f_4',['read_position_',['../classLexer.html#a57a7f02b2e483ae54041e7ccc29f143b',1,'Lexer']]],
-  ['read_5fstring_5',['read_string',['../classLexer.html#a07c40e61f32ba4d028d1a94c3c655d33',1,'Lexer']]],
-  ['ref_5f_6',['ref_',['../classRootHandle.html#a6fb0937ae7692eee00efb3f44946ea68',1,'RootHandle']]],
-  ['register_5fbuiltin_5ffunctions_7',['register_builtin_functions',['../classInterpreter.html#a5143fae7c4ebc7066e8d49bc17bfe40c',1,'Interpreter']]],
-  ['remove_8',['remove',['../classPEBBLDict.html#a12ec4fd2ae61034f93738bf99f7706e8',1,'PEBBLDict']]],
-  ['remove_5froot_9',['remove_root',['../classGCHeap.html#ac939b5b46022555fedcf65cb175a50d6',1,'GCHeap']]],
-  ['remove_5froot_5ftracer_10',['remove_root_tracer',['../classGCHeap.html#a7a49fc96d3097360d9a6c70ab33ffb4d',1,'GCHeap']]],
-  ['report_5ferror_11',['report_error',['../classASTGenerator.html#aec8d2e24433de89ac2c647cb69763192',1,'ASTGenerator::report_error()'],['../classInterpreter.html#a54c8653642dda3ecf7ff5c3715debfdd',1,'Interpreter::report_error()']]],
-  ['return_12',['RETURN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921aa2bec276a54439fe011eb523b845dac5',1,'tokens.hpp']]],
-  ['return_5fstatement_13',['RETURN_STATEMENT',['../ast_8hpp.html#a79651fcda7a7a8e0caf509aefc4016f1a6848827306558abf17a4390e4c662b0a',1,'ast.hpp']]],
-  ['return_5fvalue_14',['return_value',['../structReturnStatementNode.html#accfeb2eeb7eca827f2c590aa1f4ad302',1,'ReturnStatementNode']]],
-  ['return_5fvalue_5f_15',['return_value_',['../classInterpreter.html#a2aa35865b1391129e584866652b8037e',1,'Interpreter']]],
-  ['returnstatementnode_16',['ReturnStatementNode',['../structReturnStatementNode.html',1,'']]],
-  ['right_17',['right',['../structBinaryExpressionNode.html#a9e2083cf8c03299e56ce77b8d7758a5d',1,'BinaryExpressionNode']]],
-  ['root_5ftracers_5f_18',['root_tracers_',['../classGCHeap.html#a2d711862233682c42ba78eaa6fa8c575',1,'GCHeap']]],
-  ['roothandle_19',['roothandle',['../classRootHandle.html',1,'RootHandle'],['../classRootHandle.html#a6db1eb3932662cd4b627f8f9b059968f',1,'RootHandle::RootHandle(const RootHandle &amp;)=delete'],['../classRootHandle.html#a61b0fd368745f59d0eb8aee0fa2db972',1,'RootHandle::RootHandle(GCHeap &amp;heap, GCObject *&amp;ref)'],['../classGCHeap.html#aff74742682b919f520e6b327035acc20',1,'GCHeap::RootHandle']]],
-  ['roots_5f_20',['roots_',['../classGCHeap.html#a88622e22138bf593b95cf078180c449b',1,'GCHeap']]],
-  ['rparen_21',['RPAREN',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921afccedc90f87593a3b31536bd658808b1',1,'tokens.hpp']]],
-  ['run_5fcode_22',['run_code',['../main_8cpp.html#a7b63b4a48ae166fe2ab14156ca44f3b0',1,'main.cpp']]],
-  ['run_5ffile_23',['run_file',['../main_8cpp.html#a4a7befbab71e49e16af9fa7ac87acc10',1,'main.cpp']]],
-  ['run_5frepl_24',['run_repl',['../main_8cpp.html#a9b4651ae669685c4e9b10d6afe03addf',1,'main.cpp']]],
-  ['runtime_5ferror_25',['runtime_error',['../classInterpreter.html#ac2d317e559aaba3064b4c76ea56b5de9',1,'Interpreter']]],
-  ['runtimeerror_26',['runtimeerror',['../classRuntimeError.html#a54112325d4908afde3d01e39827f41c8',1,'RuntimeError::RuntimeError()'],['../classRuntimeError.html',1,'RuntimeError']]]
+  ['qnan_5fmask_0',['QNAN_MASK',['../structPEBBLObject.html#af5b0fa4f9a2923d3ec1a8a07cfce769d',1,'PEBBLObject']]]
 ];

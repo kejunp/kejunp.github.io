@@ -136,14 +136,14 @@ Include dependency graph for main.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7b63b4a48ae166fe2ab14156ca44f3b0" id="r_a7b63b4a48ae166fe2ab14156ca44f3b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7b63b4a48ae166fe2ab14156ca44f3b0">run_code</a> (const std::string &amp;source)</td></tr>
-<tr class="separator:a7b63b4a48ae166fe2ab14156ca44f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7befbab71e49e16af9fa7ac87acc10" id="r_a4a7befbab71e49e16af9fa7ac87acc10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4a7befbab71e49e16af9fa7ac87acc10">run_file</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:a4a7befbab71e49e16af9fa7ac87acc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa276dd73e76234090d3e7674e2c24a34" id="r_aa276dd73e76234090d3e7674e2c24a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa276dd73e76234090d3e7674e2c24a34">run_code</a> (const std::string &amp;source, bool use_bytecode=false)</td></tr>
+<tr class="separator:aa276dd73e76234090d3e7674e2c24a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0efe6e8ff2e8c2e560fbc600dcef04" id="r_a2c0efe6e8ff2e8c2e560fbc600dcef04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2c0efe6e8ff2e8c2e560fbc600dcef04">run_file</a> (const std::string &amp;filename, bool use_bytecode=false)</td></tr>
+<tr class="separator:a2c0efe6e8ff2e8c2e560fbc600dcef04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b4651ae669685c4e9b10d6afe03addf" id="r_a9b4651ae669685c4e9b10d6afe03addf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9b4651ae669685c4e9b10d6afe03addf">run_repl</a> ()</td></tr>
 <tr class="separator:a9b4651ae669685c4e9b10d6afe03addf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b0a184a758fb766f4fc5f0b3d95400" id="r_ae2b0a184a758fb766f4fc5f0b3d95400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae2b0a184a758fb766f4fc5f0b3d95400">test_interpreter</a> ()</td></tr>
-<tr class="separator:ae2b0a184a758fb766f4fc5f0b3d95400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5b927e4fa65d63503e7f5d6776c102" id="r_a2b5b927e4fa65d63503e7f5d6776c102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2b5b927e4fa65d63503e7f5d6776c102">test_interpreter</a> (bool use_bytecode=false)</td></tr>
+<tr class="separator:a2b5b927e4fa65d63503e7f5d6776c102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -178,8 +178,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b63b4a48ae166fe2ab14156ca44f3b0" name="a7b63b4a48ae166fe2ab14156ca44f3b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b63b4a48ae166fe2ab14156ca44f3b0">&#9670;&#160;</a></span>run_code()</h2>
+<a id="aa276dd73e76234090d3e7674e2c24a34" name="aa276dd73e76234090d3e7674e2c24a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa276dd73e76234090d3e7674e2c24a34">&#9670;&#160;</a></span>run_code()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,16 +188,26 @@ Functions</h2></td></tr>
           <td class="memname">void run_code </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_bytecode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4a7befbab71e49e16af9fa7ac87acc10" name="a4a7befbab71e49e16af9fa7ac87acc10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7befbab71e49e16af9fa7ac87acc10">&#9670;&#160;</a></span>run_file()</h2>
+<a id="a2c0efe6e8ff2e8c2e560fbc600dcef04" name="a2c0efe6e8ff2e8c2e560fbc600dcef04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0efe6e8ff2e8c2e560fbc600dcef04">&#9670;&#160;</a></span>run_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,8 +216,18 @@ Functions</h2></td></tr>
           <td class="memname">void run_file </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_bytecode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,8 +251,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2b0a184a758fb766f4fc5f0b3d95400" name="ae2b0a184a758fb766f4fc5f0b3d95400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b0a184a758fb766f4fc5f0b3d95400">&#9670;&#160;</a></span>test_interpreter()</h2>
+<a id="a2b5b927e4fa65d63503e7f5d6776c102" name="a2b5b927e4fa65d63503e7f5d6776c102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5b927e4fa65d63503e7f5d6776c102">&#9670;&#160;</a></span>test_interpreter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +260,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void test_interpreter </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_bytecode</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>

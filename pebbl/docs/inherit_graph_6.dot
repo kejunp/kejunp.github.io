@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="Interpreter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classInterpreter.html",tooltip="Main interpreter for executing PEBBL programs."];
+  Node0 [id="Node000000",label="Environment",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classEnvironment.html",tooltip="Environment for storing variables and managing scopes."];
 }

@@ -90,9 +90,9 @@ Collaboration diagram for Interpreter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a33e3d15f07cbbec61e903f4407b67d60" id="r_a33e3d15f07cbbec61e903f4407b67d60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a33e3d15f07cbbec61e903f4407b67d60">Interpreter</a> (<a class="el" href="classGCHeap.html">GCHeap</a> &amp;heap)</td></tr>
-<tr class="memdesc:a33e3d15f07cbbec61e903f4407b67d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:a33e3d15f07cbbec61e903f4407b67d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5cf473695b52f79af567e2cc51baa1" id="r_adf5cf473695b52f79af567e2cc51baa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#adf5cf473695b52f79af567e2cc51baa1">Interpreter</a> (<a class="el" href="classGCHeap.html">GCHeap</a> &amp;heap, bool use_bytecode=false)</td></tr>
+<tr class="memdesc:adf5cf473695b52f79af567e2cc51baa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:adf5cf473695b52f79af567e2cc51baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac59c2cfc5a0a14009acc1b10c0719e56" id="r_ac59c2cfc5a0a14009acc1b10c0719e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#ac59c2cfc5a0a14009acc1b10c0719e56">execute</a> (const <a class="el" href="structProgramNode.html">ProgramNode</a> &amp;program)</td></tr>
 <tr class="memdesc:ac59c2cfc5a0a14009acc1b10c0719e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a program.  <br /></td></tr>
 <tr class="separator:ac59c2cfc5a0a14009acc1b10c0719e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3e857d69b8d67aa61579d6aa22976be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c8653642dda3ecf7ff5c3715debfdd" id="r_a54c8653642dda3ecf7ff5c3715debfdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a54c8653642dda3ecf7ff5c3715debfdd">report_error</a> (const std::string &amp;message)</td></tr>
 <tr class="separator:a54c8653642dda3ecf7ff5c3715debfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba18edb5149143d4ad9121724c17f4f0" id="r_aba18edb5149143d4ad9121724c17f4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#aba18edb5149143d4ad9121724c17f4f0">set_bytecode_mode</a> (bool enable)</td></tr>
+<tr class="memdesc:aba18edb5149143d4ad9121724c17f4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable bytecode execution mode.  <br /></td></tr>
+<tr class="separator:aba18edb5149143d4ad9121724c17f4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac733802f8faacdd0fd043fdfecbbff00" id="r_ac733802f8faacdd0fd043fdfecbbff00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#ac733802f8faacdd0fd043fdfecbbff00">is_bytecode_mode</a> () const</td></tr>
+<tr class="memdesc:ac733802f8faacdd0fd043fdfecbbff00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if bytecode mode is enabled.  <br /></td></tr>
+<tr class="separator:ac733802f8faacdd0fd043fdfecbbff00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -160,6 +166,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ac2d317e559aaba3064b4c76ea56b5de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5143fae7c4ebc7066e8d49bc17bfe40c" id="r_a5143fae7c4ebc7066e8d49bc17bfe40c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a5143fae7c4ebc7066e8d49bc17bfe40c">register_builtin_functions</a> ()</td></tr>
 <tr class="separator:a5143fae7c4ebc7066e8d49bc17bfe40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22876b29c8c24f31d07678446e7f73d" id="r_ac22876b29c8c24f31d07678446e7f73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#ac22876b29c8c24f31d07678446e7f73d">sync_globals_to_vm</a> ()</td></tr>
+<tr class="separator:ac22876b29c8c24f31d07678446e7f73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cde01d56ef42ef3e17e88fdc7b6a07" id="r_a94cde01d56ef42ef3e17e88fdc7b6a07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a94cde01d56ef42ef3e17e88fdc7b6a07">sync_globals_from_vm</a> ()</td></tr>
+<tr class="separator:a94cde01d56ef42ef3e17e88fdc7b6a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -173,13 +183,19 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a22a39d192bdac128ce93ffe3a87becc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa35865b1391129e584866652b8037e" id="r_a2aa35865b1391129e584866652b8037e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPEBBLObject.html">PEBBLObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a2aa35865b1391129e584866652b8037e">return_value_</a></td></tr>
 <tr class="separator:a2aa35865b1391129e584866652b8037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53fc9ff347edd3db4d169a1975b9787a" id="r_a53fc9ff347edd3db4d169a1975b9787a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#a53fc9ff347edd3db4d169a1975b9787a">use_bytecode_</a></td></tr>
+<tr class="separator:a53fc9ff347edd3db4d169a1975b9787a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb1a9e486df5ebebdbd71c965385da0" id="r_afbb1a9e486df5ebebdbd71c965385da0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classCompiler.html">Compiler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#afbb1a9e486df5ebebdbd71c965385da0">compiler_</a></td></tr>
+<tr class="separator:afbb1a9e486df5ebebdbd71c965385da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af607357ac4b46c9f42e589fa850f45db" id="r_af607357ac4b46c9f42e589fa850f45db"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVM.html">VM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterpreter.html#af607357ac4b46c9f42e589fa850f45db">vm_</a></td></tr>
+<tr class="separator:af607357ac4b46c9f42e589fa850f45db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main interpreter for executing PEBBL programs. </p>
 <p>The <a class="el" href="classInterpreter.html" title="Main interpreter for executing PEBBL programs.">Interpreter</a> class evaluates AST nodes and executes PEBBL programs. It manages environments for variable scoping and integrates with the garbage collection system for memory management. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a33e3d15f07cbbec61e903f4407b67d60" name="a33e3d15f07cbbec61e903f4407b67d60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e3d15f07cbbec61e903f4407b67d60">&#9670;&#160;</a></span>Interpreter()</h2>
+<a id="adf5cf473695b52f79af567e2cc51baa1" name="adf5cf473695b52f79af567e2cc51baa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5cf473695b52f79af567e2cc51baa1">&#9670;&#160;</a></span>Interpreter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,8 +207,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">Interpreter::Interpreter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classGCHeap.html">GCHeap</a> &amp;&#160;</td>
-          <td class="paramname"><em>heap</em></td><td>)</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_bytecode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -206,6 +232,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">heap</td><td>GC heap for object allocation </td></tr>
+    <tr><td class="paramname">use_bytecode</td><td>Whether to use bytecode interpreter (default: false for tree-walker) </td></tr>
   </table>
   </dd>
 </dl>
@@ -771,6 +798,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac733802f8faacdd0fd043fdfecbbff00" name="ac733802f8faacdd0fd043fdfecbbff00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac733802f8faacdd0fd043fdfecbbff00">&#9670;&#160;</a></span>is_bytecode_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Interpreter::is_bytecode_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if bytecode mode is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if using bytecode interpreter </dd></dl>
+
+</div>
+</div>
 <a id="adc35a7d655f9f1cc8115f51c46488c00" name="adc35a7d655f9f1cc8115f51c46488c00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc35a7d655f9f1cc8115f51c46488c00">&#9670;&#160;</a></span>is_truthy()</h2>
 
@@ -935,6 +990,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aba18edb5149143d4ad9121724c17f4f0" name="aba18edb5149143d4ad9121724c17f4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba18edb5149143d4ad9121724c17f4f0">&#9670;&#160;</a></span>set_bytecode_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interpreter::set_bytecode_mode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable bytecode execution mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>True to enable bytecode mode, false for tree-walking mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abc762e4dc06932bf61cf8d430d7831c6" name="abc762e4dc06932bf61cf8d430d7831c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc762e4dc06932bf61cf8d430d7831c6">&#9670;&#160;</a></span>stringify()</h2>
 
@@ -959,6 +1040,56 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>String representation of the value </dd></dl>
+
+</div>
+</div>
+<a id="a94cde01d56ef42ef3e17e88fdc7b6a07" name="a94cde01d56ef42ef3e17e88fdc7b6a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cde01d56ef42ef3e17e88fdc7b6a07">&#9670;&#160;</a></span>sync_globals_from_vm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interpreter::sync_globals_from_vm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac22876b29c8c24f31d07678446e7f73d" name="ac22876b29c8c24f31d07678446e7f73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22876b29c8c24f31d07678446e7f73d">&#9670;&#160;</a></span>sync_globals_to_vm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interpreter::sync_globals_to_vm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1017,6 +1148,28 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="afbb1a9e486df5ebebdbd71c965385da0" name="afbb1a9e486df5ebebdbd71c965385da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb1a9e486df5ebebdbd71c965385da0">&#9670;&#160;</a></span>compiler_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classCompiler.html">Compiler</a>&gt; Interpreter::compiler_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8c0842cfc3c806678e45544e96ed22d" name="ab8c0842cfc3c806678e45544e96ed22d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8c0842cfc3c806678e45544e96ed22d">&#9670;&#160;</a></span>current_env_</h2>
 
@@ -1116,6 +1269,50 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structPEBBLObject.html">PEBBLObject</a> Interpreter::return_value_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53fc9ff347edd3db4d169a1975b9787a" name="a53fc9ff347edd3db4d169a1975b9787a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fc9ff347edd3db4d169a1975b9787a">&#9670;&#160;</a></span>use_bytecode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Interpreter::use_bytecode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af607357ac4b46c9f42e589fa850f45db" name="af607357ac4b46c9f42e589fa850f45db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af607357ac4b46c9f42e589fa850f45db">&#9670;&#160;</a></span>vm_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classVM.html">VM</a>&gt; Interpreter::vm_</td>
         </tr>
       </table>
   </td>

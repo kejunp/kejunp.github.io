@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['name_0',['name',['../structIdentifierNode.html#a89c89491b7ac033d60258d074526ba45',1,'IdentifierNode::name'],['../structVariableStatementNode.html#ab8809715f0d368472ea49de27f78cad6',1,'VariableStatementNode::name'],['../structFunctionStatementNode.html#a3248792c541e4bc47bf6086cc446fd34',1,'FunctionStatementNode::name'],['../classPEBBLFunction.html#aeb22b80c7f32e8ef96d0bcd460254897',1,'PEBBLFunction::name'],['../classPEBBLBuiltinFunction.html#a89a2d2da8b776dede7a9af33564e0b31',1,'PEBBLBuiltinFunction::name']]],
-  ['nativefn_1',['NativeFn',['../classPEBBLBuiltinFunction.html#a6b83d2878c3517ce9d81d19ee947c168',1,'PEBBLBuiltinFunction']]],
-  ['next_2',['next',['../structGCObject.html#ada46f984810ae3794a07c7a77b95fb93',1,'GCObject']]],
-  ['next_5fgc_5f_3',['next_gc_',['../classGCHeap.html#a3223a10a6729ea3c9f5e6236794a3277',1,'GCHeap']]],
-  ['next_5ftoken_4',['next_token',['../classLexer.html#a7fcfd2eb03ec5b00bda2b7722d42f68c',1,'Lexer']]],
-  ['nil_5',['nil',['../structPEBBLObject.html#af708d6afd2ab0ed5a3f070327fe26d16abc0b1e8b63f3f00318eee5aeabc14255',1,'PEBBLObject::NIL'],['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921abc0b1e8b63f3f00318eee5aeabc14255',1,'NIL:&#160;tokens.hpp']]],
-  ['not_5fequal_6',['NOT_EQUAL',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921a4ea2d378cdec20f59330f113297bc1ce',1,'tokens.hpp']]]
+  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['make_5fbool_2',['make_bool',['../structPEBBLObject.html#af3a319d43f91c0a90b979eed3d2ea62a',1,'PEBBLObject']]],
+  ['make_5fdouble_3',['make_double',['../structPEBBLObject.html#aa17d9c5f5145d36bfc412b7d31558a5b',1,'PEBBLObject']]],
+  ['make_5fgc_5fptr_4',['make_gc_ptr',['../structPEBBLObject.html#ac69367821a5d12496433f7a164c07edd',1,'PEBBLObject']]],
+  ['make_5fint32_5',['make_int32',['../structPEBBLObject.html#aad0990be76e14eb227cb7ec116e9f767',1,'PEBBLObject']]],
+  ['make_5fnull_6',['make_null',['../structPEBBLObject.html#ab89d15e402acacdc6e2ad8f809b50e6f',1,'PEBBLObject']]],
+  ['make_5ftoken_7',['make_token',['../classLexer.html#a3e2e069afa2176cc23d314736df53cfb',1,'Lexer::make_token(TokenType type, std::string &amp;&amp;lexeme)'],['../classLexer.html#aabe0e0f5afa8767af534621653d71e32',1,'Lexer::make_token(TokenType type, const std::string &amp;lexeme)']]],
+  ['make_5fundefined_8',['make_undefined',['../structPEBBLObject.html#a05ff01cfdf4188119e278f61d34f47a9',1,'PEBBLObject']]],
+  ['mark_9',['mark',['../classGCHeap.html#a33732177e157859c4b1833320175f3d7',1,'GCHeap::mark()'],['../classTracer.html#a81885e30cdeeec4ef5fc0cfa5a225054',1,'Tracer::mark()']]],
+  ['marked_10',['marked',['../structGCObject.html#a1279a78425557f3becddf3e01a9463ac',1,'GCObject']]],
+  ['minus_11',['MINUS',['../tokens_8hpp.html#aa520fbf142ba1e7e659590c07da31921affc0d9b54a1fe677c4c9e6b050e67c81',1,'tokens.hpp']]],
+  ['multiply_12',['MULTIPLY',['../bytecode_8hpp.html#a7e85f04e30e1c4c4607773335350fe20a080aaf8d817ada96fca7096b7b55bd30',1,'bytecode.hpp']]]
 ];
