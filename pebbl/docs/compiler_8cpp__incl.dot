@@ -50,4 +50,12 @@ digraph "src/runtime/bytecode/compiler.cpp"
   Node1 -> Node18 [id="edge27_Node000001_Node000018",color="steelblue1",style="solid",tooltip=" "];
   Node18 [id="Node000018",label="stdexcept",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node12 [id="edge28_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node19 [id="edge29_Node000001_Node000019",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="../builtins/builtin\l_objects.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$builtin__objects_8hpp.html",tooltip="Built-in garbage-collected object types (String, Array, Dict)"];
+  Node19 -> Node15 [id="edge30_Node000019_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node9 [id="edge31_Node000019_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node5 [id="edge32_Node000019_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node6 [id="edge33_Node000019_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node13 [id="edge34_Node000019_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node12 [id="edge35_Node000019_Node000012",color="steelblue1",style="solid",tooltip=" "];
 }

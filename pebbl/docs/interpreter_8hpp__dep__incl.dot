@@ -8,5 +8,10 @@ digraph "src/runtime/evaluator/interpreter.hpp"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="src/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main entry point for the PEBBL language interpreter."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="src/runtime/evaluator\l/interpreter.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interpreter_8cpp.html",tooltip="Implementation of the main interpreter."];
+  Node3 [id="Node000003",label="src/runtime/builtins\l/builtin_funcs.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$builtin__funcs_8hpp.html",tooltip="Implementation of all PEBBL builtin functions."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="src/runtime/bytecode\l/vm.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$vm_8cpp.html",tooltip="Implementation of the PEBBL virtual machine."];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="src/runtime/evaluator\l/interpreter.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interpreter_8cpp.html",tooltip="Implementation of the main interpreter."];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }
